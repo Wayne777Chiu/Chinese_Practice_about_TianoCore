@@ -4,7 +4,7 @@ Welcome to the Chinese_for_TianoCore wiki! the source context base from tianocor
 
 歡迎來到TianoCore--一個支持[[統一可延伸韌體介面(UEFI)|UEFI]]開放源碼實現的社群。[[EDK II]]是一個模組化、極具特色和跨平台的對UEFI和[[PI]]規範的韌體開發環境。我們希望你會鑽研我們的努力，去使用TianCore在韌體平台上，[[回報任何你發現的問題|Reporting Issues]]，並幫助社群。
 
-假如你要去編譯韌體或套件，我們建議你從[[Getting Started with EDK II]]頁。這提供一個概觀針對-下載[EDK II from github](https://github.com/tianocore/edk2) 和建置一個樣本平台([[NT32|Nt32Pkg]], [[OVMF]], [[ArmVirtPkg]], [[MdePkg]], ...)。
+假如你要去編譯韌體或套件，我們建議你從[[Getting Started with EDK II]]頁。這提供一個概觀針對-下載[EDK II from github](https://github.com/tianocore/edk2)和建置一個樣本平台([[NT32|Nt32Pkg]], [[OVMF]], [[ArmVirtPkg]], [[MdePkg]], ...)。
 
 Welcome to TianoCore, the community supporting an open source implementation of [[UEFI]]. [[EDK II]] is a modern, feature-rich, cross-platform firmware development environment for the UEFI and [[PI]] specifications. We hope that you’ll delve into our work, use TianoCore for platform firmware, [[report any issues|Reporting Issues]] you find, and contribute to the community.
 
