@@ -8,7 +8,7 @@ Welcome to the Chinese_for_TianoCore wiki! the source context base from tianocor
 
 有多種硬體平台使用EDK II 開放源碼UEFI 韌體，其中包含 [[MinnowBoard Max/Turbot|MinnowBoardMax]], [[MinnowBoard 3]], and [[Intel® Galileo Gen 2|Galileo]]。　這可讓你在實際硬體上體驗及開發。
 
-TianoCore 使用 Bugzilla 去追蹤問題和特點要求。請檢視[[Reporting Issues]] 和 [[Reporting Security Issues]] 來得到更多資訊。假如你想要去開拓源碼或修正問題，請看[[如何合作開發|How To Contribute]]。頁面[[任務|Tasks]]
+TianoCore 使用 Bugzilla 去追蹤問題和特點要求。請檢視[[Reporting Issues]] 和 [[Reporting Security Issues]] 來得到更多資訊。假如你想要去開拓源碼或修正問題，請看[[如何合作開發|How To Contribute]]。頁面[[任務|Tasks]]有優先權工作項目的列表。
 
 Welcome to TianoCore, the community supporting an open source implementation of [[UEFI]]. [[EDK II]] is a modern, feature-rich, cross-platform firmware development environment for the UEFI and [[PI]] specifications. We hope that you’ll delve into our work, use TianoCore for platform firmware, [[report any issues|Reporting Issues]] you find, and contribute to the community.
 
