@@ -12,7 +12,7 @@ TianoCore 使用 Bugzilla 去追蹤問題和特點要求。請檢視[[回報問�
 
 [<img src="https://github.com/tianocore/tianocore.github.io/blob/master/images/tianocore_logo_text_whitebkg.jpg"/>](http://www.tianocore.org)
 
-== 原文
+# 原文
 
 Welcome to TianoCore, the community supporting an open source implementation of [[UEFI]]. [[EDK II]] is a modern, feature-rich, cross-platform firmware development environment for the UEFI and [[PI]] specifications. We hope that you’ll delve into our work, use TianoCore for platform firmware, [[report any issues|Reporting Issues]] you find, and contribute to the community.
 
