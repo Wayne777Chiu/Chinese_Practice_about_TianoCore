@@ -1,5 +1,19 @@
 # EDK II
 
+EDK II是一個模組化、極具特色和跨平台的對UEFI和PI規範的韌體開發環境。 EDK II 是開放源碼，授權使用 [BSD](http://www.opensource.org/licenses/bsd-license.php) license.
+
+## 源碼 Repositories
+
+EDK II 主 Repository - <https://github.com/tianocore/edk2>
+
+EDK II 分期 (發展中的功能) - <https://github.com/tianocore/edk2-staging>
+
+
+
+# 原文
+
+# EDK II
+
 EDK II is a modern, feature-rich, cross-platform firmware development environment for the UEFI and PI specifications. EDK II is open source, using a [BSD](http://www.opensource.org/licenses/bsd-license.php) license.
 
 ## Source Repositories
