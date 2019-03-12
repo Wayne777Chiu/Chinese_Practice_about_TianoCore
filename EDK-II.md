@@ -5,7 +5,7 @@ EDK II是一個模組化、極具特色和跨平台的對UEFI和PI規範的韌�
 
 ## 源碼 Repositories
 
-EDK II 主 Repository - <https://github.com/tianocore/edk2>
+EDK II 主要 Repository - <https://github.com/tianocore/edk2>
 
 EDK II 分期 (發展中的功能) - <https://github.com/tianocore/edk2-staging>
 
