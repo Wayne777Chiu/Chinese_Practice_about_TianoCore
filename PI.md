@@ -5,6 +5,8 @@ UEFI 平台初始化(PI) 描述開機執行面到周圍[[UEFI]]支援的協定�
 
 UEFI論壇的[平台初始化工作群組(PLATFORM INITIALIZATION WORK GROUP)](http://uefi.org/workinggroups)(PIWG)管理規範開發。
 
+
+
 # 原文
 
 ## Platform Initialization (PI)
