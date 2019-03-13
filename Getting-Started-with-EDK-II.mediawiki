@@ -1,0 +1,79 @@
+(2019/03/08)
+__NOTOC__
+=下載和編譯源碼=
+
+本頁面顯示從GitHub下載[[EDK II]]與透過不同的OS或編譯器環境來編譯專案的步驟。
+
+==如何設定當地端的EDK II樹==
+
+幾種建置環境有支援和被提及。 假如說明介紹對你的系統組態不夠精準，你可能需要稍稍調整說明來符合你的系統。
+
+* Linux:[[Using EDK II with Native GCC|在原生GCC使用EDK II]](建議用目前版本的Linux)
+* Microsoft Windows: [[Windows systems]] (Win7/8/8.1/10)
+* Mac OS X: [[Xcode]]
+* UNIX: [[Unix-like systems]] (For non-Linux UNIX, 較老的 Linux distros, 或使用 Cygwin)
+
+'''Note:''' 一些其他建置工具可能需要依靠一些專題或套裝:
+* [[Nasm Setup|Nasm]]
+* [[ASL Setup|ASL Compiler]]
+* 安裝 Python 3.7 or later (https://www.python.org/) 來從源碼運行 python 工具 
+**  Python 2.7.10 or later 仍可使用 PYTHON_HOME 變數
+
+'''Note:''' 一些例子使用了 [[Multiple_Woprkspace|多重工作區]]功能來組建EDK II 基礎工具(BaseTools)。 這需要使用基於edk2-platforms的平台代碼: (https://github.com/tianocore/edk2-platforms)
+
+一旦你有了基本建置環境可運行，你就能更建置一個專案在 RELEASE 或 [[EDK II Debugging|DEBUG]] 模式。
+
+ ==GitHub Help==
+ 
+
+=原文=
+
+__NOTOC__
+=Downloading and Compiling Code=
+
+This page shows the steps for downloading [[EDK II]] from GitHub and compiling projects under various OS/compiler environments.
+
+==How to Setup a Local EDK II Tree==
+
+Several build environments are supported and documented.  If instructions are not available for your exact system configuration, you may still be able to tweak the instructions to work on your system.
+
+* Linux: [[Using EDK II with Native GCC]] (recommended for current versions of Linux)
+* Microsoft Windows: [[Windows systems]] (Win7/8/8.1/10)
+* Mac OS X: [[Xcode]]
+* UNIX: [[Unix-like systems]] (For non-Linux UNIX, older Linux distros, or when using Cygwin)
+
+'''Note:''' Some other build tools may be required depending on the project or package:
+* [[Nasm Setup|Nasm]]
+* [[ASL Setup|ASL Compiler]]
+* Install Python 3.7 or later (https://www.python.org/)  to run python tool from source 
+**  Python 2.7.10 or later can still be used with PYTHON_HOME
+
+'''Note:''' Some of the examples use the [[Multiple_Workspace]] feature to configure EDK II BaseTools. This is required for using platform code based on edk2-platforms: (https://github.com/tianocore/edk2-platforms)
+
+Once you have a basic build environment running, you can build a project in RELEASE or [[EDK II Debugging|DEBUG]] mode.
+
+==GitHub Help==
+
+GitHub (https://help.github.com/index.html) provides step-by-step instructions for user registration and basic features supported by GitHub 
+
+* Setup GitHub for Linux/Windows/MAC (https://help.github.com/articles/set-up-git)
+* Download and install a git GUI interface: git GUI Clients (https://git-scm.com/download/gui/win) | TortoiseGit (https://tortoisegit.org/)
+
+===GitHub EDK II Project Repositories===
+
+* The EDK II project repository is available at https://github.com/tianocore/edk2. 
+* Prebuilt Windows tools are available at https://github.com/tianocore/edk2-BaseTools-win32. 
+* [[EDK II Platforms]] are available at https://github.com/tianocore/edk2-platforms.
+* Content that is not released under an accepted open source license can be found at https://github.com/tianocore/edk2-non-osi.
+
+==EDK II Development Process==
+
+After setting up your build environment see  [[EDK II Development Process]] for making contributions to the EDK II Project.
+
+==Further Help==
+
+If you have questions about the code or run into obstacles getting things to work, please join the [[edk2-devel]] email list and ask your EDK II related questions on the list.
+
+For info on writing a simple UEFI EDK II Application, see: [[Getting Started Writing Simple Application]]
+
+To review the basic setup of .DSC, .DEC, and .INF files, see: [[Build Description Files]]
