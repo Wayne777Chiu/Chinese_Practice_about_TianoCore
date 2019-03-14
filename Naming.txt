@@ -1,9 +1,0 @@
-=翻譯=
-
-Boot services      開機過程服務
-
-Description Files  組態描述檔
-
-Porting            平台開發導入
-
-Runtime services   運行時間服務
