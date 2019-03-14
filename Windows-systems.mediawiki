@@ -93,7 +93,7 @@ Example:
 </pre>
 
 
-=='''Build'''==
+=='''建置'''==
 * Set up the [[Nasm-Setup| Nasm]] open source assembly compiler
 * Set up the [[Asl Setup| ASL Compiler]] 
 * [[Windows-systems#compile-tools |Compile Tools]] above

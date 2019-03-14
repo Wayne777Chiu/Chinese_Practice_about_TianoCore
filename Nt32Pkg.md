@@ -9,7 +9,7 @@ NT32 提供開機和運行時間服務給應用程式開發來對應 UEFI 函數
 Nt32Pkg 平台的目標和功能是類似於 [[UnixPkg]] 和 [[EmulatorPkg]] 。 我們的長程目標是平台開發導入 [[EmulatorPkg]] 到 Microsoft Windows 並捨棄 Nt32Pkg 。
 
 在 Windows 上使用 NT32 模擬器:
-* 建置 Nt32Pkg 在 Windows 上，參考: 如何建置去使用 [Windows Systems]( Windows-systems#build)
+* 建置 Nt32Pkg 在 Windows 上，參考: 如何建置去使用 [Windows Systems]( Windows-systems#建置)
 * t
 * t
  
