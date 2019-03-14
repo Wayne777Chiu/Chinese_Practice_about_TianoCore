@@ -32,10 +32,10 @@ GitHub (https://help.github.com/index.html) 提供對註冊和GitHub支援的基
 
 ===GitHub EDK II 專題 Repositories===
 
-* EDK II 專題 repository 位於 https://github.com/tianocore/edk2。
-* 前置建置 Windows 工具位於 https://github.com/tianocore/edk2-BaseTools-win32。
-* [[EDK II Platforms | EDKII 平台]] 位於https://github.com/tianocore/edk2-platforms。
-* 未在公開源碼允許權限發佈的內容位於 https://github.com/tianocore/edk2-non-osi。
+* EDK II 專題 repository 位於 https://github.com/tianocore/edk2 。
+* 前置建置 Windows 工具位於 https://github.com/tianocore/edk2-BaseTools-win32 。
+* [[EDK II Platforms | EDKII 平台]] 位於https://github.com/tianocore/edk2-platforms 。
+* 未在公開源碼允許權限發佈的內容位於 https://github.com/tianocore/edk2-non-osi 。
 
 ==EDK II Development Process==
 
