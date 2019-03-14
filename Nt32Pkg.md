@@ -2,8 +2,17 @@
 
 # Nt32Pkg
 
+Nt32Pkg 實作 [[NT32]]，是 Microsoft 視窗介面系統的 [[UEFI]] 模擬環境。 不像 [[OVMF]]， [[NT32]] 不支援平台模擬或載入一個作業系統。 NT32 主要是用來當成 UEFI 前置OS 應用程式原型和開發者訓練用。
 
+NT32 提供開機和運行時間服務給應用程式開發來對應 UEFI 函數到 Windows APIs。在 NT32 裡開機過程服務是不能中斷的。
 
+Nt32Pkg 平台的目標和功能是類似於 [[UnixPkg]] 和 [[EmulatorPkg]] 。 我們的長程目標是平台開發導入 [[EmulatorPkg]] 到 Microsoft Windows 並捨棄 Nt32Pkg 。
+
+在 Windows 上使用 NT32 模擬器:
+* 建置 Nt32Pkg 在 Windows 上，參考: 如何建置去使用 [Windows Systems]( Windows-systems#build)
+* t
+* t
+ 
 # 原文
 
 # Nt32Pkg
