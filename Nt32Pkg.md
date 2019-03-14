@@ -9,9 +9,13 @@ NT32 提供開機和運行時間服務給應用程式開發來對應 UEFI 函數
 Nt32Pkg 平台的目標和功能是類似於 [[UnixPkg]] 和 [[EmulatorPkg]] 。 我們的長程目標是平台開發導入 [[EmulatorPkg]] 到 Microsoft Windows 並捨棄 Nt32Pkg 。
 
 在 Windows 上使用 NT32 模擬器:
-* 建置 Nt32Pkg 在 Windows 上，參考: 如何建置去使用 [Windows Systems]( Windows-systems#建置)
-* t
-* t
+* 在建置 Nt32Pkg 在 Windows 上，參考: 如何建置去使用 [Windows Systems]( Windows-systems#建置)
+* 運行 NT32 模擬器方面，
+   - 在建置Nt32Pkg 成功後 ` >Build -p Nt32Pkg/Nt32Pkg.dsc`
+   - 在命令提示符號上鍵入: `>Build Run`
+* NT32 模擬器將顯現2個 UGA 視窗伴隨著 UEFI Shell 環境。
+
+源碼 Repository: https://github.com/tianocore/edk2/tree/master/Nt32Pkg 
  
 # 原文
 
