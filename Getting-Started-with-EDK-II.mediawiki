@@ -37,17 +37,16 @@ GitHub (https://help.github.com/index.html) 提供對註冊和GitHub支援的基
 * [[EDK II Platforms | EDKII 平台]] 位於https://github.com/tianocore/edk2-platforms 。
 * 未在公開源碼允許權限發佈的內容位於 https://github.com/tianocore/edk2-non-osi 。
 
-==EDK II Development Process==
+===EDK II 開發流程===
+在建立起你的建置環境後，參考 [[EDK II Development Process | EDK II 開發流程]] 做出貢獻給 EDK II 專題。
 
-After setting up your build environment see  [[EDK II Development Process]] for making contributions to the EDK II Project.
+==進一步幫助==
 
-==Further Help==
+假如你有問題關於源碼程式或運行出現障礙讓事情發揮作用，請加入 [[edk2-devel]] 郵件列表去詢問你的 EDK II 相關問題在列表上
 
-If you have questions about the code or run into obstacles getting things to work, please join the [[edk2-devel]] email list and ask your EDK II related questions on the list.
+在編寫一個簡單 UEFI EDK II 應用程式的資訊，參考: [[Getting Started Writing Simple Application | 正開始編寫簡單應用程式]]
 
-For info on writing a simple UEFI EDK II Application, see: [[Getting Started Writing Simple Application]]
-
-To review the basic setup of .DSC, .DEC, and .INF files, see: [[Build Description Files]]
+檢視關於 .DSC，.DEC，和 .INF，檔案的基本組建，參考: [[Build Description Files | 建置組態描述檔]]
 
 =原文=
 
