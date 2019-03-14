@@ -21,10 +21,33 @@ __NOTOC__
 
 '''Note:''' 一些例子使用了 [[Multiple_Woprkspace|多重工作區]]功能來組建EDK II 基礎工具(BaseTools)。 這需要使用基於edk2-platforms的平台代碼: (https://github.com/tianocore/edk2-platforms)
 
-一旦你有了基本建置環境可運行，你就能更建置一個專案在 RELEASE 或 [[EDK II Debugging|DEBUG]] 模式。
+一旦你有了基本建置環境可運行，你就能夠建置一個專案在 RELEASE 或 [[EDK II Debugging|DEBUG]] 模式。
 
  ==GitHub Help==
- 
+
+GitHub (https://help.github.com/index.html) 提供對註冊和GitHub支援的基本功能的單一步驟操作說明。
+
+* 組建GitHub - Linux/Windows/Mac (https://help.github.com/articles/set-up-git)
+* 下載並安裝Git GUI 介面: Git GUI 終端(Clients) (https://git-scm.com/download/gui/win) | TortoiseGit (https://tortoisegit.org/)
+
+===GitHub EDK II 專題 Repositories===
+
+* EDK II 專題 repository 位於 https://github.com/tianocore/edk2。
+* 前置建置 Windows 工具位於 https://github.com/tianocore/edk2-BaseTools-win32。
+* [[EDK II Platforms | EDKII 平台]] 位於https://github.com/tianocore/edk2-platforms。
+* 未在公開源碼允許權限發佈的內容位於 https://github.com/tianocore/edk2-non-osi。
+
+==EDK II Development Process==
+
+After setting up your build environment see  [[EDK II Development Process]] for making contributions to the EDK II Project.
+
+==Further Help==
+
+If you have questions about the code or run into obstacles getting things to work, please join the [[edk2-devel]] email list and ask your EDK II related questions on the list.
+
+For info on writing a simple UEFI EDK II Application, see: [[Getting Started Writing Simple Application]]
+
+To review the basic setup of .DSC, .DEC, and .INF files, see: [[Build Description Files]]
 
 =原文=
 
