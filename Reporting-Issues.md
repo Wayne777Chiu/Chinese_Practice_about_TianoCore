@@ -7,7 +7,7 @@ Tianocore專案的bug追蹤系統是 [Tianocore Bugzilla](https://bugzilla.tiano
 * [Bugzilla 網站](https://www.bugzilla.org/)
 * [Bugzilla 使用者手冊](https://bugzilla.readthedocs.io/en/5.0/using/index.html)
 
-開發者們也可以選擇登入到郵寄列表[edk2-bugs@lists.01.org](https://lists.01.org/mailman/listinfo/edk2-bugs)來接收每次新問題被輸入或已知問題被更新。
+開發者們也可以選擇註冊到郵寄列表[edk2-bugs@lists.01.org](https://lists.01.org/mailman/listinfo/edk2-bugs)來接收每次新問題被輸入或已知問題被更新。
 
 可以輸入使用下產品和類別的Tiancore 問題
 
