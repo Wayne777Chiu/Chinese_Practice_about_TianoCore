@@ -23,7 +23,7 @@ __NOTOC__
 
 一旦你有了基本建置環境可運行，你就能夠建置一個專案在 RELEASE 或 [[EDK II Debugging|DEBUG]] 模式。
 
- ==GitHub Help==
+==GitHub Help==
 
 GitHub (https://help.github.com/index.html) 提供對註冊和GitHub支援的基本功能的單一步驟操作說明。
 
@@ -34,10 +34,10 @@ GitHub (https://help.github.com/index.html) 提供對註冊和GitHub支援的基
 
 * EDK II 專題 repository 位於 https://github.com/tianocore/edk2 。
 * 前置建置 Windows 工具位於 https://github.com/tianocore/edk2-BaseTools-win32 。
-* [[EDK II Platforms | EDKII 平台]] 位於https://github.com/tianocore/edk2-platforms 。
+* [[EDK II Platforms | EDKII 平台]] 位於 https://github.com/tianocore/edk2-platforms 。
 * 未在公開源碼允許權限發佈的內容位於 https://github.com/tianocore/edk2-non-osi 。
 
-===EDK II 開發流程===
+==EDK II 開發流程==
 在建立起你的建置環境後，參考 [[EDK II Development Process | EDK II 開發流程]] 做出貢獻給 EDK II 專題。
 
 ==進一步幫助==
