@@ -1,4 +1,14 @@
 <!-- [[Category:EDKII Packages]] -->
+
+(2019/03/08)
+
+模組開發環境套件(MdePkg)是一個特殊的套件當成是一個最小的基礎要件需求來建置一個模組。 一個模組可能需要額外的套件來被組建但所有模組都基於 MdePkg 。 MdePkg 保持的非常穩定，它可以輕易變成模組或裝置驅動套件來建置可配合於各式各樣物件包的模組。
+
+
+
+
+=原文=
+
 The Module Development Environment Package (MdePkg) is a special package as it is the minimum infrastructure required to build a module. A module may require extra packages to be constructed but all modules are based on the MdePkg. By keeping the MdePkg very stable, it effectively becomes a module or device driver kit for building modules that can work with various sets of packages. 
 
 The MdePkg provides all definitions(including functions, MACROs, structures and library classes) and libraries instances, which are defined in the MdePkg. The latest MdePkg .chm files will document these definitions and can be found in the latest [[UDK]] releases.
