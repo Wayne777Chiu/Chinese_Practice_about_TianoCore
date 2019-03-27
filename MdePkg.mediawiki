@@ -14,7 +14,7 @@ MdePkg 可使用在 C code 寫 SEC 。
 MdePkg 套件包也能產生根據EFI 1.10 或 UEFI 2.x 規範下的 UEFI 驅動程式或 UEFI 應用程式。 MdePkg 也可以建置 UEFI 驅動程式或應用程式基於被描述在 [[EDK II Specifications | EDK II 規範]] 的 [[EDK II]] 建置環境。
 
 最新的 MdePkg .chm 檔載明所有關於定義上的詳細資料(包含了 PPIs/PROTOCOLs/GUIDs 和函式庫物件(library classes))和與 MdePkg 套件包相關的函式庫實例。
-下載最新的 .chm 目前發佈的 [[UDK]] 。
+下載最新的 .chm 檔，透過目前發佈的 [[UDK]] 。
 
 =原文=
 
