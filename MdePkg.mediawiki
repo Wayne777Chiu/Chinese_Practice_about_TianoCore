@@ -4,8 +4,17 @@
 
 模組開發環境套件(MdePkg)是一個特殊的套件當成是一個最小的基礎要件需求來建置一個模組。 一個模組可能需要額外的套件來被組建但所有模組都基於 MdePkg 。 MdePkg 保持的非常穩定，它可以適用變成模組或裝置驅動套件來建置可配合於各式各樣物件包的模組。
 
-MdePkg 提供所有定義在MdePkg裡的定義(包含了函數，巨集，結構，和函式庫物件)和函式庫實例。 最新的 MdePkg .chm 檔
+MdePkg 提供所有在MdePkg裡的定義(包含了函數，巨集(MACROs)，結構(structures)，和函式庫物件(library classes))和函式庫實例。 最新的 MdePkg .chm 檔紀錄寫明了這些定義和 最新的 [[UDK]] 的發佈裡。
 
+它也提供了關於 EFI1.10/UEFI2.x/PI1.x的定義(包含了 PPIs/PROTOCOLs/GUIDs) 和其他工業標準。
+
+MdePkg 可以建構一系列的模組種類。 MdePkg 可被單獨使用或與其他套件包合併使用來產生模組。
+MdePkg 能產生單機型模組-被定義為只使用定義在MdePkg裡基底模組類型資源的一種基底模組。 基底模組允許用戶寫可容易平台開發導入到其他環境的可移植型的 C code 。
+MdePkg 可使用在 C code 寫 SEC 。
+MdePkg 套件包也能產生根據EFI 1.10 或 UEFI 2.x 規範下的 UEFI 驅動程式或 UEFI 應用程式。 MdePkg 也可以建置 UEFI 驅動程式或應用程式基於被描述在 [[EDK II Specifications | EDK II 規範]] 的 [[EDK II]] 建置環境。
+
+最新的 MdePkg .chm 檔載明所有關於定義上的詳細資料(包含了 PPIs/PROTOCOLs/GUIDs 和函式庫物件(library classes))和與 MdePkg 套件包相關的函式庫實例。
+下載最新的 .chm 目前發佈的 [[UDK]] 。
 
 =原文=
 

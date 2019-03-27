@@ -1,15 +1,32 @@
 =翻譯=
 
+Ａpplication       應用程式
+[[MdePkg]]
+
+Base Module(s)     基底模組
+[[MdePkg]]
+
 Boot services      開機過程服務
 
 Description Files  組態描述檔
+
+Document           v. 載明
+[[MdePkg]]
+
+Driver            驅動程式
+[[MdePkg]]
+
+Industry Standard  工業標準
 
 Infrastructure     基礎要件
 
 libraries instances 函式庫實例
 
-Package            物件包 (!?) (various sets of packages - MdePkg.mediawiki)
+macro(s)            巨集
+
+Package            物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
 
 Porting            平台開發導入
+[[MdePkg]]
 
 Runtime services   運行時間服務
