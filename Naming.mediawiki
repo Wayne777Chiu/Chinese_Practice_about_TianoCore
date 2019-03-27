@@ -10,6 +10,9 @@ Boot services      開機過程服務
 
 Description Files  組態描述檔
 
+Ｄefinition(s)     定義
+[[MdePkg]]
+
 Document           v. 載明
 [[MdePkg]]
 
