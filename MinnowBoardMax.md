@@ -1,4 +1,4 @@
-[[EDK II 平台 | EDK II Platforms]] | [Intel® 處理器平台](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Platforms#intel-processor-platforms)
+[[EDK II 平台 | EDK II Platforms]] | [Intel® 處理器平台](https://github.com/Wayne777Chiu/Chinese_Practice_about_TianoCore/wiki/EDK-II-Platforms#intel-processor-platforms)
 
 ***
 
