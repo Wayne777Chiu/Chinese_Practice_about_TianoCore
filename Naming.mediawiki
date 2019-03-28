@@ -1,35 +1,51 @@
-=翻譯=
-
-Ａpplication       應用程式
-[[MdePkg]]
-
-Base Module(s)     基底模組
-[[MdePkg]]
-
-Boot services      開機過程服務
-
-Description Files  組態描述檔
-
-Ｄefinition(s)     定義
-[[MdePkg]]
-
-Document           v. 載明
-[[MdePkg]]
-
-Driver            驅動程式
-[[MdePkg]]
-
-Industry Standard  工業標準
-
-Infrastructure     基礎要件
-
-libraries instances 函式庫實例
-
-macro(s)            巨集
-
-Package            物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
-
-Porting            平台開發導入
-[[MdePkg]]
-
-Runtime services   運行時間服務
+=翻譯=                            
+                                       
+Ａpplication            應用程式
+[[MdePkg]]                          
+                                 
+Base Module(s)          基底模組
+[[MdePkg]]                          
+                                 
+Binary Image(s)         二進制映像檔 
+[[MinnowBoardMax]]                  
+                                    
+Boot services           開機過程服務
+                                 
+Description Files       組態描述檔
+                                 
+Ｄefinition(s)          定義
+[[MdePkg]]                          
+                                         
+Document                v. 載明
+[[MdePkg]]                          
+                                 
+Driver                 驅動程式
+[[MdePkg]]                          
+                                 
+expansion boards        擴充板
+[[MinnowBoardMax]]                   
+                                 
+Industry Standard       工業標準
+                                 
+Infrastructure          基礎要件
+                                 
+Intellectual Property   智慧產權 
+[[MinnowBoardMax]]                      
+                           
+Libraries Instance(s)   函式庫實例
+                                 
+Macro(s)                 巨集
+                                        
+Source Build Instructions 原始碼建置說明
+[[MinnowBoardMax]]              
+                          
+Package                 物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
+                                               
+Porting                 平台開發導入
+[[MdePkg]]                                 
+                                        
+Release Note            發佈公告
+[[MinnowBoardMax]]              
+                                
+Runtime services        運行時間服務
+                            
