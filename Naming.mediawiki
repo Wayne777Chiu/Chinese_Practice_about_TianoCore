@@ -10,7 +10,13 @@ Binary Image(s)         二進制映像檔
 [[MinnowBoardMax]]                  
                                     
 Boot services           開機過程服務
+                                            
+Codebase                源碼基底 
+[[IntelAtomProcessorE3900]]
                                  
+Customer Reference Board(CRB)  顧客參照板
+[[IntelAtomProcessorE3900]]             
+
 Description Files       組態描述檔
                                  
 Ｄefinition(s)          定義
@@ -35,7 +41,10 @@ Intellectual Property   智慧產權
 Libraries Instance(s)   函式庫實例
                                  
 Macro(s)                 巨集
-                                        
+                                            
+Maker                    創客
+[[IntelAtomProcessorE3900]]
+                                            
 Source Build Instructions 原始碼建置說明
 [[MinnowBoardMax]]              
                           
@@ -45,7 +54,7 @@ Porting                 平台開發導入
 [[MdePkg]]                                 
                                         
 Release Note            發佈公告
-[[MinnowBoardMax]]              
+[[MinnowBoardMax]] [[IntelAtomProcessorE3900]]          
                                 
 Runtime services        運行時間服務
                             

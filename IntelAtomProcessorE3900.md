@@ -1,6 +1,36 @@
-[[EDK II Platforms]] | [Intel® Processor Platforms](https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Platforms#intel-processor-platforms)
+[[EDK II 平台 | EDK II Platforms]] | [Intel® 處理器平台](https://github.com/Wayne777Chiu/Chinese_Practice_about_TianoCore/wiki/EDK-II-Platforms#intel-processor-platforms)
 
 ***
+
+(2019/03/08)
+
+# UEFI Firmware Project for Intel Atom® 處理器 E3900 Series Processor 平台 (Leaf Hill, Up Squared & MinnowBoard 3 Module)
+
+該專案是基於 TianoCore EDK II 源碼基底的開放源碼 UEFI 韌體，給下面基於在 Intel  Atom® Processor E3900 系列處理器的平台。
+
+* Leaf Hill 顧客參照板(Customer Reference Board)(CRB)
+* Up Squared by UP-BOARD (商業化型的創客板, 請看以下的"支援平台") 
+* MinnowBoard 3 Module (Pre-production Board, ship date TBD)
+
+開發者們可以下載預先建置的韌體映像檔，工具套件，二進制物件模組，和專案發佈公告。 這開放源碼韌體專案是可用的從TianoCore GitHub:
+
+*  https://github.com/tianocore/edk2-platforms/tree/devel-IntelAtomProcessorE3900
+*  https://firmware.intel.com/projects/IntelAtomProcessorE3900
+
+## 回報韌體問題
+
+請使用以下的欄位內容來回報任何有關韌體問題於 [TianoCore Bugzilla](https://bugzilla.tianocore.org/)
+
+* Product: EDK2 Platforms
+* Component: Minnowboard 3
+
+對於TianoCore Bugzilla 的更多資訊請看 [[回報問題 | Reporting Issues]]
+
+## 支援平台
+
+### Leaf Hill CRB
+
+# 原文
 
 # UEFI Firmware Project for Intel Atom® Processor E3900 Series Processor Platforms (Leaf Hill, Up Squared & MinnowBoard 3 Module)
 
