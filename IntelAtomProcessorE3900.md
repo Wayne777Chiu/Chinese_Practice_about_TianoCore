@@ -30,6 +30,32 @@
 
 ### Leaf Hill CRB
 
+Leaf Hill 參考自 Intel 顧客參照板 (Customer Reference Board)(CRB) ，使用 [Intel Atom® 處理器系列](https://www.intel.com/content/www/us/en/embedded/products/apollo-lake/overview.html) (前身 Apollo Lake) 。
+
+### Up Squared by UP-BOARD
+
+UP Squared board 的支援被介紹在發佈板 0.71。 預先建置的映像檔和建置說可被找到於 [firmware.intel.com](https://firmware.intel.com/projects/IntelAtomProcessorE3900) 。
+請參考 [發佈公告](https://firmware.intel.com/projects/IntelAtomProcessorE3900) 獲取平台上的功能與已知問題的資訊。
+
+_**NOTE:** 由專案提供給 UP Squared 創客板韌體並不是基於官方製造商的韌體。 本專案是為了測試和並不受開發商 (Aaeon) 支援。 在UP Squared 燒錄韌體將使開發商的保修失效。 感謝 Aaeon 的合作與提供平台移植資訊。_
+
+更多資訊:
+
+* [在 UP Squared 燒錄 BIOS](https://wiki.up-community.org/BIOS_chip_flashing_on_UP_Squared) - 使用 SPI 燒錄器去附加新的韌體映像檔的資訊 (工廠映像或客戶映像)
+* 產品資訊: http://www.up-board.org/upsquared/ & http://www.up-china.net/
+
+### MinnowBoard 3 模組
+
+MinnowBoard 3 模組是延續自 [[MinnowBoard Max|MinnowBoardMax]] & MinnowBoard Turbot 平台。 MinnowBoard 提供低成本和可商業化的基於Intel 架構的開源硬體給硬體、軟體和韌體開發者。 硬體可用性是待確定。 
+
+MinnowBoard 是一個鼓勵平台測試和衍生設計的的開源硬體倡議者。 專案支持 [開源硬體協會](http://www.oshwa.org/)原則藉由給社群可行的公開設計，因此"所有人能基於此設計來學習、驗證、發送、製造和販賣設計或硬體。"
+
+MinnowBoard 3 模組是基於  Intel Atom® 處理器 E3900 系列平台，初始化  Intel® 韌體支援套裝 (Firmware Support Package)(Intel® FSP) 和 開源 UEFI 從 TianoCore EDK II 專案而來。 
+
+## 公告: 之前的 MinnowBoard 3 源碼基底
+
+Intel Atom® 處理器 E3900 系列平台最初是由 [[MinnowBoard 3]] 源碼基底所支持。 在發行到 0.70 版， 這個源碼基底被更新到去使用 [[UDK2018]] 和移到一個有更廣泛平台支援的新分支。 
+
 # 原文
 
 # UEFI Firmware Project for Intel Atom® Processor E3900 Series Processor Platforms (Leaf Hill, Up Squared & MinnowBoard 3 Module)
