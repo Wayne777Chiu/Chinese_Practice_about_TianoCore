@@ -71,5 +71,8 @@ SPI Programmer          SPI 燒錄器
                                           
 Runtime services        運行時間服務
                                         
+Secure Boot             安全啟動
+[[Galileo]]
+
 TBD (To Be Determined)  待確定
 [[IntelAtomProcessorE3900]]                     
