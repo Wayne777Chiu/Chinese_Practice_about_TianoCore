@@ -10,7 +10,7 @@
 
 * Leaf Hill 顧客參照板(Customer Reference Board)(CRB)
 * Up Squared by UP-BOARD (商業化型的創客板, 請看以下的"支援平台") 
-* MinnowBoard 3 Module (Pre-production Board, ship date TBD)
+* MinnowBoard 3 Module (Pre-production Board, 發貨日期待確定)
 
 開發者們可以下載預先建置的韌體映像檔，工具套件，二進制物件模組，和專案發佈公告。 這開放源碼韌體專案是可用的從TianoCore GitHub:
 
@@ -37,7 +37,7 @@ Leaf Hill 參考自 Intel 顧客參照板 (Customer Reference Board)(CRB) ，使
 UP Squared board 的支援被介紹在發佈板 0.71。 預先建置的映像檔和建置說可被找到於 [firmware.intel.com](https://firmware.intel.com/projects/IntelAtomProcessorE3900) 。
 請參考 [發佈公告](https://firmware.intel.com/projects/IntelAtomProcessorE3900) 獲取平台上的功能與已知問題的資訊。
 
-_**NOTE:** 由專案提供給 UP Squared 創客板韌體並不是基於官方製造商的韌體。 本專案是為了測試和並不受開發商 (Aaeon) 支援。 在UP Squared 燒錄韌體將使開發商的保修失效。 感謝 Aaeon 的合作與提供平台移植資訊。_
+_**NOTE:** 由專案提供給 UP Squared 創客板韌體並不是基於官方製造商的韌體。 本專案是為了測試和不受開發商 (Aaeon) 支援。 在UP Squared 燒錄韌體將使開發商的保修失效。 感謝 Aaeon 的合作與提供平台移植資訊。_
 
 更多資訊:
 
