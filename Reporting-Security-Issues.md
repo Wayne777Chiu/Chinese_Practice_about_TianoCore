@@ -1,7 +1,9 @@
 (2019/03/08)
 
 # 如何回報安全性問題
+Tianocore 專案使用的臭蟲追蹤系統是 [Tianocore Bugzilla](https://bugzilla.tianocore.org) 。必須去 [創造](https://bugzilla.tianocore.org/createaccount.cgi) 一個新帳號來輸入一個新的問題或更新已經存在的問題。新的安全性問題必須使用 **Tianocore Security Issue** 產品項來輸入。 在產品項 **Tianocore Security Issue** 裡的問題只能被 **報告者** 和 **infosec** 團體的成員來看見。 報告中請包涵你認為已經引入 (involved) 的模組的路徑和該問題的詳細描述。
 
+額外的資訊關於 Tianocore Bugzilla 能被找到於 [報告問題](Reporting-Issues "wikilink")
 
 # 原文
 
