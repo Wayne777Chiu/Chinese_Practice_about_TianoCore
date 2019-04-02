@@ -16,7 +16,7 @@ Tianocore 專案使用的臭蟲追蹤系統是 [Tianocore Bugzilla](https://bugz
 # 安全性公告
 
 目前安全性公告的列表可以在 Gitbook:
-**[安全性公告記錄檔]( https://www.gitbook.com/book/edk2-docs/security-advisory/details)**
+**[安全性公告記錄]( https://www.gitbook.com/book/edk2-docs/security-advisory/details)**
 
 # 原文
 
