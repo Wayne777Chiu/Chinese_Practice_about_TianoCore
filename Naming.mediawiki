@@ -55,8 +55,7 @@ Open Source Hardware Association     開源硬體協會
 [[IntelAtomProcessorE3900]]     
                                                   
 Package                 物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
-                                           
-                                         
+                                                                                    
 Platform Feature(s)      平台功能
 [[IntelAtomProcessorE3900]]                                
                                               
@@ -72,7 +71,13 @@ SPI Programmer          SPI 燒錄器
 Runtime services        運行時間服務
                                         
 Secure Boot             安全啟動
-[[Galileo]]
-
+[[Galileo]]                                
+                                   
+Security Advisorie(s)     安全性公告
+[[Reporting-Security-Issues]]            
+                                 
+Security Issue          安全性問題
+[[Reporting-Security-Issues]]                                   
+                                   
 TBD (To Be Determined)  待確定
 [[IntelAtomProcessorE3900]]                     
