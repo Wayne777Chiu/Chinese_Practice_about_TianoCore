@@ -28,7 +28,7 @@
 '''OVMF: the Open Virtual Machine Firmware  '''
 
 ==VirtualBox==
-VirtualBox (http://www.virtualbox.org) 是一個虛擬機器開發環境。 有更多最近的 VirtualBox 版本能啟動 UEFI 支援在 VM 設定 (VM settings) 裡的 'System' => 'Extended Features' => 'EFI suipport' 之下。
+VirtualBox (http://www.virtualbox.org) 是一個虛擬機器開發環境。 有更多最近的 VirtualBox 版本能啟動 UEFI 支援在 VM 設定 (VM settings) 裡的 'System' => 'Extended Features' => 'EFI support' 之下。
 
 =UEFI 相容性作業系統=
 我們的社群不產生一個 UEFI 相容性的作業系統。然而，我們這裡會列出一些有一些 UEFI 相容性的等級程度的作業系統。
