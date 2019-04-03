@@ -23,7 +23,7 @@
 在你的主機板產品上可能有很多方法去啟動 UEFI 支援。 不幸的是，我們不能說明全部在這一頁面上。 但你可以在去進入韌體 (BIOS) 設定程式在你的產品上，和嘗試找到 UEFI 或 EFI 啟動問題。 有時候，這會放置在韌體設定的'開機'選單之下。 
 
 ==OVMF with QEMU or KVM==
-這個專案 [http://www.tianocore.org/ovmf/ OVMF] 是我們社群的任務之一，會提供 UEFI 相容性韌體給 [https://en.wikipedia.org/wiki/QEMU QEMU] 和 [https://en.wikipedia.org/wiki/kernel-based_Virtual_Machine KVM]　虛擬機器開發環境。
+這個專案 [http://www.tianocore.org/ovmf/ OVMF] 是我們社群的任務之一，會提供 UEFI 相容性韌體給 [https://en.wikipedia.org/wiki/QEMU QEMU] 和 [https://en.wikipedia.org/wiki/kernel-based_Virtual_Machine KVM] 虛擬機器開發環境。
 
 '''OVMF: the Open Virtual Machine Firmware  '''
 
