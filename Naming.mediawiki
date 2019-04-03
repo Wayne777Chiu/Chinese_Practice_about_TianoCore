@@ -81,3 +81,7 @@ Security Issue          安全性問題
                                    
 TBD (To Be Determined)  待確定
 [[IntelAtomProcessorE3900]]                     
+                                  
+Tech Support             技術支援
+[[Start-using-UEFI]]             
+                                 

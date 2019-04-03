@@ -1,5 +1,42 @@
 <!-- [[Category:UEFI]] -->
 
+(2019/03/08)
+
+[[UEFI]] 使用和支援今日在電腦運算領域上正急速成長。 我們的目標是產品製造商去創造產品來支援和使用 UEFI 在開機作業系統上。
+假如你有興趣在 UEFI 的　EDK II 實作上，請看 [[Getting Started | 來開始]] 用 EDK II。
+
+然而，假如你本身是技術愛好者，你可能要去是用 UEFI。 你應該注意 UEFI 是聚焦在改善韌體到作業系統 (OS) 介面從一個程式開發者的立場上，以一個使用者而言，你可能不會察覺到太多不同即使作業系統已經開始運行。
+
+=警告=
+
+本頁討論安裝 UEFI 相容的作業系統到你的電腦的方法。 這可能導致你的資料的損失在你的電腦硬碟上。 如果你的電腦硬碟沒有有價值的資料，請儘管繼續流程。
+
+=技術支援注意=
+我們的社群是專注一般開發者，我們不提供一般技術性支援在 UEFI 產品的使用。 假如你需要官方支援給你的 UEFI 產品，那麼你應該透過產品製造商來尋求技術支援。
+
+=UEFI 相容性韌體=
+為了使用 UEFI 的第一件事情是要有一個相容性韌體。
+
+==UEFI 相容性主機板==
+你可能有一個相容性韌體在你的主機板上。 假如你的主機板把 UEFI 相容性當成產品特色的列表，那很好。 假如沒有，那你可能需要檢查 韌體設定 (BIOS Setup)，但結果可能會不同。
+
+在你的主機板產品上可能有很多方法去啟動 UEFI 支援。 不幸的是，我們不能說明全部在這一頁面上。 但你可以在去進入韌體 (BIOS) 設定程式在你的產品上，和嘗試找到 UEFI 或 EFI 啟動問題。 有時候，這會放置在韌體設定的'開機'選單之下。 
+
+==OVMF with QEMU or KVM==
+這個專案 [http://www.tianocore.org/ovmf/ OVMF] 是我們社群的任務之一，會提供 UEFI 相容性韌體給 [https://en.wikipedia.org/wiki/QEMU QEMU] 和 [https://en.wikipedia.org/wiki/kernel-based_Virtual_Machine KVM]　虛擬機器開發環境。
+
+'''OVMF: the Open Virtual Machine Firmware  '''
+
+==VirtualBox==
+VirtualBox (http://www.virtualbox.org) 是一個虛擬機器開發環境。 有更多最近的 VirtualBox 版本能啟動 UEFI 支援在 VM 設定 (VM settings) 裡的 'System' => 'Extended Features' => 'EFI suipport' 之下。
+
+=UEFI 相容性作業系統=
+我們的社群不產生一個 UEFI 相容性的作業系統。然而，我們這裡會列出一些有一些 UEFI 相容性的等級程度的作業系統。
+
+==Ubuntu==
+[[UEFI UBUNTU|Ubuntu]] 提供 UEFI 可開機 CD 映像檔給他們的 64-bit (X64) 發行版.
+
+=原文=
 
 [[UEFI]] usage and support is rapidly growing in computing today.  Our goal is to enable product manufacturers to create products that are shipped both supporting and using UEFI to boot the operating system.
 If you are interested in the EDK II implementation of UEFI please see [[Getting Started]] with EDK II.
