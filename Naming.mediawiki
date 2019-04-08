@@ -13,7 +13,13 @@ Boot services           開機過程服務
                                             
 Codebase                源碼基底 
 [[IntelAtomProcessorE3900]]
-                                 
+                                   
+Command                 指令/命令
+[[Using-EDK-II-with-Native-GCC]]  
+
+Command Terminal        指令終端機
+[[Using-EDK-II-with-Native-GCC]]         
+                                          
 Customer Reference Board(CRB)  顧客參照板
 [[IntelAtomProcessorE3900]]             
                                          
@@ -28,6 +34,9 @@ Document                v. 載明
 Driver                 驅動程式
 [[MdePkg]]                          
                                  
+Edit Menu                編輯選單
+[[Using-EDK-II-with-Native-GCC]]  
+
 expansion boards        擴充板
 [[MinnowBoardMax]]                   
                                  
@@ -79,9 +88,15 @@ Security Advisorie(s)     安全性公告
 Security Issue          安全性問題
 [[Reporting-Security-Issues]]                                   
                                    
+Shell                     殼層 (通常指使用者使用介面)   
+[[Using-EDK-II-with-Native-GCC]]  
+                                                         
 TBD (To Be Determined)  待確定
 [[IntelAtomProcessorE3900]]                     
                                   
 Tech Support             技術支援
 [[Start-using-UEFI]]             
                                  
+Web Browser(s)           網頁瀏覽器
+[[Using-EDK-II-with-Native-GCC]]         
+

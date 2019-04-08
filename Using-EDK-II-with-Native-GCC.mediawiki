@@ -1,4 +1,18 @@
+(2019/03/08)
 
+本頁提供 ''單步詳細介紹'' 給使用原生 GCC (4.4+) 安裝的 Linux 來建置 [http://www.tianocore.org/edk2/ EDK II] 開發環境。 這個 EDK II 建置不需要 Mingw 版本的 GCC， 因此可以更快速的建置。
+
+==開始==
+
+這個介紹將會是寫成一系列透過指令終端機 (command terminal) 的執行指令。 通常這些說明將包含一個需要透過終端機視窗來執行的命令。 例如:
+
+<pre>
+bash$ echo this text is a sample command
+</pre>
+
+執行(上述)在你的網頁瀏覽器上被強調的命令內容。 (注意 'bash$' 並不是命令的一部分!) 大部分的網頁瀏覽器都能夠藉由編輯選單(Edit menu)下的拷貝選項來拷貝(指令)內容。 現在切換回(change back)終端機應用程式，應該有一個貼上 (Paste) 的操作在編輯選單上。 在貼上命令到這個使用者使用介面 (shell) (殼層) 之後，你可以按壓 enter 或 return 鍵去執行該命令。
+
+=原文=
 
 This page provides ''step-by-step instructions'' for setting up a [http://www.tianocore.org/edk2/ EDK II] build environment on Linux using a native GCC installation (4.4+).  This EDK II setup does not require the Mingw version of GCC to be built, and therefore can be much faster to setup.
 
