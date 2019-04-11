@@ -3,6 +3,9 @@
 Ａpplication            應用程式
 [[MdePkg]]                          
                                  
+Backslash Character     反斜線字元
+[[Using-EDK-II-with-Native-GCC]]     
+                                 
 Base Module(s)          基底模組
 [[MdePkg]]                          
                                  
@@ -16,7 +19,7 @@ Codebase                源碼基底
                                    
 Command                 指令/命令
 [[Using-EDK-II-with-Native-GCC]]  
-
+                                             
 Command Terminal        指令終端機
 [[Using-EDK-II-with-Native-GCC]]         
                                           
@@ -36,27 +39,39 @@ Driver                 驅動程式
                                  
 Edit Menu                編輯選單
 [[Using-EDK-II-with-Native-GCC]]  
-
+                                       
+Environment Variable     環境變數
+[[Using-EDK-II-with-Native-GCC]]  
+                                  
 expansion boards        擴充板
 [[MinnowBoardMax]]                   
                                  
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]
                                      
+Librar(y|ies) Instance(s)   函式庫實例
+                                           
 Industry Standard       工業標準
                                  
 Infrastructure          基礎要件
                                  
 Intellectual Property   智慧產權 
 [[MinnowBoardMax]]                      
-                           
-Libraries Instance(s)   函式庫實例
+                                      
+Internet prox(y|ies)     網路代理伺服器  
+[[Using-EDK-II-with-Native-GCC]]      
                                  
 Macro(s)                 巨集
                                             
 Maker                    創客
 [[IntelAtomProcessorE3900]]             
-                                            
+                                         
+Native                   原生
+[[Using-EDK-II-with-Native-GCC]]      
+                                     
+NetWork                  網絡
+[[Using-EDK-II-with-Native-GCC]]  
+                                        
 Source Build Instructions 原始碼建置說明
 [[MinnowBoardMax]]              
                                        
@@ -67,6 +82,9 @@ Package                 物件包/套件包 (!?) (various sets of packages - Mde
                                                                                     
 Platform Feature(s)      平台功能
 [[IntelAtomProcessorE3900]]                                
+                                              
+Port                    網路埠
+[[Using-EDK-II-with-Native-GCC]]   
                                               
 Porting                 平台開發導入
 [[MdePkg]]                                 
@@ -99,4 +117,17 @@ Tech Support             技術支援
                                  
 Web Browser(s)           網頁瀏覽器
 [[Using-EDK-II-with-Native-GCC]]         
+                                        
+V.S
 
+Web vs Internet
+    --> 如何用一句英文解釋 10 個易混淆的熱門科技字
+        --> refer https://www.inside.com.tw/article/4287-10-tech-terms-people-get-confused
+
+instruction vs command
+    --> Command vs Instruction - What's the difference?
+        --> path: https://wikidiff.com/command/instruction
+            -->  As nouns the difference between command and instruction is that 
+            command is an order, a compelling task given to an inferior or a machine 
+            while instruction is (uncountable) the act of instructing, teaching, or furnishing with information or knowledge.
+            As a verb command is to order, give orders; to compel or direct with authority. 
