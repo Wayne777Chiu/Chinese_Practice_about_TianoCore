@@ -52,9 +52,11 @@ bash$ export ftp_proxy=$http_proxy
 注意: 這些指令利用了 GCC5 & NASM 編譯器的支援(增加於2016早期)，連同 git (替換了 subversion)。 GCC 4.x 仍被支援。 GCC5 並非是強制性(要求)。
 
 ====開啟 GNOME 終端程式====
-這些指示將使用 Ubuntu建置的命令殼層 (bash) 透過 GNOME 終端程式。 要開啟這終端程式，在應用程式選單和附屬子選單下找尋(locate)(它)。
 
-====透過apt安裝所需要的軟體====
+這些指示將透過 GNOME 終端程式來使用 Ubuntu 建置的命令殼層 (bash)。 要開啟這終端程式，在應用程式選單(Application menu)和附屬子選單(Accessories sub-menu)下找尋(locate)(它)。
+
+====透過 apt 安裝所需要的軟體====
+
 幾個Ubutntu套件(包)將被需要去設置 EDK II 的建置環境。 接下來的命令將安裝所有需要的套件(包):
 
 <pre>
@@ -69,31 +71,29 @@ bash$ sudo apt-get install build-essential uuid-dev iasl git gcc-5 nasm python3-
 :nasm - 通用 x86 組譯器
 :python3-distutils - 來自 python 標準函式庫的 distutils 模組
 
-===Continue with common instructions===
+===接下來的共通指示===
 
-The [[Common instructions|remaining instructions]] are common for most UNIX-like systems.
+這 [[Common instructions|剩餘的指示]] 是對大部分 UNIX-like 系統共通的。
 
+==對舊的 Linux 環境下的指示== 
 
-==Instructions for older Linux Environments==
+注意: 這些以下指示並沒有已經更新成較新版的 GCC 4.4，git(替換 subversion) 或 NASM。 較新的建置在沒有滿足的依賴性下(dependecies)可能會失敗。我們建議移除較新的 Linux 發行除非你有一個可依賴 (dependency) 的特定版本。
 
-Note: the instructions below have not been updated for compilers newer than GCC 4.4, git (replaces subversion) or NASM. Newer builds may fail without satisfying these dependecies. We recommend moving to newer Linux distributions unless you have a dependency on a specific version.
+===注意: GCC 4.4 的限制===
 
-===Note: Limitations of GCC 4.4===
-
-Note: The GCC 4.4 toolchain only supports building images for the IA32 and X64 architectures. We recommend using newer toolchains.
-
-Also, in some cases if GCC 4.4 is installed under Linux x86 (32-bit mode), then it may only support building UEFI images for the IA32 architecture.
+注意: GCC 4.4 工具鏈只支援建置 IA32 和 X64 架構的映像檔。 我們建議使用較新的工具鏈。
+另外，在某些案例上 GCC 4.4 被安裝在 Linux x86 (32位元模式)上，那麼它也僅支援建置 IA32 架構的 UEFI 映像檔。
 
 ===Arch Linux 2010.05===
-Note: Arch Linux is not officially supported or tested by the edk2 project at this time.
+注意: Arch Linux 此時沒有經由 edk2 專案的官方支持或測試。
 
-====Open the GNOME Terminal program====
+====開啟 GNOME 終端程式====
 
-These instructions will utilize Arch Linux's built in command shell (bash) via the GNOME Terminal application.  To open the Terminal application, locate it under the Applications menu and the System Tools sub-menu.
+這些指示將透過 GNOME 終端程式來使用 Arch Linux 建置的命令殼層 (bash)。 要開啟這終端程式，在應用程式選單(Application menu)和工具子選單(System Tools sub-menu)下找尋(locate)(它)。
 
-====Install required software with pacman====
+====透過 pacman 安裝所需要的軟體====
 
-To install the required packages, you must be root.  Therefore we use 'su' to become the root user.
+為了安裝所需要的套件(包)，你必須是 root。 因此我們使用 'su' 來變成 root 使用者。
 
 <pre>
 bash$ su -
@@ -102,23 +102,23 @@ bash$ exit
 </pre>
 
 <big>
-Continue with common instructions
+接下來的共通指示
 </big>
 
-The [[Common instructions|remaining instructions]] are common for most UNIX-like systems.
+這 [[Common instructions|剩餘的指示]] 是對大部分 UNIX-like 系統共通的。
 
 ===Fedora 13===
-Note: Fedora is not officially supported or tested by the edk2 project at this time.
+注意: Fedora 此時沒有經由 edk2 專案的官方支持或測試。
 
-Note: x86 (32-bit) Fedora will install GCC 4.4 which is only capable of building UEFI for the IA32 architecture.
+注意: x86 (32位元) Fedora 將安裝 GCC 4.4，即僅有建置 UEFI 為 IA32 架構的可能。 
 
-====Open the GNOME Terminal program====
+====開啟 GNOME 終端程式====
 
-These instructions will utilize Fedora's built in command shell (bash) via the GNOME Terminal application.  To open the Terminal application, locate it under the Applications menu and the System Tools sub-menu.
+這些指示將透過 GNOME 終端程式來使用 Fedora 建置的命令殼層 (bash)。 要開啟這終端程式，在應用程式選單(Application menu)和工具子選單(System Tools sub-menu)下找尋(locate)(它)。
 
-====Install required software with yum====
+====透過 yum 安裝所需要的軟體====
 
-To install the required packages, you must be root.  Therefore we use 'su' to become the root user.
+為了安裝所需要的套件(包)，你必須是 root。 因此我們使用 'su' 來變成 root 使用者。
 
 <pre>
 bash$ su -
@@ -128,23 +128,23 @@ bash$ exit
 </pre>
 
 <big>
-Continue with common instructions
+接下來的共通指示
 </big>
 
-The [[Common instructions|remaining instructions]] are common for most UNIX-like systems.
+這 [[Common instructions|剩餘的指示]] 是對大部分 UNIX-like 系統共通的。
 
-===Mandriva 2010===
-Note: Mandriva is not officially supported or tested by the edk2 project at this time.
+===mandriva 2010===
+注意: Mandriva 此時沒有經由 edk2 專案的官方支持或測試。
 
-Note: x86 (32-bit) Mandriva will install GCC 4.4 which is only capable of building UEFI for the IA32 architecture.
+注意: x86 (32位元) Mandriva 將安裝 GCC 4.4，即僅有建置 UEFI 為 IA32 架構的可能。 
 
-====Open the Terminal program====
+====開啟終端程式====
 
-These instructions will utilize Mandriva's built in command shell (bash) via the Terminal application.  To open the Terminal application, locate it under the Applications menu and the Tools sub-menu.
+這些指示將透過終端程式來使用 Mandriva 建置的命令殼層 (bash)。 要開啟這終端程式，在應用程式選單(Application menu)和工具子選單(Tools sub-menu)下找尋(locate)(它)。
 
-====Install required software with urpmi====
+====透過 urpmi 安裝所需要的軟體====
 
-To install the required packages, you must be root.  Therefore we use 'su' to become the root user.
+為了安裝所需要的套件(包)，你必須是 root。 因此我們使用 'su' 來變成 root 使用者。
 
 <pre>
 bash$ su -
@@ -153,10 +153,12 @@ bash$ exit
 </pre>
 
 <big>
-Continue with common instructions
+接下來的共通指示
 </big>
 
-The [[Common instructions|remaining instructions]] are common for most UNIX-like systems.
+這 [[Common instructions|剩餘的指示]] 是對大部分 UNIX-like 系統共通的。
+
+
 
 ===openSUSE 12.1===
 

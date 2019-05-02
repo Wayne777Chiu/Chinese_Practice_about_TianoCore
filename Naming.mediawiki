@@ -121,6 +121,9 @@ Tech Support             技術支援
 Terminal Program         終端程式                                    
 [[Using-EDK-II-with-Native-GCC]]                               
                                  
+Toolchain                 工具鏈      
+[[Using-EDK-II-with-Native-GCC]]       
+
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using-EDK-II-with-Native-GCC]]                                     
 
