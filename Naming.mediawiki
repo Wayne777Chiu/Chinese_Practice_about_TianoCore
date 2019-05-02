@@ -49,6 +49,9 @@ expansion boards        擴充板
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]
                                      
+General Purpose x86 Assembler 通用x86組譯器
+[[Using-EDK-II-with-Native-GCC]]           
+                                            
 Librar(y|ies) Instance(s)   函式庫實例
                                            
 Industry Standard       工業標準
@@ -115,6 +118,12 @@ TBD (To Be Determined)  待確定
 Tech Support             技術支援
 [[Start-using-UEFI]]             
                                  
+Terminal Program         終端程式                                    
+[[Using-EDK-II-with-Native-GCC]]                               
+                                 
+Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
+[[Using-EDK-II-with-Native-GCC]]                                     
+
 Web Browser(s)           網頁瀏覽器
 [[Using-EDK-II-with-Native-GCC]]         
                                         

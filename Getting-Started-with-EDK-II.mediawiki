@@ -13,7 +13,7 @@ __NOTOC__
 * Mac OS X: [[Xcode]]
 * UNIX: [[Unix-like systems]] (For non-Linux UNIX, 較老的 Linux distros, 或使用 Cygwin)
 
-'''Note:''' 一些其他建置工具可能需要依靠一些專題或套裝:
+'''Note:''' 一些其他建置工具可能需要依靠一些專題或套件(包):
 * [[Nasm Setup|Nasm]]
 * [[ASL Setup|ASL Compiler]]
 * 安裝 Python 3.7 or later (https://www.python.org/) 來從源碼運行 python 工具 
