@@ -1,0 +1,97 @@
+__NOTOC__
+=Common EDK II Build Instructions for Linux=
+
+These instructions assume you have installed Linux packages required for an [[EDK II]] build environment, including git (example: [https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610|Ubuntu 16.04/16.10]). The following instructions are common to the majority of Linux environments.
+
+===Get the edk2 source tree using Git ===
+
+<pre>
+bash$ mkdir ~/src
+bash$ cd ~/src
+bash$ git clone https://github.com/tianocore/edk2
+</pre>
+
+Note: the 'git clone' command above pulls the latest code from edk2. If you want to work from a stable release, specify a release tag when cloning. Example:
+
+<pre>
+bash$ git clone https://github.com/tianocore/edk2.git vUDK2017
+</pre>
+
+===Compile build tools ===
+
+<pre>
+bash$ cd ~/src/edk2
+bash$ make -C BaseTools
+bash$ . edksetup.sh
+</pre>
+
+When the above steps are done, you can work in the edk2 directory for code development.
+
+===Build the EDK II BaseTools===
+
+<pre>
+bash$ make -C edk2/BaseTools
+</pre>
+
+===Setup build shell environment===
+
+<pre>
+bash$ cd ~/src/edk2
+bash$ export EDK_TOOLS_PATH=$HOME/src/edk2/BaseTools
+bash$ . edksetup.sh BaseTools
+</pre>
+
+===Modify Conf Files===
+
+Running <code>edksetup.sh</code> populates the <code>edk2/Conf</code> directory with default configuration files. You will need to edit the <code>Conf/target.txt</code> file to set the build platform, target architecture, tool chain, and multi-threading options. The example below is based on building the <code>MdeModulePkg</code> using GCC5.
+
+====Set Build Target Information====
+
+For the <code>Conf/target.txt</code> file, find the following lines:
+
+<pre>
+ACTIVE_PLATFORM       = Nt32Pkg/Nt32Pkg.dsc
+TOOL_CHAIN_TAG        = MYTOOLS
+</pre>
+
+And change the corresponding lines to match these:
+
+<pre>
+ACTIVE_PLATFORM       = MdeModulePkg/MdeModulePkg.dsc
+TOOL_CHAIN_TAG        = GCC5
+</pre>
+
+:Note: The <code>gcc --version</code> command can be used to find out your GCC version.  Use the '''GCC45''' toolchain for gcc 4.5.* and the '''GCC46''' toolchain for gcc 4.6.*.
+
+:Note: for GCC5 please install the gcc-5 package. Example for Ubuntu: <code>sudo apt-get install gcc-5</code>
+
+Locate the TARGET_ARCH setting:
+
+<pre>
+TARGET_ARCH           = IA32
+</pre>
+
+Change this reflect the build architecture for the final UEFI binary.
+
+:Example: <code>X64</code>, <code>IA32 X64</code> (which will build both architectures).
+
+Optional: enable multi-threaded build. The default value for <code>MAX_CONCURRENT_THREAD_NUMBER</code> is 1, which disables multi-threaded build. Change this value based on your system's multi-threading capabilities. The formula is '1 + (2 x processor threads)'.
+
+:Example: for an Intel Core i5 (two processor cores w/ hyperthreading), the value is <code>9</code>.
+
+===Build Hello World!  (and the rest of MdeModulePkg)===
+
+Now you should be able to simply run the build command to compile <code>MdeModulePkg</code>.
+
+<pre>
+bash$ build
+</pre>
+
+One result of the build is that you should have the HelloWorld UEFI application:
+<pre>
+bash$ ls Build/MdeModule/DEBUG_*/*/HelloWorld.efi
+</pre>
+
+===Build [[OVMF]]===
+
+Once your build environment is set up you might be interested in [[How to build OVMF|building the OVMF platform]] which is included in the main [[EDK II]] source tree.  Since [[OVMF]] builds a full system firmware image, this may be of interest to UEFI system firmware developers.
