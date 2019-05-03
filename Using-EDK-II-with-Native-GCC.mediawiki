@@ -158,57 +158,54 @@ bash$ exit
 
 這 [[Common instructions|剩餘的指示]] 是對大部分 UNIX-like 系統共通的。
 
-
-
 ===openSUSE 12.1===
 
-Note: openSUSE is not officially supported or tested by the edk2 project at this time.
+注意: openSUSE 此時沒有經由 edk2 專案的官方支持或測試。
 
-====Open the GNOME Terminal program====
+====開啟 GNOME 終端程式====
 
-These instructions will utilize openSUSE's built in command shell (bash) via the GNOME Terminal application.  To open the Terminal application, click the 'Computer' menu, click the 'More Applications' button, and then enter 'terminal' into the filter text box.
+這些指示將透過 GNOME 終端程式來使用 openSUSE 建置的命令殼層 (bash)。 要開啟這終端程式，點擊 '電腦' 選單('Computer' menu)，點擊 '更多應用程式' ('More Applications') 按紐，然後輸入 '終端' ('terminal') 進入過濾文字盒 (filter text box)。
 
-====Install required software with zypper====
+====透過 zypper 安裝所需要的軟體====
 
-Several openSUSE packages will be needed to fully set up an edk2 build environment.  In order to easily install all the requirements, you need to run this command.
+幾個 openSUSE 套件(包)將需要被完整設定成 edk2 建置環境。 為了要更容易安裝所有的需求，你需要運行這個命令。
 
 <pre>
 bash> sudo zypper in -t pattern devel_basis
 </pre>
 
 <big>
-Continue with common instructions
+接下來的共通指示
 </big>
 
-The [[Common instructions|remaining instructions]] are common for most UNIX-like systems.
+這 [[Common instructions|剩餘的指示]] 是對大部分 UNIX-like 系統共通的。
 
 ===Ubuntu 10.10===
-Notes:
-* The Ubuntu platform is not officially supported or tested by the edk2 project at this time.
-* Both the x86 (32-bit) and x86-64 (64-bit) Ubuntu versions will install GCC 4.4 which is capable of building UEFI for both the IA32 and X64 architectures.
-* These instructions should work for Ubuntu 10.04 as well
+注意: 
+* 這個 Ubuntu 平台此時沒有經由 edk2 專案的官方支持或測試。
+* x86 (32位元) 和 x86-64 (64位元) 兩者的 Ubuntu 版本將會安裝 GCC 4.4，兩者是可建置為 IA32 和 X64 架構的 UEFI。
+* 這些指示可以用於 Ubuntu 10.04 上。
 
-====Open the GNOME Terminal program====
+====開啟 GNOME 終端程式====
 
-These instructions will utilize Ubuntu's built in command shell (bash) via the GNOME Terminal application.  To open the Terminal application, locate it under the Applications menu and the Accessories sub-menu.
+這些指示將透過 GNOME 終端程式來使用 Ubuntu 建置的命令殼層 (bash)。 要開啟這終端程式，在應用程式選單(Application menu)和附屬子選單(Accessories sub-menu)下找尋(locate)(它)。
 
-====Install required software from apt====
+====透過 apt 安裝所需要的軟體====
 
-Several ubuntu packages will be needed to fully set up an edk2 build environment.  In order to easily install all the requirements, you need to run this command.
+幾個 Ubutntu 套件(包)將需要被完整設定成 edk2 建置環境。為了要更容易安裝所有的需求，你需要運行這個命令。
 
 <pre>
 bash$ sudo apt-get install build-essential subversion uuid-dev iasl
 </pre>
 
+===接下來的共通指示===
 
-===Continue with common instructions===
+這 [[Common instructions|剩餘的指示]] 是對大部分 UNIX-like 系統共通的。
 
-The [[Common instructions|remaining instructions]] are common for most UNIX-like systems.
+=也可參照=
 
+* [[Unix-like systems|Unix-like 系統]] - 建置 Ningw GCC 跨平台編譯器的初步試行的指示。
 
-=See Also=
-
-* [[Unix-like systems]] - Instructions which walk through building the Mingw GCC cross-compiler
 =原文=
 
 This page provides ''step-by-step instructions'' for setting up a [http://www.tianocore.org/edk2/ EDK II] build environment on Linux using a native GCC installation (4.4+).  This EDK II setup does not require the Mingw version of GCC to be built, and therefore can be much faster to setup.
