@@ -22,13 +22,16 @@ Command                 指令/命令
                                              
 Command Terminal        指令終端機
 [[Using-EDK-II-with-Native-GCC]]         
-                                          
+                                    
+Conf File(s)            關聯檔
+[[Common instructions]]             
+                                           
 Customer Reference Board(CRB)  顧客參照板
 [[IntelAtomProcessorE3900]]             
                                          
 Description Files       組態描述檔
                                  
-Ｄefinition(s)          定義
+Definition(s)          定義
 [[MdePkg]]                          
                                          
 Document                v. 載明
@@ -51,7 +54,10 @@ Firmware Support Package   韌體支援套裝
                                      
 General Purpose x86 Assembler 通用x86組譯器
 [[Using-EDK-II-with-Native-GCC]]           
-                                            
+                                          
+Hyperthreading             超線程
+[[Common instructions]] 
+
 Librar(y|ies) Instance(s)   函式庫實例
                                            
 Industry Standard       工業標準

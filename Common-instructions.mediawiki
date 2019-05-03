@@ -1,4 +1,109 @@
+(2019/03/08)
+
 __NOTOC__
+
+=Linux 共同 EDKII 建置指示=
+
+這些指示假定你已經安裝為了一個 [[EDK II]] 建置環境所需要的 Linux 套件(包)，包含了 git (例如: [https://github.com/Wayne777Chiu/Chinese_Practice_about_TianoCore/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610|Ubuntu 16.04/16.10])。 接下來的指示是共同的針對 Linux 環境的多數而言。
+
+===使用 Git 獲取 edk2 源碼樹===
+
+<pre>
+bash$ mkdir ~/src
+bash$ cd ~/src
+bash$ git clone https://github.com/tianocore/edk2
+</pre>
+
+注意: 上頭的 'git clone'命令從 edk2 '拉'最新的原始碼，如果你要作業在一個穩定的發行版上，去指定一個發行版標籤當複製 (cloning) 下來時。例如:
+
+<pre>
+bash$ git clone https://github.com/tianocore/edk2.git vUDK2017
+</pre>
+
+===編譯建置工具===
+
+<pre>
+bash$ cd ~/src/edk2
+bash$ make -C BaseTools
+bash$ . edksetup.sh
+</pre>
+
+當上面步驟完成，你能在 edk2 目錄下來做源碼開發。
+
+===建置 EDK II BaseTools===
+
+<pre>
+bash$ make -C edk2/BaseTools
+</pre>
+
+===設定建置殼層環境組態===
+
+<pre>
+bash$ cd ~/src/edk2
+bash$ export EDK_TOOLS_PATH=$HOME/src/edk2/BaseTools
+bash$ . edksetup.sh BaseTools
+</pre>
+
+===修改關聯檔===
+
+運行 <code>edksetup.sh</code> 用默認組態檔填補到 <code>edk2/Conf</code> 目錄。 你將需要編輯文字檔 <code>Conf/target.txt</code> 去設定建置平台，目標架構，工具鏈，和多行程 (multi-threading) 選項。以下例子是基於利用 GCC5 建置 <code>MdeModulePkg</code>。
+
+====設定建置目標資訊====
+
+針對 <code>Conf/target.txt</code>，找出下面的行:
+
+<pre>
+ACTIVE_PLATFORM       = Nt32Pkg/Nt32Pkg.dsc
+TOOL_CHAIN_TAG        = MYTOOLS
+</pre>
+
+和改變對應的航來符合這些:
+
+<pre>
+ACTIVE_PLATFORM       = MdeModulePkg/MdeModulePkg.dsc
+TOOL_CHAIN_TAG        = GCC5
+</pre>
+
+:注意: 這 <code>gcc --version</code> 命令能用來找出你的 GCC 版本。對 gcc 4.5.* 使用 '''GCC45''' 工具鏈，對 gcc 4.6.* 使用 '''GCC46''' 工具鏈。
+
+:注意: 對 GCC5 請安裝 gcc-5 套件(包)。 Ubuntu例子: <code>sudo apt-get install gcc-5</code>
+
+找出 TARGET_ARCH 設定:
+
+<pre>
+TARGET_ARCH           = IA32
+</pre>
+
+改變這反映到最後的UEFI二元制檔的建置架構。
+
+:例如: <code>X64</code>, <code>IA32 X64</code> (這樣會建置兩種架構)。
+
+選項: 啟動多重行程建置。 這 <code>MAX_CONCURRENT_THREAD_NUMBER</code>　的默認值是1，即關閉多行程建置。基於你的系統多行程的可行性感變這個值。　公式 (formula) 是　'1 + (2 x 處理行程數)'。
+
+:例如: 對　Intel Core i5 (兩個處理器核心有超線程)，值是 <code>9</code>。
+
+===Build Hello World!  (and the rest of MdeModulePkg)===
+
+Now you should be able to simply run the build command to compile <code>MdeModulePkg</code>.
+
+<pre>
+bash$ build
+</pre>
+
+One result of the build is that you should have the HelloWorld UEFI application:
+<pre>
+bash$ ls Build/MdeModule/DEBUG_*/*/HelloWorld.efi
+</pre>
+
+===Build [[OVMF]]===
+
+Once your build environment is set up you might be interested in [[How to build OVMF|building the OVMF platform]] which is included in the main [[EDK II]] source tree.  Since [[OVMF]] builds a full system firmware image, this may be of interest to UEFI system firmware developers.
+
+
+=原文=
+
+__NOTOC__
+
 =Common EDK II Build Instructions for Linux=
 
 These instructions assume you have installed Linux packages required for an [[EDK II]] build environment, including git (example: [https://github.com/tianocore/tianocore.github.io/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610|Ubuntu 16.04/16.10]). The following instructions are common to the majority of Linux environments.
