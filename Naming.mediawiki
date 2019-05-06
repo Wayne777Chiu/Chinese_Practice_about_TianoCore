@@ -57,7 +57,7 @@ General Purpose x86 Assembler 通用x86組譯器
                                           
 Hyperthreading             超線程
 [[Common instructions]] 
-
+                                           
 Librar(y|ies) Instance(s)   函式庫實例
                                            
 Industry Standard       工業標準
@@ -86,7 +86,10 @@ Source Build Instructions 原始碼建置說明
                                        
 Open Source Hardware Association     開源硬體協會
 [[IntelAtomProcessorE3900]]     
-                                                  
+                                   
+OVMF (Open Virtual Machine Firmware)   開放性的虛擬機器韌體
+[[OVMF]] [[Common instructions]]                              
+                                                         
 Package                 物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
                                                                                     
 Platform Feature(s)      平台功能
@@ -129,10 +132,10 @@ Terminal Program         終端程式
                                  
 Toolchain                 工具鏈      
 [[Using-EDK-II-with-Native-GCC]]       
-
+                                             
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using-EDK-II-with-Native-GCC]]                                     
-
+                                             
 Web Browser(s)           網頁瀏覽器
 [[Using-EDK-II-with-Native-GCC]]         
                                         
