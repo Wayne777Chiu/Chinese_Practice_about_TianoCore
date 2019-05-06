@@ -104,6 +104,9 @@ Porting                 平台開發導入
 Release Note(s)            發佈公告
 [[MinnowBoardMax]] [[IntelAtomProcessorE3900]]          
                                    
+RPM repositor(y|ies)          RPM套件庫
+[[How-to-run-OVMF]]                          
+                                           
 SPI Programmer          SPI 燒錄器
 [[IntelAtomProcessorE3900]]       
                                           

@@ -1,3 +1,31 @@
+(2019/03/08)
+
+如何運行 [[OVMF]] 用 QEMU 或 KVM。
+
+
+先決條件 (Pre-requisites)
+------------------------
+
+為了要運行 OVMF 在 QEMU，你必須要有 QEMU 版本 0.9.1 或更新的安裝在你的系統上。
+
+在 Debian/Ubuntu上安裝: <code>sudo apt-get qemu</code>
+
+### 得到 OVMF.fd 的一個建置
+
+你能 [建置 OVMF](How_to_build_OVMF "wikilink") 基於最新版的 [[EDK II]]。
+
+預先建置的映像檔是可被找到於 https://www.kraxel.org/repos/
+  * 這些映像檔是自動被建置和追蹤在 EDK II樹中的最新版的 OVMF 源碼。
+  * 這些建置中的一些包含了一個 seabios CSM 和能開機於非 UEFI “legacy” 作業系統上。(注意: seabios 是 GPLv3 授權)
+  * 假如你的作業系統不適用於RPM 套件庫，那麼你要手動下載和解壓縮 RPM 檔在 jenkins/edk2 之下。 
+
+選擇正確的處理器架構
+------------------
+
+
+
+#原文
+
 How to run [[OVMF]] with QEMU or KVM.
 
 Pre-requisites

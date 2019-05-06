@@ -47,7 +47,7 @@ TOOL_CHAIN_TAG        = GCC5
 
 -   <https://github.com/tianocore/edk2/blob/master/OvmfPkg/README>
 
-=原文=
+#原文
 
 Building [[OVMF]] is fairly easy once you have installed a few pre-requisites. Please note, however, that building OVMF is not required if you are only interested in [running OVMF](How-to-run-OVMF "wikilink"), since we have provided pre-built binaries of OVMF.
 
