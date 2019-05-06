@@ -74,7 +74,7 @@ TOOL_CHAIN_TAG        = GCC5
 TARGET_ARCH           = IA32
 </pre>
 
-改變這反映到最後的UEFI二元制檔的建置架構。
+改變這會反映到最後的UEFI二元制檔的建置架構上。
 
 :例如: <code>X64</code>, <code>IA32 X64</code> (這樣會建置兩種架構)。
 
@@ -82,23 +82,22 @@ TARGET_ARCH           = IA32
 
 :例如: 對　Intel Core i5 (兩個處理器核心有超線程)，值是 <code>9</code>。
 
-===Build Hello World!  (and the rest of MdeModulePkg)===
+===建置 Hello World! (和 MdeModulePkg 其他部分)===
 
-Now you should be able to simply run the build command to compile <code>MdeModulePkg</code>.
+現在你應該可以運行建置命令去編譯 <code>MdeModulePkg</code>
 
 <pre>
 bash$ build
 </pre>
 
-One result of the build is that you should have the HelloWorld UEFI application:
+建置(完成)的一種結果是你將有一個 HelloWorld UEFI 的應用程式: 
 <pre>
 bash$ ls Build/MdeModule/DEBUG_*/*/HelloWorld.efi
 </pre>
 
-===Build [[OVMF]]===
+===建置 [[OVMF]]===
 
-Once your build environment is set up you might be interested in [[How to build OVMF|building the OVMF platform]] which is included in the main [[EDK II]] source tree.  Since [[OVMF]] builds a full system firmware image, this may be of interest to UEFI system firmware developers.
-
+一旦你的建置環境被設定成功，你可能會有興趣去 [[How to build OVMF|建置 OVMF 平台]]，這已包含在主 [[EDK II]] 源碼樹中。 利用 [[OVMF]] 建置一個完整系統韌體映像檔，這對 UEFI 系統韌體開發者而言是有趣的。
 
 =原文=
 
