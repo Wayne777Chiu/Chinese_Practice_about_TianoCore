@@ -4,7 +4,7 @@ __NOTOC__
 
 =Linux 共同 EDKII 建置指示=
 
-這些指示假定你已經安裝為了一個 [[EDK II]] 建置環境所需要的 Linux 套件(包)，包含了 git (例如: [https://github.com/Wayne777Chiu/Chinese_Practice_about_TianoCore/wiki/Using-EDK-II-with-Native-GCC#ubuntu-1604-lts--ubuntu-1610 |Ubuntu 16.04/16.10])。 接下來的指示是共同的針對 Linux 環境的多數而言。
+這些指示假定你已經安裝為了一個 [[EDK II]] 建置環境所需要的 Linux 套件(包)，包含了 git (例如: [https://github.com/Wayne777Chiu/Chinese_Practice_about_TianoCore/wiki/Using-EDK-II-with-Native-GCC#Ubuntu_1604_LTS__Ubuntu_1610 | Ubuntu 16.04/16.10])。 接下來的指示是共同的針對 Linux 環境的多數而言。
 
 ===使用 Git 獲取 edk2 源碼樹===
 
