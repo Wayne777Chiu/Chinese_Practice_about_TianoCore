@@ -1,6 +1,6 @@
 (2019/03/08)
 
-建置 [[OVMF]]是相當容易的一旦你已經安裝了一個小的先決條件 (pre-requisties) 後。然而,請注意假如你只是對 [運行 OVMF](How-to-run-OVMF) "wikilink") 有興趣，你不需要建置 OVMF，因為我們已經提供了預先建置好的 OVMF 二元檔。
+建置 [[OVMF]]是相當容易的一旦你已經安裝了一個小的先決條件 (pre-requisties) 後。然而,請注意假如你只是對 [運行 OVMF](How-to-run-OVMF "wikilink") 有興趣，你不需要建置 OVMF，因為我們已經提供了預先建置好的 OVMF 二元檔。
 
 建置先決條件 (Pre-requisites)
 ---------------------------
