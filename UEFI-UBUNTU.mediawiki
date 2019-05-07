@@ -1,3 +1,35 @@
+(2019/03/08)
+
+[[UEFI OS Support | UEFI OS 支持]] | [[Linux Support for UEFI | Linux 對 UEFI 的支援]]
+
+= Ubuntu Linux 對 UEFI 的支援 =
+
+== 支援 UEFI 的 Ubuntu 版本 ==
+
+Ubuntu Linux 支援 x64 [[UEFI]] 為 64位元的建置，起始於 10.10。 我們建議使用 Ubuntu 12.04 LTS 或 更高版本的 x64 UEFI。
+
+沒有 IA32 UEFI 支援在 Ubuntu 是可行的，但 [[Debian Linux|UEFI Debian]] 在 Jessis 發行版開始被支援。
+
+== UEFI 安全性開機的支援 ==
+
+Ubuntu 12.04 LTS 或 更高版本支援 [[UEFI Secure Boot|Secure Boot]]，利用一個 [[UEFI CA|UEFI 認證]] 的 OS 墊片載入器 (OS shim loader)。 這代表一個被正確組態成 UEFI 安全性開機的系統能載入到 Ubuntu Linux，而不需要在韌體安裝選單中啟動傳統式 BIOS (legacy BIOS) 的支援或關閉安全性開機。
+
+== 下載 ==
+
+最新發行版: http://www.ubuntu.com/download
+
+最新 live 每日映像檔 (生效於下一版發行版): http://cdimage.ubuntu.com/daily-live/
+
+== 參考資料 ==
+
+https://help.ubuntu.com/community/UEFI
+
+https://wiki.ubuntu.com/Kernel/Testing/UbuntuUEFI
+
+http://askubuntu.com/questions/221835/installing-ubuntu-alongside-a-pre-installed-windows-with-uefi
+
+=原文=
+
 [[UEFI OS Support]] | [[Linux Support for UEFI]]
 
 = Ubuntu Linux Support for UEFI =

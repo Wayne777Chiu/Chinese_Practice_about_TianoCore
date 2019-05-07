@@ -58,6 +58,9 @@ General Purpose x86 Assembler 通用x86組譯器
 Hyperthreading             超線程
 [[Common instructions]] 
                                            
+Legacy BIOS                 傳統式 BIOS
+[[UEFI-UBUNTU]]                        
+                                              
 Librar(y|ies) Instance(s)   函式庫實例
                                            
 Industry Standard       工業標準
@@ -86,7 +89,10 @@ Source Build Instructions 原始碼建置說明
                                        
 Open Source Hardware Association     開源硬體協會
 [[IntelAtomProcessorE3900]]     
-                                   
+                                      
+OS shim loader            OS 墊片載入器
+[[UEFI-UBUNTU]]                                  
+                                    
 OVMF (Open Virtual Machine Firmware)   開放性的虛擬機器韌體
 [[OVMF]] [[Common instructions]]                              
                                                          
@@ -113,7 +119,7 @@ SPI Programmer          SPI 燒錄器
 Runtime services        運行時間服務
                                         
 Secure Boot             安全啟動
-[[Galileo]]                                
+[[Galileo]] [[UEFI-UBUNTU]]                                 
                                    
 Security Advisorie(s)     安全性公告
 [[Reporting-Security-Issues]]            
