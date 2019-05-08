@@ -1,3 +1,51 @@
+(2019/03/08)
+__NOTOC__
+本頁提供依步驟指示來建立一個在視窗系統上的 [http://www.tianocore.org/edk2/ EDK II] 建置環境。
+
+<u>''內容表格''</u>
+* [[Windows-systems#github-help|GitHub Help]]
+* [[Windows-systems#如何建置_EDK_II_樹|如何建置 EDK II 樹]]
+* [[Windows-systems#download| Download]]  Checkout EDK II source tree from Github 
+* [[Windows-systems#compile-tools |Compile Tools]] Build EDK II BaseTools for Windows 
+* [[Windows-systems#build | BUILD]] EDK II
+
+==GitHub Help==
+fdsfad
+d
+fd
+fds
+fdsa
+fds
+fds
+fd
+f
+s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sdfds
+f
+
+
+asdf
+ds
+
+
+=='''如何建置 EDK II 樹'''==
+
+= 原文 =
+
 __NOTOC__
 This page provides step-by-step instructions or setting up a [http://www.tianocore.org/edk2/ EDK II] build environment on Windows systems.
 
