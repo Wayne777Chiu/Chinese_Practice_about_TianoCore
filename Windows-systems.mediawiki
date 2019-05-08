@@ -76,7 +76,7 @@ GitHub (https://help.github.com/index.html) 提供了使用者註冊和 GitHub �
 =====對於利用 Windows 上源碼BaseTools的 EDK II 專案開發者=====
 *   創造一個工作區目錄
 *   切換工作區目錄
-*   克隆 EDK II 專案倉儲 (參見 [[Windows-systems#下載| 下載]] 的上面章節)
+*   克隆 EDK II 專案倉儲 (參見其上方的 [[Windows-systems#下載| 下載]] 章節)
 **  例子: git clone https://github.com/tianocore/edk2
 * 安裝 Python37 或之後板本 (https://www.python.org/) 來運行從源碼來的 python 工具
 * 編譯 基礎工具 C 源碼工具
@@ -96,7 +96,7 @@ GitHub (https://help.github.com/index.html) 提供了使用者註冊和 GitHub �
 =='''建置'''==
 * 設立 [[Nasm-Setup| Nasm]] 開放源碼組譯器
 * 設立 [[Asl Setup| ASL 編譯器]]
-* [[Windows-systems#編譯工具|編譯工具]] 於上頭
+* 在上方的 [[Windows-systems#編譯工具|編譯工具]] 
 * 開啟 Windows 命令提示視窗
 * 切換到 edk2 目錄
 * 運行 edksetup.bat 腳本檔
