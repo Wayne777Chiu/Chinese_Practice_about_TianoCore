@@ -44,7 +44,7 @@ bash$ export EDK_TOOLS_PATH=$HOME/src/edk2/BaseTools
 bash$ . edksetup.sh BaseTools
 </pre>
 
-===修改關聯檔===
+===修改配置檔===
 
 運行 <code>edksetup.sh</code> 用默認組態檔填補到 <code>edk2/Conf</code> 目錄。 你將需要編輯文字檔 <code>Conf/target.txt</code> 去設定建置平台，目標架構，工具鏈，和多行程 (multi-threading) 選項。以下例子是基於利用 GCC5 建置 <code>MdeModulePkg</code>。
 
