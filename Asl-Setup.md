@@ -3,7 +3,7 @@
 
 EDK II 使用 ACPI 去描述平台配置和電源管理方法給作業系統。這些方法透過使用 ASL-需要額外的編譯系-去描述。
 
-[ACPI 元件架構 (ACPICA) 下載](https//acpica.org/downloads)
+[ACPI 元件架構 (ACPICA) 下載](https://acpica.org/downloads)
 
 [ASL 2.0 介紹和概觀 (白皮書 @ acpica.org)](https://acpica.org/sites/acpica/files/ASL2.0Overview.pdf)
 
