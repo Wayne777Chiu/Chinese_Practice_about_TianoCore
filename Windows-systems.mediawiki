@@ -4,7 +4,7 @@ __NOTOC__
 
 <u>''內容表格''</u>
 * [[Windows-systems#github-help|GitHub Help]]
-* [[Windows-systems#如何建置_EDK_II_樹|如何建置 EDK II 樹]]
+* [[Windows-systems#如何建置-edk-ii-樹|如何建置 EDK II 樹]]
 * [[Windows-systems#download| Download]]  Checkout EDK II source tree from Github 
 * [[Windows-systems#compile-tools |Compile Tools]] Build EDK II BaseTools for Windows 
 * [[Windows-systems#build | BUILD]] EDK II
