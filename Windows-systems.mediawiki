@@ -125,7 +125,7 @@ ACTIVE_PLATFORM       = MdeModulePkg/MdeModulePkg.dsc
 TOOL_CHAIN_TAG       = VS2015x86
 </pre>
 
-也可看  [[Windows-systems-ToolChain-Matrix]] 看如何改變工具鏈標籤屬性 (Tool Chain Tag)。
+也可參照:  [[Windows-systems-ToolChain-Matrix]] 看如何改變工具鏈標籤屬性 (Tool Chain Tag)。
 
 當然，也可以藉由改變 在target.txt 檔裡的 TARGET_ARCH 的值來審思是否你要建構其他處理器架構。 請認知某些工具鏈只支援建構某些處理器架構。
 
