@@ -1,48 +1,156 @@
 (2019/03/08)
 __NOTOC__
-本頁提供依步驟指示來建立一個在視窗系統上的 [http://www.tianocore.org/edk2/ EDK II] 建置環境。
+本頁提供單步指示來建立一個在 Windows 系統上的 [http://www.tianocore.org/edk2/ EDK II] 建置環境。
 
 <u>''內容表格''</u>
 * [[Windows-systems#github-help|GitHub Help]]
 * [[Windows-systems#如何建置-edk-ii-樹|如何建置 EDK II 樹]]
-* [[Windows-systems#download| Download]]  Checkout EDK II source tree from Github 
-* [[Windows-systems#compile-tools |Compile Tools]] Build EDK II BaseTools for Windows 
-* [[Windows-systems#build | BUILD]] EDK II
+* [[Windows-systems#下載|下載]]  從 Github 去 checkout EDK II 源碼樹 
+* [[Windows-systems#編譯工具|編譯工具]] 建置 Windows 上的 EDK II BaseTools (基礎工具) 
+* [[Windows-systems#建置|建置]] EDK II
 
 ==GitHub Help==
-fdsfad
-d
-fd
-fds
-fdsa
-fds
-fds
-fd
-f
-s
 
+GitHub (https://help.github.com/index.html) 提供了使用者註冊和 GitHub 支援的基本功能的單步指示。
 
+=== Windows 系統上的 Git 圖形使用者介面 ===
+* 給 Windows 系統 的 Git 可在此找到: (http://git-scm.com/download/win)
+* 給 Windows 系統 的 TortoiseGit 可在此找到 (https://tortoisegit.org/download/)
 
+=='''GitHub EDK II 專案倉儲'''==
 
+* EDK II 專案倉儲可被找到於 https://github.com/tianocore/edk2 。
 
+內容 - 沒有在一個開放源碼授權許可下的釋出發行內容可在此找到 https://github.com/tianocore/edk2-non-osi.<br />
+&nbsp;<br />
+注意:以下步驟將從 edk2 master 分支拉取最新的的源碼。 要在穩定發行版下作業，請參考 [[UDK2017]] Microsoft Windows 建置步驟: [[UDK2017-How-to-Build#如何建置-UDK2017-在-Windows-系統|如何建置 UDK2017 在 Windows 系統]] 
+ 
+=== 網路代理 ===
 
+假如你的區域網路使用一個有網路代理的防火牆，那麼你可能需要去設定代理伺服資訊給各種的命令列應用程式去作業。 你能需要諮詢你的區域網路管理者去為代理伺服器的設定找出電腦名稱和連接埠來使用。以下是一般 '''Git Bash''' 如何藉著設定環境變數來設定你的代理伺服器組態組態的例子: 
 
-
-
-
-
-
-
-
-sdfds
-f
-
-
-asdf
-ds
+<pre>
+    $git config --global https.proxy <proxyname>.domain.com:<port>
+    $git config --global thhp.proxy <proxyname>.domain.com:<port>
+</pre>
 
 
 =='''如何建置 EDK II 樹'''==
+'''注意:''' 以下的一些例子使用了多重工作區 (Multiple Workspace) 功能區去組態 EDK II BaseTools (基礎工具)。 更多資訊關於多重工作區功能能透過以下路徑。 <BR>
+* [[Multiple_Workspace|多重工作區]]
+
+=='''下載'''==
+下載/查驗 EDK II 源碼樹透過 Github
+=== 使用網頁瀏覽器下載 ===
+
+# 下載 EDK II 專案
+## 在瀏覽器上開啟網址 https://github.com/tianocore/edk2
+## 點擊 ''Clone or Download'' 按紐 (右邊 綠色)
+## 點擊 Download ZIP
+## 解壓縮到 C 槽 
+## 更改 “edk2-master” 目錄名稱成 “edk2”  
+
+接續到 [[Windows-systems#編譯工具|編譯工具]]
+
+=== '''Windows 版 Git''' 應用程式 ===
+==== ''Git GUI'' ====
+# 克隆 EDK II 專案倉儲
+## 開啟 Git GUI
+## 使用 ''Clone Exiting Repository'' 利用源碼所在 https://github.com/tianocore/edk2.git
+## 選擇目標路徑到 C:/edk2
+## 勾選 Recursively clone submodules too (也遞迴性克隆子模組)
+## 點擊 Clone 按鈕
+
+接續到 [[Windows-systems#編譯工具|編譯工具]] 章節
+
+==== ''Git CMD'' ====
+假如你使用的是命令列版本，那麼你能容易地用以下 git 命令去查找 (checkout) edk2 到 C:\edk2 目錄:
+主要倉儲: https://github.com/tianocore/edk2
+<pre>
+    $git clone https://github.com/tianocore/edk2
+</pre>
+
+接續到 [[Windows-systems#編譯工具|編譯工具]] 和 [[Windows-systems#建置| 建置]] 章節。
+
+=='''編譯工具'''==
+=====對於利用 Windows 上源碼BaseTools的 EDK II 專案開發者=====
+*   創造一個工作區目錄
+*   切換工作區目錄
+*   克隆 EDK II 專案倉儲 (參見 [[Windows-systems#下載| 下載]] 的上面章節)
+**  例子: git clone https://github.com/tianocore/edk2
+* 安裝 Python37 或之後板本 (https://www.python.org/) 來運行從源碼來的 python 工具
+* 編譯 基礎工具 C 源碼工具
+例如:
+* Inside Bit Bash
+<pre>
+    $ git clone https://github.com/tianocore/edk2
+</pre>
+=====編譯BaseTools=====
+例如:
+*開啟命令提示視窗和 進入(CD) C:\edk2
+<pre>
+    C:\edk2> set PYTHON_HOME=C:\Python27
+    C:\edk2> edksetup.bat Rebuild
+</pre>
+
+=='''建置'''==
+* 設立 [[Nasm-Setup| Nasm]] 開放源碼組譯器
+* 設立 [[Asl Setup| ASL 編譯器]]
+* [[Windows-systems#編譯工具|編譯工具]] 於上頭
+* 開啟 Windows 命令提示視窗
+* 切換到 edk2 目錄
+* 運行 edksetup.bat 腳本檔
+
+      C:\\Users\MySid> CD \edk2
+      C:\edk2> edksetup
+
+=== 建置 MdeModulePkg===
+
+====修改 配置檔===
+
+你將需要編輯 Conf\target.txt 檔。 首先， 改變 ACTIVE_PLATFORM 成 MdeModulePkg:
+
+<pre>
+C:\edk2> notepad Conf\target.txt
+</pre>
+
+ACTIVE_PLATFORM 在 Conf\target.txt (檔案裡)應該像這樣:
+
+<pre>
+ACTIVE_PLATFORM       = MdeModulePkg/MdeModulePkg.dsc 
+</pre>
+
+在 target.txt 裡，修改 TOOL_CHAIN_TAG  成在你系統裡的安裝好的(那個)工具鏈。 有很多選項，因此檢視 tools_def.txt 去找出你系統裡適當的工具鏈。 在 tools_def.txt 檔裡搜尋 'Supported Tool Chains' 去看可用的選項給 TOOL_CHAIN_TAG。
+<pre>
+TOOL_CHAIN_TAG       = VS2015x86
+</pre>
+
+也可看  [[Windows-systems-ToolChain-Matrix]] 看如何改變工具鏈標籤屬性 (Tool Chain Tag)。
+
+當然，也可以藉由改變 在target.txt 檔裡的 TARGET_ARCH 的值來審思是否你要建構其他處理器架構。 請認知某些工具鏈只支援建構某些處理器架構。
+
+====建置 Hello World! (和 MdeModulePkg 的剩餘部分)====
+
+現在你應該能夠簡單運行建置命令來編譯 MdeModulePkg。
+
+<pre>
+C:\edk2> build
+</pre>
+
+當建置的明確結果出來，你應該會有一個 HelloWorld UEFI 應用程式。　假如你有一個 UEFI 系統符合你所建置的處理器架構，那麼這應用程式應該能夠正確地運行在 shell 下。
+
+<pre>
+C:\edk2> dir /s Build\MdeModule\DEBUG_...\IA32\HelloWorld.efi
+</pre>
+
+===建置 [[OVMF]] (選項)===
+
+一旦你的建置環境被設定成功，你可能會有興趣去建置 [[OVMF]] 平台，這已包含在主 edk2 源碼樹中。 利用 [[OVMF]] 建置一個完整系統韌體映像檔，這對 UEFI 系統韌體開發者而言是有趣的。
+
+=也可參考=
+* [[Getting-Started-Writing-Simple-Application|著手開始寫簡單的應用程式]]
+
+<!-- [[Category:EDKII]] --> 
 
 = 原文 =
 
@@ -141,7 +249,7 @@ Example:
 </pre>
 
 
-=='''建置'''==
+=='''Build'''==
 * Set up the [[Nasm-Setup| Nasm]] open source assembly compiler
 * Set up the [[Asl Setup| ASL Compiler]] 
 * [[Windows-systems#compile-tools |Compile Tools]] above

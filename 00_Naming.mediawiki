@@ -23,7 +23,7 @@ Command                 指令/命令
 Command Terminal        指令終端機
 [[Using-EDK-II-with-Native-GCC]]         
                                     
-Conf File(s)            關聯檔
+Conf File(s)            配置檔
 [[Common instructions]]             
                                            
 Customer Reference Board(CRB)  顧客參照板
@@ -50,13 +50,25 @@ expansion boards        擴充板
 [[MinnowBoardMax]]                   
                                  
 Firmware Support Package   韌體支援套裝
-[[IntelAtomProcessorE3900]]
+[[IntelAtomProcessorE3900]]           
                                      
 General Purpose x86 Assembler 通用x86組譯器
 [[Using-EDK-II-with-Native-GCC]]           
                                           
+Git Clone                    Git 克隆
+[[Windows-systems]]                  
+                                       
+Git Pull                     Git 拉取
+[[Windows-systems]]    
+
+Git Repositor(y|ies)           Git 倉儲
+[[Windows-systems]]                      
+                                         
+Graphical User Interface (GUI)  圖形使用者介面
+[[Windows-systems]]                             
+                                            
 Hyperthreading             超線程
-[[Common instructions]] 
+[[Common instructions]]                  
                                            
 Legacy BIOS                 傳統式 BIOS
 [[UEFI-UBUNTU]]                        
@@ -129,7 +141,10 @@ Security Issue          安全性問題
                                    
 Shell                     殼層 (通常指使用者使用介面)   
 [[Using-EDK-II-with-Native-GCC]]  
-                                                         
+                                                 
+step-by-step instructions   單步(驟)指示
+[[Windows-systems]] [[Using-EDK-II-with-Native-GCC]]                   
+                                  
 TBD (To Be Determined)  待確定
 [[IntelAtomProcessorE3900]]                     
                                   
@@ -148,6 +163,9 @@ Universally Unquid Identifier (UUID) 全域唯一識別碼
 Web Browser(s)           網頁瀏覽器
 [[Using-EDK-II-with-Native-GCC]]         
                                         
+Workspace                 工作區
+[[Windows-systems]]                  
+
 V.S
 
 Web vs Internet
@@ -161,3 +179,18 @@ instruction vs command
             command is an order, a compelling task given to an inferior or a machine 
             while instruction is (uncountable) the act of instructing, teaching, or furnishing with information or knowledge.
             As a verb command is to order, give orders; to compel or direct with authority. 
+翻譯參考
+    Git Clone                 Git 克隆
+        --> 2.1 Git 基礎 - 取得一個 Git 倉儲
+            --> refer: https://git-scm.com/book/zh-tw/
+    Git Pull                 Git 拉取
+        --> 2.5 Git 基礎 - 與遠端協同工作
+            --> refer: https://git-scm.com/book/zh-tw/ 
+    Git Repositor(y|ies)     Git 倉儲
+        --> 2.1 Git 基礎 - 取得一個 Git 倉儲 
+            --> refer: https://git-scm.com/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97%E4%B8%80%E5%80%8B-Git-%E5%80%89%E5%84%B2
+
+某參照: 
+    目的查詢 (Conf Files)
+    (之乎) config、option、setting这三者在程序世界里是什么区别？
+        --> refer: https://www.zhihu.com/question/39827177

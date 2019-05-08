@@ -1,6 +1,6 @@
 (2019/03/08)
 
-本頁提供 ''一步接一步指示'' 給使用原生 GCC (4.4+) 安裝的 Linux 來建置 [http://www.tianocore.org/edk2/ EDK II] 開發環境。 這個 EDK II 建置不需要 Mingw 版本的 GCC， 因此可以更快速的建置。
+本頁提供 ''單步指示'' 給使用原生 GCC (4.4+) 安裝的 Linux 來建置 [http://www.tianocore.org/edk2/ EDK II] 開發環境。 這個 EDK II 建置不需要 Mingw 版本的 GCC， 因此可以更快速的建置。
 
 ==開始==
 
