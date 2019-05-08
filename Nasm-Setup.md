@@ -9,9 +9,9 @@ NASM 最新的(版本) 2.12  的發佈公告連結在: http://www.nasm.us/doc/na
 
 NASM 2.12 新增了 Codeview 版本 8 (cv8) 的支援，其允許 NASM 源碼的源碼等級偵錯當 EDK II 源碼是透過 Microsoft Visual Studio* 20xx 工具鏈建置下。
 
-## Nasm 字首綴詞
-Nasm 環境變數被使用來給 EDK II Build
-假如組合源碼 (assembly code) 被模組使用了且使用 NASM 組譯器(來組譯)，這系統環境變數, NASM_PREFIX 一定要被設定且必須涵蓋伴隨的反斜線，如以下展示的:
+## Nasm 字首綴詞 (Prefix)
+Nasm 環境變數被使用來給 EDK II Build。
+假如組合源碼 (assembly code) 被模組使用了且利用 NASM 組譯器(來組譯)，這系統環境變數, NASM_PREFIX，一定要被設定且必須涵蓋伴隨的反斜線，如以下展示的:
 <pre>
 	C:\edk2\> set NASM_PREFIX =C:\nasm\
 </pre>
