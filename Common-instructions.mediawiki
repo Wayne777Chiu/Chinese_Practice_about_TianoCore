@@ -82,7 +82,7 @@ TARGET_ARCH           = IA32
 
 :例如: 對　Intel Core i5 (兩個處理器核心有超線程)，值是 <code>9</code>。
 
-===建置 Hello World! (和 MdeModulePkg 其他部分)===
+===建置 Hello World! (和 MdeModulePkg 的剩餘部分)===
 
 現在你應該可以運行建置命令去編譯 <code>MdeModulePkg</code>
 
