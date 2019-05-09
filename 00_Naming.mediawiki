@@ -113,6 +113,9 @@ OVMF (Open Virtual Machine Firmware)   開放性的虛擬機器韌體
                                                          
 Package                 物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
                                                                                     
+Path Separator Character    路徑分隔符號字元
+[[Multiple_Workspace]]                                
+                                                    
 Platform Feature(s)      平台功能
 [[IntelAtomProcessorE3900]]                                
                                               

@@ -1,3 +1,22 @@
+(2019/03/08)
+==='''介紹'''===
+一個 EDKII 建置工具的更新現在允許可以設定去搜尋多重路徑當嘗試去解決套件位置時。 這新的特徵允許更多彈性當設計一個樹的分布或合併不同源碼時。新的功能可透過一個新的環境變數的增加來被啟動 (PACKAGES_PATH)。
+
+這個 PACKAGES_PATH 的變數是一個額外搜尋路徑的有序清單使用了主機作業系統的默認路徑分隔符號在每個條目間。 列表的第一個路徑有最高優先權和最後的路徑有最低優先權。 在 WORKSPACE 變數的路徑總是比任何條目在 PACKAGE_PATH上的有最高搜尋優先權。
+
+要使用這個特徵，PACKAGES_PATH 環境變數必須被設定先於運行 edksetup 腳本前。 這麼做的理由是 edksetup 腳本決定的配置位置和 BaseTools 目錄位置都是基於 WORKSPACE 和 PACKAGES_PATH 環境變數而來的。
+
+PACKAGES_PATH 環境變數的使用是可選擇選項，假如它沒被定義，將會建置過去有像它(一樣功能)的函數。
+
+==='''環境變數:'''===
+*       WORKSPACE
+**    Build 目錄的位置
+**    總是有最高的搜尋優先權
+*       PACKAGES_PATH
+**    額外路徑的列表去搜尋套件使用 OS 路徑分隔符號字元
+**    路徑在一個優先順序上被列表
+
+==原文==
 ==='''Introduction:'''===
 An update to the EDKII build tools now allows the setting of multiple paths that will be searched when attempting to resolve the location of packages.  This new feature allows for more flexibility when designing a tree layout or combining sources from different sources.  The new functionality is enabled through the addition of a new environment variable (PACKAGES_PATH). 
 
