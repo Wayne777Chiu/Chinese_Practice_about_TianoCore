@@ -30,7 +30,7 @@ PACKAGES_PATH ­h¾³×ƒ”µµÄÊ¹ÓÃÊÇ¿Éßx“ñßxí—£¬¼ÙÈçËü›]±»¶¨Áx£¬Œ¢•þ½¨ÖÃß^È¥ÓÐÏñËü(Ò»˜
 
 '''¿‚½Y'''
 *        Ê¹ÓÃ PACKAGES_PATH ²»ÊÇ±Øíš
-*        PACKAGES_PATH ±ØíšÏÈ±»ÔO¶¨ÏÈì¶ˆÌÐÐ edksetup Ä_±¾Ç°íÐÞÕý¹¤¾ßÅäÖÃ
+*        PACKAGES_PATH ±Øíš±»ÔO¶¨ÏÈì¶ˆÌÐÐ edksetup Ä_±¾Ç°íÐÞÕý¹¤¾ßÅäÖÃ
 
 ===Ô­ÎÄ===
 ==='''Introduction:'''===
