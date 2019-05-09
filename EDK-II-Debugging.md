@@ -1,3 +1,14 @@
+(2019/03/08)
+# EDK II 偵錯
+
+## 基本概念
+
+EDK II 偵錯的方法是啟動以下的偵錯技術:
+* 使用 `DEBUG` 巨集 替換 inline Print() 函數來得到偵錯訊息
+* 使用 `ASSERT` 巨集 去中斷程式碼執行在緊急問題 (critical issues)上
+* 使用一個 [[軟體偵錯|SourceLevelDebugPkg]] \(COM/USB\)
+
+# 原文
 # EDK II Debugging
 
 ## Basic Concepts
