@@ -1,4 +1,5 @@
 (2019/03/08)
+__NOTOC__
 ==='''½é½B'''===
 Ò»‚€ EDKII ½¨ÖÃ¹¤¾ßµÄ¸üÐÂ¬FÔÚÔÊÔS¿ÉÒÔÔO¶¨È¥ËÑŒ¤¶àÖØÂ·½®”‡LÔ‡È¥½â›QÌ×¼þÎ»ÖÃ•r¡£ ß@ÐÂµÄÌØáçÔÊÔS¸ü¶à—ÐÔ®”ÔOÓ‹Ò»‚€˜äµÄ·Ö²¼»òºÏã²»Í¬Ô´´a•r¡£ÐÂµÄ¹¦ÄÜ¿ÉÍ¸ß^Ò»‚€ÐÂµÄ­h¾³×ƒ”µµÄÔö¼Óí±»†¢„Ó (PACKAGES_PATH)¡£
 
@@ -15,6 +16,21 @@ PACKAGES_PATH ­h¾³×ƒ”µµÄÊ¹ÓÃÊÇ¿Éßx“ñßxí—£¬¼ÙÈçËü›]±»¶¨Áx£¬Œ¢•þ½¨ÖÃß^È¥ÓÐÏñËü(Ò»˜
 *       PACKAGES_PATH
 **    î~ÍâÂ·½µÄÁÐ±íÈ¥ËÑŒ¤Ì×¼þÊ¹ÓÃ OS Â·½·Ö¸ô·ûÌ–×ÖÔª
 **    Â·½ÔÚÒ»‚€ƒžÏÈí˜ÐòÉÏ±»ÁÐ±í
+
+'''Àý×Ó:'''
+    set WORKSPACE=c:\efi\test
+    set PACKAGES_PATH=%WORKSPACE%\platform;%WORKSPACE%\edk2
+
+ÔÚß@‚€Çé›rÏÂ£¬WORKSPACE ÊÇÒ»‚€ÈÝÆ÷ (container) ½oƒÉ‚€(½¨ÖÃ)˜äÊ¹ÓÃ°éëSÖø½¨ÖÃÄ¿ä›µÄÎ»ÖÃ¡£ß@‚€Àý×Ó¼Ù¶¨Ëù½o¶¨(ÌØ¶¨)Æ½Ì¨µÄÔ´´aÌ×¼þµÄÔOÖÃÊÇ±»°üº¬ÔÚ platform Ä¿ä›ÉÏµÄ¡£ ÄÔ´´a‚}ƒ¦íµÄÔ´´aÌ×¼þ±»°üº¬ÔÚ edk2 Ä¿ä›ÉÏ¡£
+
+®”ÓÃß@˜ÓÅäÖÃµÄÄ¿ä›íˆÌÐÐ½¨ÖÃ¹¤¾ßŒ¢•þ’ßÃèÒÔÏÂµÄí˜ÐòÈ¥ÕÒ³ö±»ÁÐÔÚ DSC ºÍ FDF ™nµÄÌ×¼þ¡£
+#        C:\efi\test
+#        C:\efi\test\platform
+#        C:\efi|test\edk2
+
+'''¿‚½Y'''
+*        Ê¹ÓÃ PACKAGES_PATH ²»ÊÇ±Øíš
+*        PACKAGES_PATH ±ØíšÏÈ±»ÔO¶¨ÏÈì¶ˆÌÐÐ edksetup Ä_±¾Ç°íÐÞÕý¹¤¾ßÅäÖÃ
 
 ===Ô­ÎÄ===
 ==='''Introduction:'''===
