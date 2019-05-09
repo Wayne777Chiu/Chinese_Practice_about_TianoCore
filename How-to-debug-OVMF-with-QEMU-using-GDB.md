@@ -1,3 +1,34 @@
+(2019/03/08)
+# 用 QEMU 和 Linux GDB 來偵錯 使用 OvmfPkg的EDK II
+這個例子將展示如何去偵錯一個使用OvmfPkg建置然後使用 QEMU 和 GDB 去偵錯 UEFI 應用程式的簡單應用程式。
+
+### 以下將使用 UEFI_APPLICATION SampleApp.c 當成例子:
+1. 新增你的 UEFI 應用程式到 OvmfPkgIa32.dsc (使用 IA32) 例子:(新增) `SampleApp/SampleApp.inf` 在OvmfPkgIa32.dsc 檔案裡的 `[Components]` 區域的最後。
+2. 建置 OVMF 於 IA32 (架構): ` bash$ build -a IA32 -p OvmfPkg/OvmfPkgIa32.dsc -t GCC5` 
+3. 複製 SampleApp 的輸出到 `hda-contents` 目錄如同在 [[How-to-run-OVMF|如何運行 OVMF]] 裡展示的設定 QEMU 用檔案系統一樣。這將是以下的類似目錄裡: `/home/u-mypc/src/edk2/Build/OvmfIa32/DeEBUG_GCC5/IA32`
+```
+    SampleApp.efi
+    SampleApp.debug
+    SampleApp (目錄)
+```
+4. 在 `run-ovmf` 目錄下開啟終端提示視窗(1)就與在 [[How-to-run-OVMF|如何運行 OVMF]] 裡展示(關於)用 ovmf.fd 檔 複製到 bios.bin 檔一樣。
+5. 調用 QEMU 用以下的命令:
+```
+bash$ qemu-system-i386 -s -pflash bios.bin -hda fat:rw:hda-contents -net none -debugcon file:debug.log -global isa-debugcon.iobase=0x402
+```
+6. QEMU 將讀取和開機到一個 UEFI Shell 提示
+
+
+### 在 QEMU 視窗裡
+調用你的應用程式。
+```
+Shell> fs0:
+Fs0:\> SampleApp.efi
+```
+在 `run-ovmf` 目錄下開啟終端提示視窗(2)和查驗 debug.log 檔
+`bash$ `
+
+# 原文
 # Debugging EDK II using OvmfPkg with QEMU and Linux GDB
 This example will show how to debug a simple application built with OvmfPkg then using the QEMU and GDB to debug the UEFI Application.
 
