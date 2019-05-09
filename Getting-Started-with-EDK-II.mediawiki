@@ -19,7 +19,7 @@ __NOTOC__
 * 安裝 Python 3.7 or later (https://www.python.org/) 來從源碼運行 python 工具 
 **  Python 2.7.10 or later 仍可使用 PYTHON_HOME 變數
 
-'''Note:''' 一些例子使用了 [[Multiple_Woprkspace|多重工作區]]功能來組建EDK II 基礎工具(BaseTools)。 這需要使用基於edk2-platforms的平台代碼: (https://github.com/tianocore/edk2-platforms)
+'''Note:''' 一些例子使用了 [[Multiple_Workspace|多重工作區]]功能來組建EDK II 基礎工具(BaseTools)。 這需要使用基於edk2-platforms的平台代碼: (https://github.com/tianocore/edk2-platforms)
 
 一旦你有了基本建置環境可運行，你就能夠建置一個專案在 RELEASE 或 [[EDK II Debugging|DEBUG]] 模式。
 

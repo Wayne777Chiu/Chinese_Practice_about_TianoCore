@@ -16,7 +16,7 @@ PACKAGES_PATH ­h¾³×ƒ”µµÄÊ¹ÓÃÊÇ¿Éßx“ñßxí—£¬¼ÙÈçËü›]±»¶¨Áx£¬Œ¢•ş½¨ÖÃß^È¥ÓĞÏñËü(Ò»˜
 **    î~ÍâÂ·½µÄÁĞ±íÈ¥ËÑŒ¤Ì×¼şÊ¹ÓÃ OS Â·½·Ö¸ô·ûÌ–×ÖÔª
 **    Â·½ÔÚÒ»‚€ƒÏÈí˜ĞòÉÏ±»ÁĞ±í
 
-==Ô­ÎÄ==
+===Ô­ÎÄ===
 ==='''Introduction:'''===
 An update to the EDKII build tools now allows the setting of multiple paths that will be searched when attempting to resolve the location of packages.  This new feature allows for more flexibility when designing a tree layout or combining sources from different sources.  The new functionality is enabled through the addition of a new environment variable (PACKAGES_PATH). 
 
