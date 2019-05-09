@@ -32,11 +32,17 @@ Conf File(s)            配置檔
 Customer Reference Board(CRB)  顧客參照板
 [[IntelAtomProcessorE3900]]             
                                          
-Description Files       組態描述檔
-                                 
-Definition(s)          定義
+Debug Host Application     偵錯主機應用程式
+[[SourceLevelDebugPkg]]              
+                                          
+Debugger Agent            偵錯代理
+[[SourceLevelDebugPkg]]              
+                                  
+Definition(s)          定義         
 [[MdePkg]]                          
-                                         
+                              
+Description Files       組態描述檔
+                                
 Document                v. 載明
 [[MdePkg]]                          
                                  
@@ -54,7 +60,7 @@ expansion boards        擴充板
                                  
 Field                      位元區段
 [[EDK-II-Ddebugging]]                   
-                                         
+
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]           
                                      
