@@ -52,6 +52,9 @@ Environment Variable     環境變數
 expansion boards        擴充板
 [[MinnowBoardMax]]                   
                                  
+Field                      位元區段
+[[EDK-II-Ddebugging]]                   
+                                         
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]           
                                      
@@ -116,6 +119,9 @@ Package                 物件包/套件包 (!?) (various sets of packages - Mde
 Path Separator Character    路徑分隔符號字元
 [[Multiple_Workspace]]                                
                                                     
+Platform Configuration Database (PCD(s)) 平台配置資料庫
+[[EDK-II-Ddebugging]]
+
 Platform Feature(s)      平台功能
 [[IntelAtomProcessorE3900]]                                
                                               
