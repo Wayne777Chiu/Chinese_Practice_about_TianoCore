@@ -15,6 +15,9 @@ Base Module(s)          基底模組
 Binary Image(s)         二進制映像檔 
 [[MinnowBoardMax]]                  
                                     
+Break Point             中斷點
+[[How-to-debug-OVMF-with-QEMU-using-GDB]]        
+
 Boot services           開機過程服務
                                             
 Codebase                源碼基底 
@@ -52,6 +55,9 @@ Driver                 驅動程式
 Edit Menu                編輯選單
 [[Using-EDK-II-with-Native-GCC]]  
                                        
+Entry Point              (程式)進入點
+[[How-to-debug-OVMF-with-QEMU-using-GDB]]                             
+                                                 
 Environment Variable     環境變數
 [[Using-EDK-II-with-Native-GCC]]  
                                   
@@ -60,7 +66,7 @@ expansion boards        擴充板
                                  
 Field                      位元區段
 [[EDK-II-Ddebugging]]                   
-
+                                          
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]           
                                      
@@ -71,8 +77,8 @@ Git Clone                    Git 克隆
 [[Windows-systems]]                  
                                        
 Git Pull                     Git 拉取
-[[Windows-systems]]    
-
+[[Windows-systems]]                          
+                                                
 Git Repositor(y|ies)           Git 倉儲
 [[Windows-systems]]                      
                                          
@@ -86,6 +92,9 @@ Legacy BIOS                 傳統式 BIOS
 [[UEFI-UBUNTU]]                        
                                               
 Librar(y|ies) Instance(s)   函式庫實例
+                                          
+Local Variable(s)           區域變數
+[[How-to-debug-OVMF-with-QEMU-using-GDB]]     
                                            
 Industry Standard       工業標準
                                  
@@ -126,8 +135,8 @@ Path Separator Character    路徑分隔符號字元
 [[Multiple_Workspace]]                                
                                                     
 Platform Configuration Database (PCD(s)) 平台配置資料庫
-[[EDK-II-Ddebugging]]
-
+[[EDK-II-Ddebugging]]                                      
+                                                        
 Platform Feature(s)      平台功能
 [[IntelAtomProcessorE3900]]                                
                                               
@@ -163,9 +172,12 @@ Security Issue          安全性問題
 Shell                     殼層 (通常指使用者使用介面)   
 [[Using-EDK-II-with-Native-GCC]]  
                                                  
-Source Level Debug            源碼等級偵錯
-[[Nasm-Setup]]
+Source Layout Window       源碼佈局視窗                                                 
+[[How-to-debug-OVMF-with-QEMU-using-GDB]]   
 
+Source Level Debug            源碼等級偵錯
+[[Nasm-Setup]]                           
+                                                              
 step-by-step instructions   單步(驟)指示
 [[Windows-systems]] [[Using-EDK-II-with-Native-GCC]]                   
                                   
@@ -189,8 +201,8 @@ Web Browser(s)           網頁瀏覽器
                                         
 Workspace                 工作區
 [[Windows-systems]]                  
-
-V.S
+                                             
+V.S 
 
 Web vs Internet
     --> 如何用一句英文解釋 10 個易混淆的熱門科技字
