@@ -120,6 +120,9 @@ NetWork                  網絡
 Source Build Instructions 原始碼建置說明
 [[MinnowBoardMax]]              
                                        
+Open Compute Project(OCP)           開放伺服器計畫
+[[EDK II Platforms]]                            
+                                                   
 Open Source Hardware Association     開源硬體協會
 [[IntelAtomProcessorE3900]]     
                                       
