@@ -107,7 +107,7 @@ Continuing.
 ### 在 QEMU 視窗上再次調用你的應用程式
 ```
 Shell> fs0:
-Fs0J:\> SampleApp.efi
+Fs0:\> SampleApp.efi
 ```
 
 GDB 將觸及你的 UEFI 應用程式的進入點的中斷點且你能夠開始用源碼偵錯的方式偵錯。
