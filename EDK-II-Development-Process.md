@@ -1,3 +1,50 @@
+(2019/03/08)
+在你的建置環境裡下載最新版 EDK II 開發專案時，先查看 [[Getting Started with EDK II]] 。
+
+你是使用 git 的新手嗎? 如果是， [[git新手|New to git]] 頁面可能是有幫助的。
+
+EDK II 專案的開發者流程
+----------------------
+
+1. 建設 EDK II 樹，如果你還沒有。
+
+    * 在 [[SourceForge to Github Quick Start]] 頁面的文件
+
+2. 創建和切換 (checkout) 一個主題分支 (topic branch) 給新的功能或臭蟲修正
+    `$ git checkout -b <new-dev-branch> origin/master`
+
+3. 在工作樹上做改變
+
+4. 中斷工作樹上的改變到沒有破壞*二元查找* (*git bisect*) 的獨立提交。
+    - [提交-分區](Commit-Partitioning "wikilink")
+
+    - 預存所有的修正: `$ git add -u` 
+
+    - 追蹤 (add) 新的檔案: `$ git add <path-to-new-file>`
+
+    - 使用 git 提示去選擇預存區的改變: `$ git add -p`
+
+5. 當寫下提交的訊息時，依循以下訂好的提交訊息模板
+ 
+    - [提交-訊息-格式](Commit-Message-Format "wikilink")
+
+    - 提交預存的改變: `$ git commit`
+
+      - 加上 `-s` 參數 (小寫???)
+
+5.  Follow the commit message template given below when writing commit
+    messages
+
+    - [Commit-Message-Format](Commit-Message-Format "wikilink")
+
+    - To commit staged changes: `$ git commit`
+
+      - Add the `-s` parameter to automatically append your
+        Signed-off-by tag to the commit message.
+
+
+
+# 原文
 First check out [[Getting Started with EDK II]] for downloading the
 latest EDK II development project with your build environment.
 

@@ -76,12 +76,18 @@ General Purpose x86 Assembler 通用x86組譯器
 Git Clone                    Git 克隆
 [[Windows-systems]]                  
                                        
+Git Commit                   Git  提交
+[[EDK-II-Development-Process]]         
+                                      
 Git Pull                     Git 拉取
 [[Windows-systems]]                          
                                                 
 Git Repositor(y|ies)           Git 倉儲
 [[Windows-systems]]                      
                                          
+Git Stage                      Git 預存
+[[EDK-II-Development-Process]]           
+                                           
 Graphical User Interface (GUI)  圖形使用者介面
 [[Windows-systems]]                             
                                             
@@ -196,6 +202,9 @@ Terminal Program         終端程式
 Toolchain                 工具鏈      
 [[Using-EDK-II-with-Native-GCC]]       
                                              
+Topic Branch               主題分支
+[[EDK-II-Development-Process]]               
+
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using-EDK-II-with-Native-GCC]]                                     
                                              
@@ -225,9 +234,15 @@ instruction vs command
     Git Pull                 Git 拉取
         --> 2.5 Git 基礎 - 與遠端協同工作
             --> refer: https://git-scm.com/book/zh-tw/ 
+    Git Stage                Git 預存
+        --> 2.2 Git 基礎 - 紀錄變更到版本庫中                 
+            --> https://git-scm.com/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E7%B4%80%E9%8C%84%E8%AE%8A%E6%9B%B4%E5%88%B0%E7%89%88%E6%9C%AC%E5%BA%AB%E4%B8%AD
     Git Repositor(y|ies)     Git 倉儲
         --> 2.1 Git 基礎 - 取得一個 Git 倉儲 
             --> refer: https://git-scm.com/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97%E4%B8%80%E5%80%8B-Git-%E5%80%89%E5%84%B2
+    another refer: 
+        --> 阮一峰 Git 教程
+            --> https://www.bookstack.cn/read/git-tutorial/docs-commands-git-add.md
 
 某參照: 
     目的查詢 (Conf Files)
