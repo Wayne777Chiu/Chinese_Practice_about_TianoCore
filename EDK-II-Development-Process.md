@@ -30,17 +30,18 @@ EDK II 專案的開發者流程
 
     - 提交預存的改變: `$ git commit`
 
-      - 加上 `-s` 參數 (小寫???)
+      - 加上 `-s` 參數 去自動附加署名 (Signed-off-by)標籤到提交訊息。
 
-5.  Follow the commit message template given below when writing commit
-    messages
+6.  Use the ‘PatchCheck.py’ script under ‘edk2\\BaseTools\\Scripts’
+    directory to verify the commits are correctly formatted
 
-    - [Commit-Message-Format](Commit-Message-Format "wikilink")
+    - To check the latest <N> changes: `$ python BaseTools/Scripts/PatchCheck.py -<N>`
 
-    - To commit staged changes: `$ git commit`
+      - For example, 2 changes would be: `$ python BaseTools/Scripts/PatchCheck.py -2`
 
-      - Add the `-s` parameter to automatically append your
-        Signed-off-by tag to the commit message.
+    - It is strongly recommended that you run PatchCheck.py after each
+      commit. You can then easily amend the commit to correct any
+      issues.
 
 
 

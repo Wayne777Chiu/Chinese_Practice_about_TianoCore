@@ -17,7 +17,7 @@ Binary Image(s)         二進制映像檔
                                     
 Break Point             中斷點
 [[How-to-debug-OVMF-with-QEMU-using-GDB]]        
-
+                                             
 Boot services           開機過程服務
                                             
 Codebase                源碼基底 
@@ -181,9 +181,12 @@ Security Issue          安全性問題
 Shell                     殼層 (通常指使用者使用介面)   
 [[Using-EDK-II-with-Native-GCC]]  
                                                  
+Signed-off-by              (Git) 署名
+[[EDK-II-Development-Process]]
+                                                    
 Source Layout Window       源碼佈局視窗                                                 
 [[How-to-debug-OVMF-with-QEMU-using-GDB]]   
-
+                                           
 Source Level Debug            源碼等級偵錯
 [[Nasm-Setup]]                           
                                                               
@@ -204,7 +207,7 @@ Toolchain                 工具鏈
                                              
 Topic Branch               主題分支
 [[EDK-II-Development-Process]]               
-
+                                         
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using-EDK-II-with-Native-GCC]]                                     
                                              
@@ -243,7 +246,9 @@ instruction vs command
     another refer: 
         --> 阮一峰 Git 教程
             --> https://www.bookstack.cn/read/git-tutorial/docs-commands-git-add.md
-
+    Signed-of-by vs. Signature
+        --> 为什么要Sign Off？
+            --> https://segmentfault.com/q/1010000004044749
 某參照: 
     目的查詢 (Conf Files)
     (之乎) config、option、setting这三者在程序世界里是什么区别？
