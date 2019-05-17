@@ -32,18 +32,53 @@ EDK II 專案的開發者流程
 
       - 加上 `-s` 參數 去自動附加署名 (Signed-off-by)標籤到提交訊息。
 
-6.  
+6. 使用在 ‘edk2\\BaseTools\\Scripts’ 目錄之下的 ‘PatchCheck.py’ 腳本來驗證提交是正確的格式
 
-6.  Use the ‘PatchCheck.py’ script under ‘edk2\\BaseTools\\Scripts’
-    directory to verify the commits are correctly formatted
+    - 要檢查最後 <N> 次感變: `$ python BaseTools/Scripts/PatchCheck.py -<N>`
 
-    - To check the latest <N> changes: `$ python BaseTools/Scripts/PatchCheck.py -<N>`
+      - 例如，兩個改變就會是: `$ python BaseTools/Scripts/PatchCheck.py -2`
 
-      - For example, 2 changes would be: `$ python BaseTools/Scripts/PatchCheck.py -2`
+    - 強烈建議每次提交之後都執行 PatchCheck.py。 然後你能更容易修改 (amend) 提交去改正問題。
 
-    - It is strongly recommended that you run PatchCheck.py after each
-      commit. You can then easily amend the commit to correct any
-      issues.
+7. 獲取最新的改變從 origin
+
+    `$ git fetch origin`
+
+    注意: 這是 origin/master 的更新，不是你的在地的 master 分支。 (origin/master 可能有較新的提交比 master。)
+
+8. 重定基這個主題分支到 (onto) master 分支
+
+    `$ git rebase origin/master`
+
+9. 創造補丁 (patch) (序列) 到 [[edk2-devel]] 郵件列表
+  
+    - 清除所有舊的補丁: `$ rm *.patch`
+
+    - 生成新的補丁檔: `$ git format-patch -M --thread origin/master`
+
+9. Create patch (serial) to the [[edk2-devel]] mailing list
+
+    - Clean out any old patches: `$ rm *.patch`
+
+    - Generate new patch files: `$ git format-patch -M --thread origin/master`
+
+      - Add the `--cover-letter` parameter for long patch series. (Be
+        sure to edit the cover-letter.)
+
+      - Add the `--subject-prefix="PATCH v2"` if you are sending out a
+        second version of the patch series.
+
+    - `$ git send-email *.patch`
+
+10. Modify local commits based on the review feedbacks and repeat steps
+    3 to 9
+
+    - For the latest commit, you can use `$ git commit --amend`
+
+    - For multiple commits use `$ git rebase -i origin/master`
+
+    - Consult your git gurus on edk2-devel or irc channel if you have
+      questions.
 
 
 

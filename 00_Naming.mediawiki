@@ -140,6 +140,9 @@ OVMF (Open Virtual Machine Firmware)   開放性的虛擬機器韌體
                                                          
 Package                 物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
                                                                                     
+Patch                        補丁
+[[EDK-II-Development-Process]]   
+                                                       
 Path Separator Character    路徑分隔符號字元
 [[Multiple_Workspace]]                                
                                                     
@@ -246,6 +249,8 @@ instruction vs command
     another refer: 
         --> 阮一峰 Git 教程
             --> https://www.bookstack.cn/read/git-tutorial/docs-commands-git-add.md
+        --> Yu-Cheng Chuang’s Blog - Git-rebase 小筆記
+            --> https://blog.yorkxin.org/2011/07/29/git-rebase.html
     Signed-of-by vs. Signature
         --> 为什么要Sign Off？
             --> https://segmentfault.com/q/1010000004044749
