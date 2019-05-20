@@ -32,6 +32,9 @@ Command Terminal        指令終端機
 Conf File(s)            配置檔
 [[Common instructions]]             
                                            
+Cover-Letter                   涵蓋文稿
+[[EDK-II-Development-Process]]               
+                                               
 Customer Reference Board(CRB)  顧客參照板
 [[IntelAtomProcessorE3900]]             
                                          
@@ -82,6 +85,9 @@ Git Commit                   Git  提交
 Git Pull                     Git 拉取
 [[Windows-systems]]                          
                                                 
+Git Rebase                     Git 重定基
+[[EDK-II-Development-Process]]                 
+                                                                                             
 Git Repositor(y|ies)           Git 倉儲
 [[Windows-systems]]                      
                                          
@@ -94,6 +100,22 @@ Graphical User Interface (GUI)  圖形使用者介面
 Hyperthreading             超線程
 [[Common instructions]]                  
                                            
+Industry Standard       工業標準
+                                 
+Infrastructure          基礎要件                                     
+                                          
+Integration Branch       整和分支
+[[EDK-II-Development-Process]] 
+                                 
+Intellectual Property   智慧產權 
+[[MinnowBoardMax]]                      
+                                      
+Internet prox(y|ies)     網路代理伺服器  
+[[Using-EDK-II-with-Native-GCC]]      
+                                       
+Internet Relay Chat (IRC)   網際網路中繼聊天
+[[EDK-II-Development-Process]]                   
+                                             
 Legacy BIOS                 傳統式 BIOS
 [[UEFI-UBUNTU]]                        
                                               
@@ -101,17 +123,7 @@ Librar(y|ies) Instance(s)   函式庫實例
                                           
 Local Variable(s)           區域變數
 [[How-to-debug-OVMF-with-QEMU-using-GDB]]     
-                                           
-Industry Standard       工業標準
-                                 
-Infrastructure          基礎要件
-                                 
-Intellectual Property   智慧產權 
-[[MinnowBoardMax]]                      
-                                      
-Internet prox(y|ies)     網路代理伺服器  
-[[Using-EDK-II-with-Native-GCC]]      
-                                 
+                                               
 Macro(s)                 巨集
                                             
 Maker                    創客
@@ -234,6 +246,9 @@ instruction vs command
             while instruction is (uncountable) the act of instructing, teaching, or furnishing with information or knowledge.
             As a verb command is to order, give orders; to compel or direct with authority. 
 翻譯參考
+    Git am                    Git 使用修補檔 (format-patch)
+        --> .3 分散式 Git - 專案的管理
+            --> https://git-scm.com/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%88%E6%A1%88%E7%9A%84%E7%AE%A1%E7%90%86
     Git Clone                 Git 克隆
         --> 2.1 Git 基礎 - 取得一個 Git 倉儲
             --> refer: https://git-scm.com/book/zh-tw/
@@ -246,6 +261,9 @@ instruction vs command
     Git Repositor(y|ies)     Git 倉儲
         --> 2.1 Git 基礎 - 取得一個 Git 倉儲 
             --> refer: https://git-scm.com/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97%E4%B8%80%E5%80%8B-Git-%E5%80%89%E5%84%B2
+    (git) cover-letter             涵蓋文稿
+        --> git-format-patch - Prepare patches for e-mail submission
+            --> https://git-scm.com/docs/git-format-patch
     another refer: 
         --> 阮一峰 Git 教程
             --> https://www.bookstack.cn/read/git-tutorial/docs-commands-git-add.md

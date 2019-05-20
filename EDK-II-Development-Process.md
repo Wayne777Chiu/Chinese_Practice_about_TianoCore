@@ -50,35 +50,65 @@ EDK II 專案的開發者流程
 
     `$ git rebase origin/master`
 
-9. 創造補丁 (patch) (序列) 到 [[edk2-devel]] 郵件列表
+9. 創造補丁 (patch) (系列) 到 [[edk2-devel]] 郵件列表
   
     - 清除所有舊的補丁: `$ rm *.patch`
 
     - 生成新的補丁檔: `$ git format-patch -M --thread origin/master`
 
-9. Create patch (serial) to the [[edk2-devel]] mailing list
+      - 加入 `--cover-letter` 參數針對長期補丁系列。 (記得要編輯涵蓋文稿)
 
-    - Clean out any old patches: `$ rm *.patch`
+      - 加入 `--subject-prefix="PATCH v2` 假如你正在送出第二版本的補丁系列。
 
-    - Generate new patch files: `$ git format-patch -M --thread origin/master`
+    - `$ git send-email *.patch` 
 
-      - Add the `--cover-letter` parameter for long patch series. (Be
-        sure to edit the cover-letter.)
+10. 基於評論的反饋來修改在地的提交(資訊)和重複步驟 3 到 9
 
-      - Add the `--subject-prefix="PATCH v2"` if you are sending out a
-        second version of the patch series.
+    - 對最新的提交，你能使用 `$ git commit --amend`
 
-    - `$ git send-email *.patch`
+    - 對多重的提交使用 `$ git rebase -i origin/master`
 
-10. Modify local commits based on the review feedbacks and repeat steps
-    3 to 9
+    - 有問題，可諮詢你在 edk2-devel或網路中繼聊天頻道上的 git 權威。
 
-    - For the latest commit, you can use `$ git commit --amend`
+EDK II 專案的維護者流程
+----------------------
 
-    - For multiple commits use `$ git rebase -i origin/master`
+1. 決定對套裝而言一個補丁是否有符合審查需求。
 
-    - Consult your git gurus on edk2-devel or irc channel if you have
-      questions.
+2. 從伺服器更新 orgin/master
+
+    `$ git fetch origin`
+
+3. 創建和切換到一個整合分支
+
+    `$ git checkout -b <新的整合分支> origin/master`
+
+4. 新增提交在一個整合分支上
+
+    `$ git am <patch-file>`
+
+5.  重定基提交訊息去涵蓋任何重新審定或其他的歸屬
+
+    `$ git rebase -i origin/master`
+
+    - 編輯行(內容)的提交利用一個 'r' 或 'reword'。 這將允許你去新增重新審定的歸屬。
+
+5.  Rebase commit message to include any reviewed-by or other
+    attributions
+
+    `$ git rebase -i origin/master`
+
+    - Edit lines to have an 'r' to 'reword' the commit. This will
+      allow you to add the Reviewed-by attributions.
+
+6.  Push changes to the EDK II project repository
+    -   Pushing the integration branch directly to origin/master is
+        preferred
+
+    `$ git push origin HEAD:master`
+
+    - Using the `--dry-run` parameter will show exactly what is going
+      to be updated. Use this if you are paranoid. :)
 
 
 
