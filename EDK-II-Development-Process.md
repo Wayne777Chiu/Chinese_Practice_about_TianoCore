@@ -93,7 +93,7 @@ EDK II 專案的維護者流程
 
     - 編輯行(內容)的提交利用一個 'r' 或 'reword'。 這將允許你去加入這個重新審定之歸屬。
 
-    '''編按''': 例如以下
+    '''編按''': 例如以下 加入重新審定之歸屬至master 參考自[git rebase](https://git-scm.com/docs/git-rebase)
     <pre>
         o---o---o---o---o---o---o---o  master
          \
@@ -110,24 +110,33 @@ EDK II 專案的維護者流程
                         *---*---*  topic
     </pre>
 
-
-5.  Rebase commit message to include any reviewed-by or other
-    attributions
-
-    `$ git rebase -i origin/master`
-
-    - Edit lines to have an 'r' to 'reword' the commit. This will
-      allow you to add the Reviewed-by attributions.
-
-6.  Push changes to the EDK II project repository
-    -   Pushing the integration branch directly to origin/master is
-        preferred
+6.  推送改變到 EDK II 專案倉儲
+    - 直接推送整合的分支到 origin/master 是首選
 
     `$ git push origin HEAD:master`
 
-    - Using the `--dry-run` parameter will show exactly what is going
-      to be updated. Use this if you are paranoid. :)
+    - 使用 `--dry-run` 參數將顯示究竟更新了甚麼。 使用這個如果你很堅持的話。 :)
 
+更新你的 master 分支
+-------------------
+
+1. 從 origin 上獲取最新的改變
+
+    `$ git fetch origin`
+
+2. 切換到當地的 master 分支
+
+    `$ git checkout master`
+
+3. 採用最新的伺服器端上的改變到你的當地 master 分支
+
+    `$ git rebase origin/master`
+
+**也可參考**
+------------
+
+-   [[提交-訊息-格式|Commit-Message-Format]]
+-   [[編碼風格|Code-Style]]
 
 
 # 原文
