@@ -87,11 +87,29 @@ EDK II 專案的維護者流程
 
     `$ git am <patch-file>`
 
-5.  重定基提交訊息去涵蓋任何重新審定或其他的歸屬
+5.  重定基提交訊息去涵蓋任何或其他的被歸屬重新審定
 
     `$ git rebase -i origin/master`
 
-    - 編輯行(內容)的提交利用一個 'r' 或 'reword'。 這將允許你去新增重新審定的歸屬。
+    - 編輯行(內容)的提交利用一個 'r' 或 'reword'。 這將允許你去加入這個重新審定之歸屬。
+
+    '''編按''': 例如以下
+    <pre>
+        o---o---o---o---o---o---o---o  master
+         \
+      o---o---o---o---o  subsystem
+                       \
+                        *---*---*  topic
+    </pre>
+    to 
+    <pre>
+        o---o---o---o---o---o---o---o  master
+         \                           \
+      o---o---o---o---o               o'--o'--o'--o'--o'  subsystem
+                       \
+                        *---*---*  topic
+    </pre>
+
 
 5.  Rebase commit message to include any reviewed-by or other
     attributions
