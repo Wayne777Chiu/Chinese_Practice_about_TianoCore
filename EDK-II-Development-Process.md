@@ -11,6 +11,7 @@ EDK II 專案的開發者流程
     * 在 [[SourceForge to Github Quick Start]] 頁面的文件
 
 2. 創建和切換 (checkout) 一個主題分支 (topic branch) 給新的功能或臭蟲修正
+
     `$ git checkout -b <new-dev-branch> origin/master`
 
 3. 在工作樹上做改變
@@ -34,17 +35,17 @@ EDK II 專案的開發者流程
 
 6. 使用在 ‘edk2\\BaseTools\\Scripts’ 目錄之下的 ‘PatchCheck.py’ 腳本來驗證提交是正確的格式
 
-    - 要檢查最後 <N> 次感變: `$ python BaseTools/Scripts/PatchCheck.py -<N>`
+    - 要檢查最後 <N> 次改變: `$ python BaseTools/Scripts/PatchCheck.py -<N>`
 
       - 例如，兩個改變就會是: `$ python BaseTools/Scripts/PatchCheck.py -2`
 
     - 強烈建議每次提交之後都執行 PatchCheck.py。 然後你能更容易修改 (amend) 提交去改正問題。
 
-7. 獲取最新的改變從 origin
+7. 從 origin獲取最新的改變
 
     `$ git fetch origin`
 
-    注意: 這是 origin/master 的更新，不是你的在地的 master 分支。 (origin/master 可能有較新的提交比 master。)
+    注意: 這是 origin/master 的更新，不是你的在地的 master 分支。 (origin/master 可能比 master有更新的提交。)
 
 8. 重定基這個主題分支到 (onto) master 分支
 
@@ -91,9 +92,9 @@ EDK II 專案的維護者流程
 
     `$ git rebase -i origin/master`
 
-    - 編輯行(內容)的提交利用一個 'r' 或 'reword'。 這將允許你去加入這個重新審定之歸屬。
+    - 編輯行(內容)的提交利用一個 `r` 或 `reword`。 這將允許你去加入這個重新審定之歸屬。
 
-    '''編按''': 例如以下 加入重新審定之歸屬至master 參考自[git rebase](https://git-scm.com/docs/git-rebase)
+    __編按__: 例如以下 加入重新審定之歸屬至master 參考自[git rebase](https://git-scm.com/docs/git-rebase)
     <pre>
         o---o---o---o---o---o---o---o  master
          \
