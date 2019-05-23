@@ -20,9 +20,18 @@ Binary Image(s)         二進制映像檔
                                     
 Break Point             中斷點
 [[How-to-debug-OVMF-with-QEMU-using-GDB]]        
-                                             
+                                          
+Boot Image(s)              開機映像檔
+[[EDK-II-Specifications]]          
+                                              
 Boot services           開機過程服務
-                                            
+                                                 
+C Coding Standards      C語言編碼標準
+[[EDK-II-Specifications]]                              
+                                          
+Capsule Image(s)              膠囊映像檔
+[[EDK-II-Specifications]]          
+                                           
 Codebase                源碼基底 
 [[IntelAtomProcessorE3900]]
                                    
@@ -33,7 +42,7 @@ Command Terminal        指令終端機
 [[Using-EDK-II-with-Native-GCC]]         
                                     
 Conf File(s)            配置檔
-[[Common instructions]]             
+[[Common instructions]]              
                                            
 Cover-Letter                   涵蓋文稿
 [[EDK-II-Development-Process]]               
@@ -47,11 +56,15 @@ Debug Host Application     偵錯主機應用程式
 Debugger Agent            偵錯代理
 [[SourceLevelDebugPkg]]              
                                   
+Declaration File (DEC)            宣告檔
+[[EDK-II-Specifications]]        
+                                            
 Definition(s)          定義         
 [[MdePkg]]                          
                               
 Description Files       組態描述檔
-                                
+[[EDK-II-Specifications]]                   
+                                       
 Document                v. 載明
 [[MdePkg]]                          
                                  
@@ -73,12 +86,21 @@ Environment Variable     環境變數
 expansion boards        擴充板
 [[MinnowBoardMax]]                   
                                  
-Field                      位元區段
+Field (for bit)         (位元)區段
 [[EDK-II-Ddebugging]]                   
                                           
+Field (for data file)    (資料)欄位
+[[EDK-II-Specifications]]        
+                                            
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]           
                                      
+Firmware Volume (FV)           韌體冊
+[[EDK-II-Specifications]]                  
+                                                
+Flash Description File (FDF)     刷錄描述檔
+[[EDK-II-Specifications]]         
+                                               
 General Purpose x86 Assembler 通用x86組譯器
 [[Using-EDK-II-with-Native-GCC]]           
                                           
@@ -103,14 +125,20 @@ Git Stage                      Git 預存
 Graphical User Interface (GUI)  圖形使用者介面
 [[Windows-systems]]                             
                                             
-Hyperthreading             超線程
+Hyperthreading             超線程              
 [[Common instructions]]                  
                                            
+Image Definition File (IDF)           映像定義檔
+[[EDK-II-Specifications]]         
+                                                       
 Independent Hardware Vendor (IHV)       獨立硬體供應商
 [[Driver-Developer]]                            
                                                
 Industry Standard       工業標準
-                                 
+                                             
+Information File                     資訊檔
+[[EDK-II-Specifications]]         
+                                                       
 Infrastructure          基礎要件                                     
                                           
 Integration Branch       整和分支
@@ -138,6 +166,9 @@ Macro(s)                 巨集
 Maker                    創客
 [[IntelAtomProcessorE3900]]             
                                          
+Meta-Data                    後設資料 (直譯 解釋資料的資料)
+[[EDK-II-Specifications]]         
+                                                       
 Native                   原生
 [[Using-EDK-II-with-Native-GCC]]      
                                      
@@ -155,7 +186,7 @@ Open Source Hardware Association     開源硬體協會
                                       
 Operating Systems Vendor  (OSV)      作業系統供應商
 [[Driver-Developer]]                    
-
+                                                       
 OS shim loader            OS 墊片載入器
 [[UEFI-UBUNTU]]                                  
                                     
@@ -171,8 +202,11 @@ Path Separator Character    路徑分隔符號字元
 [[Multiple_Workspace]]                                
                                                     
 Platform Configuration Database (PCD(s)) 平台配置資料庫
-[[EDK-II-Ddebugging]]                                      
+[[EDK-II-Ddebugging]] [[EDK-II-Specifications]]                                        
                                                         
+Platform Description File (DES)     平台組態描述檔
+[[EDK-II-Specifications]]                               
+                                               
 Platform Feature(s)      平台功能
 [[IntelAtomProcessorE3900]]                                
                                               
@@ -226,6 +260,9 @@ TBD (To Be Determined)  待確定
 Tech Support             技術支援
 [[Start-using-UEFI]]             
                                  
+Template Specification             樣板規範
+[[EDK-II-Specifications]]                                
+                                              
 Terminal Program         終端程式                                    
 [[Using-EDK-II-with-Native-GCC]]                               
                                  
@@ -237,7 +274,7 @@ Topic Branch               主題分支
                                          
 Unified Extensible Firmware Interface (UEFI) 統一可延伸韌體介面
 [[Driver-Developer]]
-
+                                                           
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using-EDK-II-with-Native-GCC]]                                     
                                              
@@ -287,6 +324,10 @@ instruction vs command
     Signed-of-by vs. Signature
         --> 为什么要Sign Off？
             --> https://segmentfault.com/q/1010000004044749
+
+    Meta-Data 
+        --> 技術服務小百科 後設資料( Metadata ) 
+            --> http://techserviceslibrary.blogspot.com/2011/04/metadata.html
 某參照: 
     目的查詢 (Conf Files)
     (之乎) config、option、setting这三者在程序世界里是什么区别？
