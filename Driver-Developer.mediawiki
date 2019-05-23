@@ -17,7 +17,7 @@
 
 <tr>
     <td>[[UEFI Driver Wizard|UEFI 驅動程式精靈]]</td>
-    <td> 這 [[UEFI Driver Wizard|UEFI 驅動程式精靈]] 是一個使用圖形介面基礎的樣板產生器的開放源碼程式設計用來加速新 UEFI 驅動程式的開發。這個精靈對大多數一般類型的驅動程式提供基本的支援。請參考 UEFI 驅動程式精靈 [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard/README.txt ReadMe] 。查看 [[Wizard-Getting-Started|開始精靈]] 指南來(得到)更進一步資訊。下載這個 UEFI 驅動精靈 MSI (微軟安裝程序)或使用 [https://svn.code.sf.net/p/edk2share/code/trunk/DriverDeveloper/UefiDriverWizard/ SVN Link] 來下載 Linux/Unix/Mac 版本。</td>
+    <td> 這 [[UEFI Driver Wizard|UEFI 驅動程式精靈]] 是一個使用圖形介面基礎的樣板產生器的開放源碼程式設計用來加速新 UEFI 驅動程式的開發。這個精靈對大多數一般類型的驅動程式提供基本的支援。請參考 UEFI 驅動程式精靈的 [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard/README.txt ReadMe] 。查看 [[Wizard-Getting-Started|開始精靈]] 指南來(得到)更進一步資訊。下載這個 UEFI 驅動精靈 MSI (微軟安裝程序)或使用 [https://svn.code.sf.net/p/edk2share/code/trunk/DriverDeveloper/UefiDriverWizard/ SVN 連結] 來下載 Linux/Unix/Mac 版本。</td>
 </tr>
 
 <tr>
