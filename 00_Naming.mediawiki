@@ -91,7 +91,7 @@ Field (for bit)         (位元)區段
                                           
 Field (for data file)    (資料)欄位
 [[EDK-II-Specifications]]        
-                                            
+
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]           
                                      
@@ -297,6 +297,10 @@ instruction vs command
             command is an order, a compelling task given to an inferior or a machine 
             while instruction is (uncountable) the act of instructing, teaching, or furnishing with information or knowledge.
             As a verb command is to order, give orders; to compel or direct with authority. 
+framework vs architechture
+    --> 小朱® 的技術隨手寫 - Framework 和 Architecture 有何不同?
+        --> https://dotblogs.com.tw/regionbbs/2009/06/12/framework_vs_architecture
+
 翻譯參考
     Git am                    Git 使用修補檔 (format-patch)
         --> .3 分散式 Git - 專案的管理
