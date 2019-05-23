@@ -1,3 +1,45 @@
+(2019/03/08)
+== '''利用EDK II 來啟動 UEFI 驅動程式開發者的資源''' ==
+
+本頁是被獨立硬體供應商 (IHV), 作業系統供應商 (OSV)，和應用程式設計師用來支援統一可延伸韌體介面 (UEFI) 開發。本頁包括 UEFI 驅動程式精靈 (Wizard) 和 UEFI 驅動程式編碼指南 (DWG) 等給 UEFI 驅動程式開發者的資源。
+
+<div class="t_projects">
+
+<table>
+<tr>
+    <th colspan="4" style="background-color:#a9c6dd">利用 EDK II 的 UEFI 驅動程式開發者資源</th>
+</tr>
+    <tr>
+        <th>下載</th>
+        <th>描述</th>
+    </tr>
+<tr></tr>
+
+<tr>
+    <td>[[UEFI Driver Wizard|UEFI 驅動程式精靈]]</td>
+    <td> 這 [[UEFI Driver Wizard|UEFI 驅動程式精靈]] 是一個使用圖形介面基礎的樣板產生器的開放源碼程式設計用來加速新 UEFI 驅動程式的開發。這個精靈對大多數一般類型的驅動程式提供基本的支援。請參考 UEFI 驅動程式精靈 [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard/README.txt ReadMe] 。查看 [[Wizard-Getting-Started|開始精靈]] 指南來(得到)更進一步資訊。下載這個 UEFI 驅動精靈 MSI (微軟安裝程序)或使用 [https://svn.code.sf.net/p/edk2share/code/trunk/DriverDeveloper/UefiDriverWizard/ SVN Link] 來下載 Linux/Unix/Mac 版本。</td>
+</tr>
+
+<tr>
+    <td>[[UEFI Driver Writer's Guide|UEFI 驅動程式編碼指南]]</td>
+    <td>這 [[UEFI Driver Writer's Guide|UEFI 驅動程式編碼指南(UEFI Driver Writer's Guide)]] (DWG) 是放在 gitbook。</td>
+</tr>
+
+<tr> 
+    <td>[[UDK2014.IHV Setup Guide|UDK2014 IHV]] (驅動程式開發發佈)</td>
+    <td>UEFI開發套件包 ([[UDK2014]]) 的子集套件被設計用來使用 UEFI 驅動程式精靈。這個發佈僅包含必要的套件給獨立硬體供應商 (IHV) 驅動程式開發，基於較舊的[[UDK2014]]發佈上。
+
+一般來說，明智的做法是使用更近的發佈 (ex. [[UDK2018]])。 這 UDK2014.IHV 子集合以歷史意義上仍被提供。
+
+檢視 [[UDK2014.IHV 建置手冊]] 去得到更多資訊。</td>
+</tr>
+
+</table>
+
+* 基於 Intel 平台上的額外資源請拜訪 [http://firmware.intel.com/ Intel® Architecture Firmware Resource Center]
+
+=原文=
+
 == '''Enabling Resources for UEFI Driver Developers Using EDK II'''==
 
 This page is designed to support Unified Extensible Firmware Interface ([[UEFI]]) development by independent hardware vendors (IHV), operating systems vendors (OSV), and application programmers. This page contains resources for UEFI driver developers including the UEFI Driver Wizard and the UEFI Driver Writers Guide (DWG).

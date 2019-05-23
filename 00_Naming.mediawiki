@@ -6,6 +6,9 @@
 Assembly Code           組合源碼
 [[Nasm-Setup]]                           
                                  
+Application Programmer    應用程式設計師
+[[Driver-Developer]]               
+                                         
 Backslash Character     反斜線字元
 [[Using-EDK-II-with-Native-GCC]]     
                                  
@@ -55,6 +58,9 @@ Document                v. 載明
 Driver                 驅動程式
 [[MdePkg]]                          
                                  
+Driver Writer Guide (DWG)  UEFI 驅動程式編碼指南
+[[Driver-Developer]]                         
+                                 
 Edit Menu                編輯選單
 [[Using-EDK-II-with-Native-GCC]]  
                                        
@@ -100,6 +106,9 @@ Graphical User Interface (GUI)  圖形使用者介面
 Hyperthreading             超線程
 [[Common instructions]]                  
                                            
+Independent Hardware Vendor (IHV)       獨立硬體供應商
+[[Driver-Developer]]                            
+                                               
 Industry Standard       工業標準
                                  
 Infrastructure          基礎要件                                     
@@ -144,6 +153,9 @@ Open Compute Project(OCP)           開放伺服器計畫
 Open Source Hardware Association     開源硬體協會
 [[IntelAtomProcessorE3900]]     
                                       
+Operating Systems Vendor  (OSV)      作業系統供應商
+[[Driver-Developer]]                    
+
 OS shim loader            OS 墊片載入器
 [[UEFI-UBUNTU]]                                  
                                     
@@ -223,6 +235,9 @@ Toolchain                 工具鏈
 Topic Branch               主題分支
 [[EDK-II-Development-Process]]               
                                          
+Unified Extensible Firmware Interface (UEFI) 統一可延伸韌體介面
+[[Driver-Developer]]
+
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using-EDK-II-with-Native-GCC]]                                     
                                              
