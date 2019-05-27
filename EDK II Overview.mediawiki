@@ -1,4 +1,24 @@
 <!-- [[Category:EDKII]] -->
+(2019/03/08)
+
+[http://www.tianocore.org/edk2/ EDK II] 專案是回應 EFI 社群的需求關於對 UEFI 和 PI開發上有更好的建置和版本追蹤環境。EDK II 與原生的 EDK 上主要不同點是 EDK II 的'''強化建置環境'''。
+這強化建置環境的優點包括了:
+
+* 操作系統獨立性
+* 在選擇編譯器與組譯器上的彈性
+* 使用開放源碼建置工具和應用程式來產生工作代碼的能力
+* 強化模組和模組套件的開發和建置能力
+* 建置配置工具和資訊集的使用來提供靈活的流程
+* 線上的源碼控制允許使用者去貢獻源碼和成為參與者
+
+EDK II 的加強建置環境與原生 EDK 的建置環境有很大的不同。 有很多新的觀念和功能在 EDK II 裡，將(建置)環境改變了。如果你熟悉原生的 EDK ，這些改變將是明顯的，當然它們對每個人的好處是很明顯的。新架構和套件所有人被寫入在 [[EDKII Packages|EDKII 套件包]] 裡。
+
+一個重要的注意事項，EDK II 的編譯結果與原生 EDK 是相同的，改變是只在建置環境裡影響源碼的那個層級。任何在源碼檔案上的改變僅是支援建置環境的改變，一旦創建模組，它們在功能上是相同的。
+
+
+
+= 原文 =
+<!-- [[Category:EDKII]] -->
 The [http://www.tianocore.org/edk2/ EDK II] project is the response to the EFI community’s request for a better build and version tracking environment for UEFI and PI development. The main difference between the EDK II to the original EDK is the '''Enhanced Build Environment''' of the EDK II. 
 The advantages of the Enhanced Build Environment include: 
 
