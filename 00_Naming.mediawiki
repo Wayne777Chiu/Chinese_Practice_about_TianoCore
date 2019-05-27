@@ -147,6 +147,9 @@ Integration Branch       整和分支
 Intellectual Property   智慧產權 
 [[MinnowBoardMax]]                      
                                       
+Internal Forms Representation (IFR)       內部表單展現
+[[EDK-II-Specifications]]         
+                                         
 Internet prox(y|ies)     網路代理伺服器  
 [[Using-EDK-II-with-Native-GCC]]      
                                        
@@ -272,12 +275,18 @@ Toolchain                 工具鏈
 Topic Branch               主題分支
 [[EDK-II-Development-Process]]               
                                          
+Unicode                    萬國碼、國際碼、統一碼、單一碼
+[[EDK-II-Specifications]]                               
+                                                      
 Unified Extensible Firmware Interface (UEFI) 統一可延伸韌體介面
-[[Driver-Developer]]
+[[Driver-Developer]]                                            
                                                            
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using-EDK-II-with-Native-GCC]]                                     
                                              
+Visual Forms Representation (VFR)      虛擬表單展現
+[[EDK-II-Specifications]]                               
+                                                      
 Web Browser(s)           網頁瀏覽器
 [[Using-EDK-II-with-Native-GCC]]         
                                         

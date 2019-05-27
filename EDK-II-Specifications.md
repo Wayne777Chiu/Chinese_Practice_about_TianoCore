@@ -7,7 +7,7 @@
 
 為了基本的認知建立和了解如何使用 EDK II 規範裡的檔案 [.DEC](#dec),[.DSC](#dsc) 和 [.INF](#inf) 的範例，可參考 wiki 頁面 [[建置描述檔|Build Description Files]] 。<Br>
 
-_EDK II 樣板規範 (Template Specification)_ 是一個使用來給一個新文件當成樣板的範例文件。完整內容關於如何協助 TianoCore 文件，請看 [這裡](https://github.com/tianocore-docs/edk2-TemplateSpecification/wiki) 的資訊
+_EDK II 樣板規範 (Template Specification)_ 是一個使用來給一個新文件當成樣板的範例文件。關於如何協助 TianoCore 文件的完整內容，請看 [這裡](https://github.com/tianocore-docs/edk2-TemplateSpecification/wiki) 的資訊
 
 **_每種規範的描述詳列於下_**
 
@@ -117,55 +117,54 @@ EDK II 平台配置資料庫 (PCD) 規範 -\[
 
 
 ## UNI
-Unicode Format File Specification -  \[
+單一碼格式檔案規範 -  \[
 [HTML   ](https://www.gitbook.com/read/book/edk2-docs/edk-ii-uni-specification),
 [PDF    ](https://www.gitbook.com/download/pdf/book/edk2-docs/edk-ii-uni-specification),
 [Mobi   ](https://www.gitbook.com/download/mobi/book/edk2-docs/edk-ii-uni-specification),
 [ePub   ](https://www.gitbook.com/download/epub/book/edk2-docs/edk-ii-uni-specification),
 [Gitbook](https://www.gitbook.com/book/edk2-docs/edk-ii-uni-specification),
 [GitHub ](https://github.com/tianocore-docs/edk2-UniSpecification)
-\] - This document describes the Multi-String build information (UNI) file format . See details in the Revision History in the document for more details.
+\] - 這文件描述多字串建置資訊 (UNI) 檔格式。詳細內容參見文件內校訂版本歷史。
 
 ## VFR
-Visual Form Representation Specification -\[
+虛擬表單呈現規範 -\[
 [HTML   ](https://www.gitbook.com/read/book/edk2-docs/edk-ii-vfr-specification),
 [PDF    ](https://www.gitbook.com/download/pdf/book/edk2-docs/edk-ii-vfr-specification),
 [Mobi   ](https://www.gitbook.com/download/mobi/book/edk2-docs/edk-ii-vfr-specification),
 [ePub   ](https://www.gitbook.com/download/epub/book/edk2-docs/edk-ii-vfr-specification),
 [Gitbook](https://www.gitbook.com/book/edk2-docs/edk-ii-vfr-specification),
 [GitHub ](https://github.com/tianocore-docs/edk2-VfrSpecification)
-\] - To simplify the creation of Internal Forms Representation (IFR), a high-level Visual Forms Representation (VFR) language is described in this document. Using this language syntax, a compiler can be designed to take an ordinary text file containing VFR as an input, and output IFR for use in a user’s program. There are various methods to define the VFR language.
+\] - 為了簡化內部表單展現的設計，一個高階虛擬表單展現語言在這文件描述。使用這個語言語法，編譯器能被設計去抓取傳統文本檔案包含 VFR 當輸入，和輸出 IFR 給使用者的程式來使用。 有各式各樣的方法去定義 VFR 語言。
 
 
-## C Coding Standards
-EDK II C Coding Standards Specification - \[
+## C 編碼標準
+EDK II C 編碼標準規範 - \[
 [HTML   ](https://www.gitbook.com/read/book/edk2-docs/edk-ii-c-coding-standards-specification),
 [PDF    ](https://www.gitbook.com/download/pdf/book/edk2-docs/edk-ii-c-coding-standards-specification),
 [Mobi   ](https://www.gitbook.com/download/mobi/book/edk2-docs/edk-ii-c-coding-standards-specification),
 [ePub   ](https://www.gitbook.com/download/epub/book/edk2-docs/edk-ii-c-coding-standards-specification),
 [Gitbook](https://www.gitbook.com/book/edk2-docs/edk-ii-c-coding-standards-specification),
 [GitHub ](https://github.com/tianocore-docs/edk2-CCodingStandardsSpecification)
-\] - The EDK II C Coding Standards Specification establishes a set of rules intended not as
-a constraint, but as an enabling philosophy which will:
-  * Establish uniformity of style.
-  * Set minimum information content requirements.
-  * Allow all programmers to easily understand the code.
-  * Facilitate support tasks by establishing uniform conventions.
-  * Ease documentation efforts by embedding the design documentation in the code.
-  * Reduce customer and new employee learning curves by providing accurate code documentation and uniform style.
-
-  These rules apply to all code developed.
+\] - EDK II C 編碼標準規範建立一個規矩叢，不是打算用來限制而是當成實行原理用來:
+  * 建立單一性風格。
+  * 設立最小資訊內容的需求。
+  * 允許所有程式設計師更容易理解原始碼。
+  * 藉著建立單一慣例加強支援任務。
+  * 利用源碼裡嵌入設計文件來簡化文件工作。
+  * 提供精準的源碼文件和單一風格減輕客戶和新進員工學習曲線。
+ 
+  這些規則適用所有的開發源碼。
 
 ---
 
-* **_EDK II Template Specification_** \[
+* **_EDK II 樣板規範_** \[
 [HTML   ](https://www.gitbook.com/read/book/edk2-docs/edk-ii-template-specification),
 [PDF    ](https://www.gitbook.com/download/pdf/book/edk2-docs/edk-ii-template-specification),
 [Mobi   ](https://www.gitbook.com/download/mobi/book/edk2-docs/edk-ii-template-specification),
 [ePub   ](https://www.gitbook.com/download/epub/book/edk2-docs/edk-ii-template-specification),
 [Gitbook](https://www.gitbook.com/book/edk2-docs/edk-ii-template-specification),
 [GitHub ](https://github.com/tianocore-docs/edk2-TemplateSpecification)
-\] This document is a template that can be copied to start a new Tianocore Gitbook document. It also provides examples for styles and formats commonly found in Tianocore specifications.
+\] 這文件是一個樣板能被複製去開始(創造)一個新的 Tianocore Gitbook 文件。它也提供了可在 Tianocore 規範裡找到的一般性風格和格式的範例。
  
 # 原文
 # **EDK II Specifications**
