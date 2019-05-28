@@ -21,6 +21,7 @@
 ******* [[Build Description Files]]
 ****** [[Code Style]]
 ****** [[EDK II Overview]]
+******* [[EDKII Packages]]
 ****** [[edk2-devel]]
 ****** [[Reporting Security Issues]]
 ****** [[Tasks]]
