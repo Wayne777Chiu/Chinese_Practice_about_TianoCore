@@ -1,11 +1,12 @@
 (2019/03/08)
+
 <span style="font-size: 15.0pt; text-align: center; font-family: Verdana; color: #004280; font-weight: bold; font-style: normal">'''如何編寫一個簡單的 EDK II UEFI 應用程式 '''
 </span>
 
 === 1) 創造工作區目錄 ===
 例 <span style="font-family: Courier">mkdir edk2</span>
 === 2) 下載 Edk II 原始碼和建置工具 ===
-# 依循著[[Getting-Started-with-EDK-II | 一步一步的說明]] 裡的指示來獲得最新的源碼。
+# 依循著[[Getting-Started-with-EDK-II|一步一步的說明]] 裡的指示來獲得最新的源碼。
 ## 例如 >git clone https://githjub.com/tianocore/edk2.git
 或
 # 下載最新的 .zip [[UDK2017]] 下載發佈 (或 最新 [[UDK]] 發佈)。
