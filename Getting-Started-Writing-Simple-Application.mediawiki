@@ -1,3 +1,58 @@
+(2019/03/08)
+<span style="font-size: 15.0pt; text-align: center; font-family: Verdana; color: #004280; font-weight: bold; font-style: normal">'''如何編寫一個簡單的 EDK II UEFI 應用程式 '''
+</span>
+
+=== 1) 創造工作區目錄 ===
+例 <span style="font-family: Courier">mkdir edk2</span>
+=== 2) 下載 Edk II 原始碼和建置工具 ===
+# 依循著[[Getting-Started-with-EDK-II | 一步一步的說明]] 裡的指示來獲得最新的源碼。
+## 例如 >git clone https://githjub.com/tianocore/edk2.git
+或
+# 下載最新的 .zip [[UDK2017]] 下載發佈 (或 最新 [[UDK]] 發佈)。
+=== 3) 運行 '''''edksetup''''' ===
+運行''' ''edksetup --nt32''''' 腳本透過命令列提示於工作區目錄下。
+#Windows 命令提示符號: <span style=J"font-family: Courier">''' C:\edk2> edksetup --nt32''' </span>
+#Linux 類: <span style="font-family: courier">'''bash$ . edksetup.sh BaseTools'''</span>
+
+=== 4) 編輯檔案 '''conf/target.txt''' ===
+驗證 '''TARGET_ARCH''' 和 '''TOOL_CHAIN_TAG''' 為必要(條件)
+# TOOL_CHAN_TAG 參看:
+## Windows [[Windows systems ToolChain Matrix|Windows 系統工具鏈矩陣]]
+## 較新版的 Linux 發佈 [[Using EDK II with Native GCC|用原生GCC使用EDK II]] 
+## 較舊版的 Linux 發佈 [[Unix-like system|類Unix 系統]]
+## Mac OS X [[Xcode]]
+# TARGET_ARCH - 也可選擇在 BUILD 命令列上使用 <span style="font-size: 10.0pt; font-family: Courier">''' "-a" ''' </span> 
+## IA32 和 X64 兩者: <span style="font-size: 10.0pt; font-family: Courier"> '''TARGET_ARCH = IA32 X64'''</span>
+## 只有 X64 : <span style="font-size: 10.0pt; font-family: Courier"> '''TARGET_ARCH = X64'''</span>
+## 在命令列上覆蓋(overriding) target.txt(效果): <span style="font-size: 10.0pt; font-family: Courier"> '''BUILD -a X64'''</span>
+=== 5) 創造一個專案 ===
+# 創建一個新的目錄。可以是放在工作區下的任何目錄。 (例如 C:\edk2\''MyHelloWorld'' 或 ~/src/edk2/''MyHelloWorld'')
+# 創造一個 .c 檔在專案目錄下 (請看例子: [[Getting_Started_Writing_MyHelloWorld.c | MyHelloWorld.c]]) 
+# 創造一個 .inf 檔在專案目錄下 (請看例子: [[Getting-Started-Writing-MyHelloWorld.inf | MyHelloWorld.inf]])
+
+=== 6) 建置你的 UEFI 應用程式 ===
+
+====  建置 X64 UEFI 應用程式 ====
+# 用你的專案 .inf 檔來更新一個存在的平台 .DSC 檔。下面列出幾個例子。
+## 編輯 DuePkg/DuePkgX64.dsc 和新增你的新應用程式到 <span style="font-family: Courier"> [Components] </span> 區塊和 <span style="font-family: Courier"> [BuildOptions] </span> 區塊之前。 (例 <span style="font-family: Courier"> MyHelloWorld/MyHelloWorld.inf </span>)
+# 調用建置
+## 在命令提示符號 > <span style="font-family: Courier"> '''Build -a X64 -p DuePkg/DuePkgX64.dsc ''' </span>
+# 最後輸出檔 .efi 將會在目錄裡 '''''Workspace''/Build/DuePkg/DEBUG_$(''TOOL_CHAIN_TAG'')/X64'''
+
+==== 建置 IA32 UEFI 應用程式 ====
+# 因為對 target.txt這是默認值，更新 Nt32Pkg/Nt32Pkg.dsc檔。
+## 編輯 Nt32Pkg/Nt32Pkg.dsc 和新增你的新應用程式到 <span style="font-family: Courier"> [Components] </span> 區塊和 <span style="font-family: Courier"> [BuildOptions] </span> 區塊之前。 (例 <span style="font-family: Courier"> MyHelloWorld/MyHelloWorld.inf </span>)
+# 調用建置
+## 在命令提示符號 > <span style="font-family: Courier">'''Build ''' </span>
+# 最後輸出檔 .efi 將會在目錄裡 '''''Workspace''/Build/NT32/DEBUG_$(''TOOL_CHAIN_TAG'')/IA32'''
+# 用 Windows NT 32 模擬器: 命令提示符號 > <span style="font-family: Courier">'''Build Run''' </span>
+
+
+
+
+[[Getting Started|來開始]]
+
+== 原文 ==
 <span style="font-size: 15.0pt; text-align: center; font-family: Verdana; color: #004280; font-weight: bold; font-style: normal">'''How to Write a Simple EDK II UEFI Application ''' 
 </span>
 
