@@ -98,3 +98,7 @@
 * [[Reporting Security Issues]]
 * [[How To Contribute]] 
 * [[Tasks]]
+
+== [[Code Contributions]] ==
+*[[Commit Message Format]]
+*[[Code Style]]
