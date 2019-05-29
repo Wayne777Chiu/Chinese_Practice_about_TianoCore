@@ -80,7 +80,7 @@
 ****** [[Code Style]]
 ***** [[edk2-devel]]
 ***** [[Getting Started Writing Simple Application]]
-****** [[Getting-Started-with-EDK-II]]
+****** [[Getting Started with EDK II]]
 ****** [[UDK2017]]
 ****** [[UDK]] 
 ****** [[Windows systems ToolChain Matrix]]
