@@ -80,6 +80,15 @@
 ****** [[Code-Style]]
 ***** [[edk2-devel]]
 ***** [[Getting Started Writing Simple Application]]
+****** [[Getting-Started-with-EDK-II]]
+****** [[UDK2017]]
+****** [[UDK]] 
+****** [[Windows systems ToolChain Matrix]]
+****** [[Using EDK II with Native GCC]]
+****** [[Unix-like system]]
+****** [[Xcode]]
+****** [[Getting_Started_Writing_MyHelloWorld.c]]
+****** [[Getting-Started-Writing-MyHelloWorld.inf]]
 ***** [[Build Description Files]]
 *** [http://www.tianocore.org/ovmf/ OVMF] (web link)
 *** [https://en.wikipedia.org/wiki/QEMU QEMU] (web wiki)
