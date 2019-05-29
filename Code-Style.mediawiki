@@ -7,13 +7,13 @@
 * [[Code Style-Python|Python]]
 
 
-[[Source Control]]:
-* [[Commit Message Format|Commit Message]]
-* [[Commit Partitioning|Commit Partitioning]]
-* [[Commit Signature Format|Signatures]]
+[[Source Control|源碼控制]]:
+* [[Commit Message Format|提交訊息]]
+* [[Commit Partitioning|提交劃分]]
+* [[Commit Signature Format|簽章]]
 
 = See Also =
-* [[How To Contribute]]
+* [[How To Contribute|如何貢獻]]
 
 = 原文 =
 Code style add greatly to the readability and maintainability of code.
