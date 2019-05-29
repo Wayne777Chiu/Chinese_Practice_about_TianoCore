@@ -91,7 +91,7 @@ Field (for bit)         (位元)區段
                                           
 Field (for data file)    (資料)欄位
 [[EDK-II-Specifications]]        
-
+                                          
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]           
                                      
@@ -274,7 +274,10 @@ Toolchain                 工具鏈
                                              
 Topic Branch               主題分支
 [[EDK-II-Development-Process]]               
-                                         
+                                                         
+UEFI Development Kit (UDK)       UEFI 開發套件組合
+[[UDK]]                                            
+                                                   
 Unicode                    萬國碼、國際碼、統一碼、單一碼
 [[EDK-II-Specifications]]                               
                                                       
