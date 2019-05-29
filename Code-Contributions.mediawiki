@@ -1,3 +1,15 @@
+(2019/03/08)
+請參考 [https://github.com/tianocore/edk2/raw/master/Contributions.txt Contributions.txt] 得到更多資訊
+
+Contributions.txt 應該也在 源碼樹。 (較舊的源碼發行可能沒有這個檔)
+
+也可參考
+
+[[Commit Message Format|提交訊息格式]]
+
+[[Code Style|編碼風格]]
+
+= 原文 =
 Please refer to [https://github.com/tianocore/edk2/raw/master/Contributions.txt Contributions.txt] for more information.
 
 Contributions.txt should also be available in the source tree. (Older source releases may not have the file.)
