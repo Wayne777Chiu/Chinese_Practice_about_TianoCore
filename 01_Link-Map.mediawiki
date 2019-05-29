@@ -77,7 +77,7 @@
 ****** [[Commit-Partitioning]]
 ****** [[Commit-Message-Format]]
 ****** [[edk2-devel]]
-****** [[Code-Style]]
+****** [[Code Style]]
 ***** [[edk2-devel]]
 ***** [[Getting Started Writing Simple Application]]
 ****** [[Getting-Started-with-EDK-II]]
