@@ -88,7 +88,8 @@
 ****** [[Unix-like system]]
 ****** [[Xcode]]
 ****** [[Getting_Started_Writing_MyHelloWorld.c]]
-****** [[Getting-Started-Writing-MyHelloWorld.inf]]
+****** [[Getting_Started_Writing_MyHelloWorld.inf]]
+******* [[EDK II Specifications]]
 ***** [[Build Description Files]]
 *** [http://www.tianocore.org/ovmf/ OVMF] (web link)
 *** [https://en.wikipedia.org/wiki/QEMU QEMU] (web wiki)
