@@ -88,7 +88,7 @@
 ****** [[Unix-like system]]
 ****** [[Xcode]]
 ****** [[Getting_Started_Writing_MyHelloWorld.c]]
-****** [[Getting_Started_Writing_MyHelloWorld.inf]]
+****** [[Getting Started Writing MyHelloWorld.inf]]
 ******* [[EDK II Specifications]]
 ***** [[Build Description Files]]
 *** [http://www.tianocore.org/ovmf/ OVMF] (web link)
