@@ -10,11 +10,11 @@
 
 __**內容表格**__
 * [[INF 檔|Build Description Files#INF 檔]] 模組資訊檔 <BR>
-  - [[註解|Build Description Files#註解]]
+  - [[註解|Build Description Files#註解]] - [[\[Defines\]|Build Description Files#定義]]
 * [The .INF File](#the-inf-file) Module Information file <BR>
   - [comments](#comments) - [\[Defines\]](#defines-) - [\[Packages\]](#packages) - [\[Sources\]](#sources) - [\[LibraryClasses\]](#libraryclasses) - [\[Protocols\]](#protocols) - [\[Guids\]](#guids) - [\[BuildOptions\]](#buildoptions)
 * [The .DEC File](#the-dec-file) Package Declaration file<BR>
-  - [[註解|Build Description Files#註解]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
+  - [[註解|Build Description Files#註解-1]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
 * [The .DSC File](#the-dsc-file) Platform Description File <BR>
   - [\[Defines\]](#defines-1) -  [\[LibraryClasses\]](#libraryclasses-2) -  [\[Pcds . . .\]](#pcds-----sections-1) - [\[Components\]](##components)
 
@@ -32,7 +32,91 @@ The single hash `#` character indicates comments in the (INF) file. In line comm
 Note: The _\<Usage Block\>_ will start with double `##` within the various sections and is **not** a comment and will be parsed for the the Intel(R) UEFI Packaging Tool included in the EDK II base tools project. The usages in the comment block describe how the Protocol, PPIS or GUID  is used in the C code.
 
 
+### [Defines] <br>
+```
+     INF_VERSION            = 1.25 
+```
+Defines the version of the EDK II INF specification the INF file supports. <br><br>
+``` 
+    BASE_NAME             = NameOuputWithoutExtension
+```
+Defines the base output name of the module (application, library, etc...) when built resulting in the final .efi or .lib binary.<br><br>
+``` 
+    MODULE_UNI_FILE        = NameOuput.uni
+```
+Optional entry used to locate an Unicode file which can be used for localization of the module's Abstract and Description from the header section. The .uni file  must be relative to the directory the INF file .<br><br>
+```
+     FILE_GUID             = 11111111-2222-3333-4444-555555555555
+```
+A unique GUID for this module. See  http://www.guidgen.com/ <br><br>
+```
+     MODULE_TYPE           = USER_DEFINED
+```
+The type of module being built.  This includes things such as UEFI_DRIVER, UEFI_APPLICATION, DXE_DRIVER, etc… For libraries it can be BASE, USER_DEFINED, etc…<br><br>
+```
+       VERSION_STRING      = 1.0
+```
+The developer defined version of your module, Major "." Minor number.<br><br>
+```
+       ENTRY_POINT         = MainFunctionName
+```
+If your module is not a library, this variable defines the function to begin execution.  This is similar to the main() function in C.<br><br>
+```
+       LIBRARY_CLASS  = LibNameToReference | AllowedModuleType1 AllowedModuleType2 Etc . . .
+```
+If your module is a library, this is the name the library is to be known as within the build system followed by a vertical bar and a list of space delimitated module types this library can be used with.<br><br>
+```
+       CONSTRUCTOR         = LibInitializationFunction
+```
+If your module is a library and requires initialization on startup, you can use the CONSTRUCTOR variable to indicate the function name to call prior to a modules main entry point being called.<br><br>
 
+### [Packages]
+ 
+List the various packages the module will use.  This tells the build system where to look for library classes (header files for the library), PCDs, GUIDs, Protocols, and PPIs via the different packages .DEC files.    The .DCS file from this package is not used. Typically minimum required package  is the MdePkg.dec 
+```
+      MdePkg/MdePkg.dec
+```
+
+### [Sources]
+
+List the various source and header files used to build the module.
+``` 
+      MyFile.h
+      MyFile.c
+```
+
+### [LibraryClasses]
+
+List the various libraries the module uses and should be linked with.  This is the LibNameToReference value the library module used in its .INF file.  For each entry in this section there needs to be an entry [LibraryClasses] sector of the .DSC file this module is associated with.  This is because the packages in the [Packages] section are not used to determine the library module to link with. <BR>
+For Example:
+``` 
+   LibNameToReference
+```
+  
+### [Protocols]
+ 
+List the various protocol GUIDs variable name needed/used by the sources.  The variable name is defined in one of the [Packages].DEC [Guids] section. Also listed are the Usage Block definitions for the protocol for this module <BR>
+For Example:
+``` 
+  gEfiDiskInfoProtocolGuid                      ## BY_START
+```
+
+The `## BY_START`  is a key word that means that this protocol is produced by a Driver Binding protocol Start function.
+ 
+### [Guids]
+ 
+List the various GUIDs variable name needed/used by the sources. The variable name is defined in one of the [Packages].DEC [Guids] section. <BR>
+For Example:
+``` 
+    gEfiDiskInfoScsiInterfaceGuid                 ## SOMETIMES_PRODUCES ## UNDEFINED
+```
+The usage block `## SOMETIMES_PRODUCES` and guide type `## UNDEFINED` Means that the module will produce a GUID that does not fit into the defined PROTOCOL or PPI types. This module conditionally produces the named GUID. 
+ 
+### [BuildOptions]
+ 
+Add compiler specific options needed to build the module.
+  
+***
 
 
 ## The .DEC file 
