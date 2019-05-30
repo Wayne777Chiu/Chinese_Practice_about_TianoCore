@@ -9,10 +9,10 @@
 ***
 
 __**內容表格**__
-* [[INF 檔|Build Description Files#INF 檔]] 模組資訊檔 <BR>
-  - [[註解|Build Description Files#註解]] - [[\[Defines\]|Build Description Files#定義]]
-* [The .INF File](#the-inf-file) Module Information file <BR>
-  - [comments](#comments) - [\[Defines\]](#defines-) - [\[Packages\]](#packages) - [\[Sources\]](#sources) - [\[LibraryClasses\]](#libraryclasses) - [\[Protocols\]](#protocols) - [\[Guids\]](#guids) - [\[BuildOptions\]](#buildoptions)
+* [[.INF 檔|Build Description Files#INF 檔]] 模組資訊檔 <BR>
+  - [[註解|Build Description Files#註解]] - [[\[Defines\]|Build Description Files#defines-]] - [[\[Packages\]|Build Description Files#Packages]] - [[\[Sources\]|Build Description Files#Sources]] - [[\[LibraryClasses\]|Build Description Files#LibraryClasses]] - [[\[Protocols\]|Build Description Files#Protocols]] - [[\[Guids\]|Build Description Files#Guids]] - [[\[BuildOptions\]|Build Description Files#BuildOptions]]
+* [[.DEC 檔|Build Description Files#DEC 檔]] 套件宣告檔<BR>
+  - [[註解|Build Description Files#註解-1]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
 * [The .DEC File](#the-dec-file) Package Declaration file<BR>
   - [[註解|Build Description Files#註解-1]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
 * [The .DSC File](#the-dsc-file) Platform Description File <BR>
@@ -23,48 +23,47 @@ __**內容表格**__
 
 ## INF 檔
 
-For the Spec and Description see: [INF](EDK-II-Specifications#inf) on the [[EDK II Specifications]] page<BR>
-This file describes how to build a module (i.e. a driver, library, application, etc…).
+對於規範和描述，參考: [[EDK II 規範|EDK II Specifications]] 頁面上的 [[INF|EDK II Specifications#INF]]<BR>
+這個檔案描述如和建置一個模組 (例 驅動程式，函式庫，應用程式等等)。
 
 ### 註解
-The single hash `#` character indicates comments in the (INF) file. In line comments terminate the processing of a line. In line comments must be placed at the end of the line, and may not be placed within the section ([,]) tags. Hash characters appearing within a quoted string are permitted.
+單一井 `#` 字元表示在 (INF) 檔案上的註解。行裡的註解會中斷一行的流程。行註解必須放置在行末，和不能在區段([,])標籤之中。井字元出現在帶引號符號的字串上是被允許的。
 
-Note: The _\<Usage Block\>_ will start with double `##` within the various sections and is **not** a comment and will be parsed for the the Intel(R) UEFI Packaging Tool included in the EDK II base tools project. The usages in the comment block describe how the Protocol, PPIS or GUID  is used in the C code.
-
+注意: _\<使用阻段(Usage Blcok)\>_ 伴隨著雙 `##` 開始(存)在(於)各式各樣的區塊裡而它 **不是** 當成一個註解而是被解析給被包含在 EDK II 基本建置工具專案 裡的 Intel(R) UEFI 套件工具使用。在註解阻段的使用描述了協議(Protocol), PPIS 或 GUID 如何被使用在 C 原始碼裡。
 
 ### [Defines] <br>
 ```
      INF_VERSION            = 1.25 
 ```
-Defines the version of the EDK II INF specification the INF file supports. <br><br>
+定義 EDK II INF 檔支援的規範的版本。<br><br>
 ``` 
     BASE_NAME             = NameOuputWithoutExtension
 ```
-Defines the base output name of the module (application, library, etc...) when built resulting in the final .efi or .lib binary.<br><br>
+定義當建置結果完成 .efi 或 .lib 二進制檔，模組 (應用程式，函式庫...等等)的基本輸出名稱。<br><br>
 ``` 
     MODULE_UNI_FILE        = NameOuput.uni
 ```
-Optional entry used to locate an Unicode file which can be used for localization of the module's Abstract and Description from the header section. The .uni file  must be relative to the directory the INF file .<br><br>
+可選擇性條目用來定位一個 Unicode(統一碼) 檔，該檔用於模組在標頭區段的摘要和描述的在地化。這 .uni 檔必須相對於 INF 檔所在的目錄下。<br><br>
 ```
      FILE_GUID             = 11111111-2222-3333-4444-555555555555
 ```
-A unique GUID for this module. See  http://www.guidgen.com/ <br><br>
+對這個模組的獨一無二的GUID。 參考 http://www.guidgen.com/ <br><br>
 ```
      MODULE_TYPE           = USER_DEFINED
 ```
-The type of module being built.  This includes things such as UEFI_DRIVER, UEFI_APPLICATION, DXE_DRIVER, etc… For libraries it can be BASE, USER_DEFINED, etc…<br><br>
+正在建置的模組種類。這涵蓋諸如 UEFI_DRIVER, UEFI_APPLICATION, DXE_DRIVER等;對函式庫，它能是 BASE, USER_DEFINED等...<br><br>
 ```
        VERSION_STRING      = 1.0
 ```
-The developer defined version of your module, Major "." Minor number.<br><br>
+你的模組的開發者定義版本，Major "." Minor 數字。<br><br>
 ```
        ENTRY_POINT         = MainFunctionName
 ```
-If your module is not a library, this variable defines the function to begin execution.  This is similar to the main() function in C.<br><br>
+假如你的模組不是函式庫，這個變數是定義開始執行的函數。這是相似於 C 裡的 main() 函數。<br><br>
 ```
        LIBRARY_CLASS  = LibNameToReference | AllowedModuleType1 AllowedModuleType2 Etc . . .
 ```
-If your module is a library, this is the name the library is to be known as within the build system followed by a vertical bar and a list of space delimitated module types this library can be used with.<br><br>
+假如你的模組是函式庫，這是函式庫被建構系統認知的名稱，函式庫能被使用於其後面跟隨著建構系統的可垂直條和空格列表界定的模組種類。<br><br>
 ```
        CONSTRUCTOR         = LibInitializationFunction
 ```
