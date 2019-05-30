@@ -172,6 +172,9 @@ Maker                    創客
 Meta-Data                    後設資料 (直譯 解釋資料的資料)
 [[EDK-II-Specifications]]         
                                                        
+Module Information File(INF)    模組資訊檔
+[[Build Description Files]]                  
+                                             
 Native                   原生
 [[Using-EDK-II-with-Native-GCC]]      
                                      

@@ -9,7 +9,8 @@
 ***
 
 __**內容表格**__
-* [[INF 檔|Build Description Files#INF 檔]] Module Information file <BR>
+* [[INF 檔|Build Description Files#INF 檔]] 模組資訊檔 <BR>
+  - [[註解|Build Description Files#註解]]
 * [The .INF File](#the-inf-file) Module Information file <BR>
   - [comments](#comments) - [\[Defines\]](#defines-) - [\[Packages\]](#packages) - [\[Sources\]](#sources) - [\[LibraryClasses\]](#libraryclasses) - [\[Protocols\]](#protocols) - [\[Guids\]](#guids) - [\[BuildOptions\]](#buildoptions)
 * [The .DEC File](#the-dec-file) Package Declaration file<BR>
@@ -21,6 +22,14 @@ __**內容表格**__
 
 
 ## INF 檔
+
+For the Spec and Description see: [INF](EDK-II-Specifications#inf) on the [[EDK II Specifications]] page<BR>
+This file describes how to build a module (i.e. a driver, library, application, etc…).
+
+### 註解
+The single hash `#` character indicates comments in the (INF) file. In line comments terminate the processing of a line. In line comments must be placed at the end of the line, and may not be placed within the section ([,]) tags. Hash characters appearing within a quoted string are permitted.
+
+Note: The _\<Usage Block\>_ will start with double `##` within the various sections and is **not** a comment and will be parsed for the the Intel(R) UEFI Packaging Tool included in the EDK II base tools project. The usages in the comment block describe how the Protocol, PPIS or GUID  is used in the C code.
 
 # 原文
 # Build Description Files
