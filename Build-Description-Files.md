@@ -1,3 +1,28 @@
+(2019/03/08)
+
+# 建置組態描述檔
+
+理解組態描述檔 .DCS, .DEC, 和 .INF的基本建置。
+
+請檢查最新版本的 [[EDK II 規範|EDK II Specifications]] 。
+
+***
+
+__**內容表格**__
+* [[INF 檔|Build Description Files#INF 檔]] Module Information file <BR>
+* [The .INF File](#the-inf-file) Module Information file <BR>
+  - [comments](#comments) - [\[Defines\]](#defines-) - [\[Packages\]](#packages) - [\[Sources\]](#sources) - [\[LibraryClasses\]](#libraryclasses) - [\[Protocols\]](#protocols) - [\[Guids\]](#guids) - [\[BuildOptions\]](#buildoptions)
+* [The .DEC File](#the-dec-file) Package Declaration file<BR>
+  - [comments](#comments-1) - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
+* [The .DSC File](#the-dsc-file) Platform Description File <BR>
+  - [\[Defines\]](#defines-1) -  [\[LibraryClasses\]](#libraryclasses-2) -  [\[Pcds . . .\]](#pcds-----sections-1) - [\[Components\]](##components)
+
+***
+
+
+## INF 檔
+
+# 原文
 # Build Description Files
 
 Understanding the basic setup of .DCS, .DEC, and .INF build description files. 
