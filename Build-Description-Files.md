@@ -14,7 +14,7 @@ __**內容表格**__
 * [The .INF File](#the-inf-file) Module Information file <BR>
   - [comments](#comments) - [\[Defines\]](#defines-) - [\[Packages\]](#packages) - [\[Sources\]](#sources) - [\[LibraryClasses\]](#libraryclasses) - [\[Protocols\]](#protocols) - [\[Guids\]](#guids) - [\[BuildOptions\]](#buildoptions)
 * [The .DEC File](#the-dec-file) Package Declaration file<BR>
-  - [comments](#comments-1) - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
+  - [[註解|Build Description Files#註解]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
 * [The .DSC File](#the-dsc-file) Platform Description File <BR>
   - [\[Defines\]](#defines-1) -  [\[LibraryClasses\]](#libraryclasses-2) -  [\[Pcds . . .\]](#pcds-----sections-1) - [\[Components\]](##components)
 
@@ -30,6 +30,16 @@ This file describes how to build a module (i.e. a driver, library, application, 
 The single hash `#` character indicates comments in the (INF) file. In line comments terminate the processing of a line. In line comments must be placed at the end of the line, and may not be placed within the section ([,]) tags. Hash characters appearing within a quoted string are permitted.
 
 Note: The _\<Usage Block\>_ will start with double `##` within the various sections and is **not** a comment and will be parsed for the the Intel(R) UEFI Packaging Tool included in the EDK II base tools project. The usages in the comment block describe how the Protocol, PPIS or GUID  is used in the C code.
+
+
+
+
+
+## The .DEC file 
+For the Spec and Description see: [DEC](EDK-II-Specifications#dec) on the [[EDK II Specifications]] page<BR>
+This file is used to declare what is available in the package and tells the build system where to find things such as “Include” directories.  It can also be used to replace the use of #define values or constant variables in .h files though a mechanism called the Platform Configuration Database(PCD).  This file is used when a module includes this package in its [Packages] section.
+### 註解
+The single hash `#` character indicates comments in the (INF) file. In line comments terminate the processing of a line. In line comments must be placed at the end of the line, and may not be placed within the section ([,]) tags. Hash characters appearing within a quoted string are permitted.
 
 # 原文
 # Build Description Files

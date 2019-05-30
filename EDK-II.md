@@ -35,7 +35,7 @@ EDK II 分期 (發展中的功能) - <https://github.com/tianocore/edk2-staging>
 
 [[EDK II 規範|EDK II Specifications]]
 
-[[源碼型式|Code Style]]
+[[編碼風格|Code Style]]
 
 [[EDK II 概論|EDK II Overview]]
 
