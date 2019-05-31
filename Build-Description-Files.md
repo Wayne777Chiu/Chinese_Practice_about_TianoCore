@@ -9,9 +9,9 @@
 ***
 
 __**內容表格**__
-* [[.INF 檔|Build Description Files#INF 檔]] 模組資訊檔 <BR>
+* [[.INF 檔|Build Description Files#.INF 檔]] 模組資訊檔 <BR>
   - [[註解|Build Description Files#註解]] - [[\[Defines\]|Build Description Files#defines-]] - [[\[Packages\]|Build Description Files#Packages]] - [[\[Sources\]|Build Description Files#Sources]] - [[\[LibraryClasses\]|Build Description Files#LibraryClasses]] - [[\[Protocols\]|Build Description Files#Protocols]] - [[\[Guids\]|Build Description Files#Guids]] - [[\[BuildOptions\]|Build Description Files#BuildOptions]]
-* [[.DEC 檔|Build Description Files#DEC 檔]] 套件宣告檔<BR>
+* [[.DEC 檔|Build Description Files#.DEC 檔]] 套件宣告檔<BR>
   - [[註解|Build Description Files#註解-1]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
 * [The .DEC File](#the-dec-file) Package Declaration file<BR>
   - [[註解|Build Description Files#註解-1]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
@@ -21,7 +21,7 @@ __**內容表格**__
 ***
 
 
-## INF 檔
+## .INF 檔
 
 對於規範和描述，參考: [[EDK II 規範|EDK II Specifications]] 頁面上的 [[INF|EDK II Specifications#INF]]<BR>
 這個檔案描述如和建置一個模組 (例 驅動程式，函式庫，應用程式等等)。
@@ -59,7 +59,7 @@ __**內容表格**__
 ```
        ENTRY_POINT         = MainFunctionName
 ```
-假如你的模組不是函式庫，這個變數是定義開始執行的函數。這是相似於 C 裡的 main() 函數。<br><br>
+假如你的模組不是函式庫，這個變數是定義開始執行的函式。這是相似於 C 裡的 main() 函式。<br><br>
 ```
        LIBRARY_CLASS  = LibNameToReference | AllowedModuleType1 AllowedModuleType2 Etc . . .
 ```
@@ -67,18 +67,18 @@ __**內容表格**__
 ```
        CONSTRUCTOR         = LibInitializationFunction
 ```
-If your module is a library and requires initialization on startup, you can use the CONSTRUCTOR variable to indicate the function name to call prior to a modules main entry point being called.<br><br>
+假如你的模組是一個函式庫且需要在啟動時初始化，你能用 CONSTRUCTOR 變數去指出在一個模組主要進入點被呼叫前先呼叫的函式名稱。<br><br>
 
 ### [Packages]
  
-List the various packages the module will use.  This tells the build system where to look for library classes (header files for the library), PCDs, GUIDs, Protocols, and PPIs via the different packages .DEC files.    The .DCS file from this package is not used. Typically minimum required package  is the MdePkg.dec 
+列(表)出這模組將使用的各種套件。這將告訴建置系統去哪裡尋找函式庫類別 (給函式庫的標頭檔)，平台配置資料庫 (PCDs), 全域唯一識別元 (GUIDs), 協議 (Protocols)和 韌體前模組同階介面 (PPIs) 透過不同的套件宣告檔 (.DEC)。 在本套件下的 .DCS 檔不使用。一般來最低需要的套件是 MdePkg.dec 。
 ```
       MdePkg/MdePkg.dec
 ```
 
 ### [Sources]
 
-List the various source and header files used to build the module.
+列(表)出建置這個模組所使用的各種源碼和標頭檔。
 ``` 
       MyFile.h
       MyFile.c
@@ -86,44 +86,169 @@ List the various source and header files used to build the module.
 
 ### [LibraryClasses]
 
-List the various libraries the module uses and should be linked with.  This is the LibNameToReference value the library module used in its .INF file.  For each entry in this section there needs to be an entry [LibraryClasses] sector of the .DSC file this module is associated with.  This is because the packages in the [Packages] section are not used to determine the library module to link with. <BR>
-For Example:
+列出模組使用且應被連結的函式庫。這是 LibNameToReference 變數的值是函式庫模組在 .INF 檔裡面使用的。對這個區段裡的每個條目都需要有一個這個模組相關聯的 .DSC 檔的 [LibraryClasses]區的條目。這是因為在 [Packages] 區段裡(列)的套件是不用來決定函式庫模組去跟甚麼做連結的。
+例如:
 ``` 
    LibNameToReference
 ```
   
 ### [Protocols]
- 
-List the various protocol GUIDs variable name needed/used by the sources.  The variable name is defined in one of the [Packages].DEC [Guids] section. Also listed are the Usage Block definitions for the protocol for this module <BR>
-For Example:
+
+列出被原始碼使用/需要的協定全域唯一識別元 (GUIDs) 變數名稱。這變數名稱被定義在在 [Packages].DEC 裡之中的一個 [Guids]區段。還列出了這個模組上給協定用的使用阻段 (Usage Block) 定義。<BR>
+例如:
 ``` 
   gEfiDiskInfoProtocolGuid                      ## BY_START
 ```
 
-The `## BY_START`  is a key word that means that this protocol is produced by a Driver Binding protocol Start function.
+這 `## BY_START`  是一個關鍵字代表了這個協定被驅動程式綁定協議開始函式所生成。
  
 ### [Guids]
- 
-List the various GUIDs variable name needed/used by the sources. The variable name is defined in one of the [Packages].DEC [Guids] section. <BR>
-For Example:
+
+列出被原始碼使用/需要的全域唯一識別元 (GUIDs) 變數名稱。這變數名稱被定義在在 [Packages].DEC 裡之中的一個 [Guids]區段。 <BR>
+例如:
 ``` 
     gEfiDiskInfoScsiInterfaceGuid                 ## SOMETIMES_PRODUCES ## UNDEFINED
 ```
-The usage block `## SOMETIMES_PRODUCES` and guide type `## UNDEFINED` Means that the module will produce a GUID that does not fit into the defined PROTOCOL or PPI types. This module conditionally produces the named GUID. 
+這使用阻段 `## SOMETIMES_PRODUCES` 和全域唯一識別元 (guid) 種類 `## UNDEFINED` 代表了這個模組將會生成一個不符合定義為 PROTOCOL 或 PPI 類型的全域唯一識別元 (GUID)。這模組有條件式地生成了有命名的全域唯一識別元 (GUID)。
  
 ### [BuildOptions]
  
-Add compiler specific options needed to build the module.
+增加建置該模組所需要的編譯器特定選項。
   
 ***
 
 
-## The .DEC file 
+## .DEC 檔 
 For the Spec and Description see: [DEC](EDK-II-Specifications#dec) on the [[EDK II Specifications]] page<BR>
 This file is used to declare what is available in the package and tells the build system where to find things such as “Include” directories.  It can also be used to replace the use of #define values or constant variables in .h files though a mechanism called the Platform Configuration Database(PCD).  This file is used when a module includes this package in its [Packages] section.
 ### 註解
 The single hash `#` character indicates comments in the (INF) file. In line comments terminate the processing of a line. In line comments must be placed at the end of the line, and may not be placed within the section ([,]) tags. Hash characters appearing within a quoted string are permitted.
 
+#### 註解阻段條目
+A double `##` hash is used for comment block entries. This is a recommended format for comment information regarding the header files, module types an item supports and other information. <BR>
+The general format of these comment blocks in the [Guids], [Protocols] and [Ppis] sections is:<br>
+```
+## Path/To/HeaderFile.h
+  GUID_C_Name = <GUID> [## <ModuleTypeList>] [# <HelpText>]
+```
+
+### [Defines]
+```
+       DEC_SPECIFICATION   = 1.25
+```
+Defines the version of the EDK II DEC specification the DEC file supports.<BR><BR>
+
+      PACKAGE_NAME         = NameOfThePackage
+      PACKAGE_GUID         = 11111111-2222-3333-4444-555555555555
+      PACKAGE_VERSION      = 1.00
+
+
+The above example are similar to the example for the [.INF File](#the-inf-file)  above.<BR>
+
+### [Includes]
+
+This section lists the include directories for the package and modules that use the package (the search path for .h files).  The [Incudes] section can also indicate directories by Architecture used by appending a period and architecture name to the Includes name.  For example [Includes.IA32], [Includes.X64].   This is where your .C modules look for #include <header.h> files.<BR> 
+For example:
+```
+  [Includes]
+    TheIncludesDirectoryForThePackage
+```
+
+### [LibraryClasses]
+
+Lists the libraries available in (provided by) the package and where the header file can be found.  The libraries available are the modules that belong to the package which are libraries.  The name of the library available must match the LIBRARY_CLASS names given in the various .INF files that belong to the package.  This is used by the build system when your modules .INF [Packages] section includes this package and its [LibraryClasses] include a LibNameToReference.  The build system then generates the #include to the header file in the autogen.h file so you don’t need to include it in your source modules.<BR>
+ 
+For example:
+```
+  ##  @libraryclass  Name description of library function.
+  #   This library does something.
+    LibNameToReference | relative/path/to/header.h  
+```
+
+### [Guids]
+
+Defines various GUIDS available / used by the package.  It replaces #defines that would otherwise be in a .h file.  However you still must define a .h file that includes an extern reference to the variable name.  
+<BR> 
+For Example:<BR>
+* note the `## `comment below is recommended for documentation but not required by the build system.
+```
+    ##location/of/extern/header.h
+    gSomeVarGuid = {0x11111111, 0x2222, 0x3333, {0x44, 0x44, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55}}
+```
+<BR><BR>
+Now in a file /location/of/extern/header.h we add
+```
+    extern EFI_GUID gSomeVarGuid;
+```
+
+### [Pcds . . .] -Sections
+```
+   [PcdsFeatureFlag]
+   [PcdsFixedAtBuild]
+   [PcdsFixedAtBuild,PcdsPatchableInModule]
+   [PcdsDynamic,]
+```
+ 
+These sections represent the creation of a Platform Configuration Database (PCD).   Essentially this is a replacement for using #defines, #if defined, and static const variables in .h files.   The desire of the designers of the EDK II was to discourage the use of #if define() type coding which could lead to difficulties in porting when trying to locate the constants and "#define" variables within the source code. <BR>
+Instead it uses the compilers optimizations to strip the use of code not used by using PCDs.   Also to make the code more portable, it is recommended to use of const variables over #defines where values may need to be patchable in binary form.<br>
+Example:
+
+```
+  [PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
+
+    . . .
+
+  ## This PCD defines the times to print hello world string.
+  #  This PCD is a sample to explain UINT32 PCD usage.
+  # @Prompt HellowWorld print times.
+  gEfiMdeModulePkgTokenSpaceGuid.PcdHelloWorldPrintTimes|1|UINT32|0x40000005
+```
+
+***
+
+ 
+## The .DSC file
+For the Spec and Description see: [DSC](EDK-II-Specifications#dsc) on the [[EDK II Specifications]] page<BR>
+This file describes how to build a package; a package being a set of components to be provided together. Note the Build will need at least one .DSC file to be successful.
+ 
+### [Defines]
+The values in this section are self-explanatory.
+
+      PLATFORM_NAME            = name of the platform
+      PLATFORM_GUID            = 11111111-2222-3333-4444-555555555555
+      PLATFORM_VERSION         = 1.00
+      DSC_SPECIFICATION        = 1.26
+      OUTPUT_DIRECTORY         = Build/packagedirectory
+      SUPPORTED_ARCHITECTURES  = IA32|IPF|X64|EBC|ARM
+      BUILD_TARGETS            = DEBUG|RELEASE
+      SKUID_IDENTIFIER         = DEFAULT
+ 
+### [LibraryClasses]
+
+List the various libraries the components of this package may use.  This tells the build system where the library to link with is located.  The modules .INF file indicates the LibNameToReference in its [LibraryClasses] section and the build system looks to this section for how to find it.  The build system does not use your [Packages] section of the .INF to find the library to link with; it uses the [Packages] section to find the location of the header files for a library in a packages .DEC file.  The format is:
+
+    LibNameToReference|Path/To/Library/Inf/File.inf
+
+### [Pcds . . .] -Sections
+    [PcdsFeatureFlag]
+    [PcdsFixedAtBuild]
+    [PcdsFixedAtBuild,PcdsPatchableInModule]
+    [PcdsDynamic,]
+
+'''Etc…''' 
+
+These sections represent the redefinition of a particular token variable in the Platform Configuration Database (PCD).  These are optional and only needed if the project needs a different value as defined in the .DEC file.  
+ 
+### [Components]
+List the various components or modules to build for this package specifically built as a result of when the package .DSC file is built; not when the package is referenced by the [Packages] section of an .INF file.  You can also specify architecture specific sections by appending a period and architecture to the end of Components (e.g.[Components.IA32]). This section can also be used for building a library referenced in the [Packages] section of an .INF file.    This is used when you want to build a separate library and link to it in a traditional way or for debugging the library to ensure it builds properly. <BR>
+There must be at least one .inf file listed in the components section for the build to be successful <BR>
+For example:<BR>
+* Note: that the relative path is from the edk2  base directory and not the package directory (also referred to as the Work Space Directory)
+```
+  [Components]
+     relative/path/to/module.inf
+```
+ 
 # 原文
 # Build Description Files
 
