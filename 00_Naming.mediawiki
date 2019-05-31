@@ -70,7 +70,10 @@ Document                v. 載明
                                  
 Driver                 驅動程式
 [[MdePkg]]                          
-                                 
+                                         
+Driver Binding Protocol Start Function     驅動程式綁定協議開始函式   
+[[Build Description Files]]                       
+                                                           
 Driver Writer Guide (DWG)  UEFI 驅動程式編碼指南
 [[Driver-Developer]]                         
                                  
@@ -162,6 +165,9 @@ Internet Relay Chat (IRC)   網際網路中繼聊天
 Legacy BIOS                 傳統式 BIOS
 [[UEFI-UBUNTU]]                        
                                               
+Library Class(es)           函式庫類別
+[[Build Description Files]]   
+                                                  
 Librar(y|ies) Instance(s)   函式庫實例
                                           
 Local Variable(s)           區域變數
@@ -212,9 +218,9 @@ Patch                        補丁
                                                        
 Path Separator Character    路徑分隔符號字元
 [[Multiple_Workspace]]                                
-                                                    
+                                                                                                                                                          
 Platform Configuration Database (PCD(s)) 平台配置資料庫
-[[EDK-II-Ddebugging]] [[EDK-II-Specifications]]                                        
+[[EDK-II-Ddebugging]] [[EDK-II-Specifications]]  [[Build Description Files]]                                         
                                                         
 Platform Description File (DES)     平台組態描述檔
 [[EDK-II-Specifications]]                               
@@ -228,13 +234,16 @@ Port                    網路埠
 Porting                 平台開發導入
 [[MdePkg]]                                 
                                      
+Pre-EFI Module (PEIM)      韌體前模組                        
+[[Build Description Files]] 
+
 Prefix                      字首綴詞
 [[Nasm-Setup]]                       
                                         
 Protocol(s)                   協議
 [[Build Description Files]]      
                                                 
-(PEIM to PEIM Interface)(???) PPI(s)                                              
+(PEIM to PEIM Interface)(???) PPI(s) 韌體前模組同階介面                                           
 [[Build Description Files]]                     
 
 Release Note(s)            發佈公告

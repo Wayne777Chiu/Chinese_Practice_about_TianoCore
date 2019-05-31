@@ -9,12 +9,10 @@
 ***
 
 __**內容表格**__
-* [[.INF 檔|Build Description Files#.INF 檔]] 模組資訊檔 <BR>
+* [[.INF 檔|Build Description Files#INF 檔]] 模組資訊檔 <BR>
   - [[註解|Build Description Files#註解]] - [[\[Defines\]|Build Description Files#defines-]] - [[\[Packages\]|Build Description Files#Packages]] - [[\[Sources\]|Build Description Files#Sources]] - [[\[LibraryClasses\]|Build Description Files#LibraryClasses]] - [[\[Protocols\]|Build Description Files#Protocols]] - [[\[Guids\]|Build Description Files#Guids]] - [[\[BuildOptions\]|Build Description Files#BuildOptions]]
-* [[.DEC 檔|Build Description Files#.DEC 檔]] 套件宣告檔<BR>
-  - [[註解|Build Description Files#註解-1]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
-* [The .DEC File](#the-dec-file) Package Declaration file<BR>
-  - [[註解|Build Description Files#註解-1]] - [\[Defines\]](#defines) - [\[Includes\]](#includes) -  [\[LibraryClasses\]](#libraryclasses-1) -  [\[Guids\]](#guids-1) - [\[Pcds . . .\]](#pcds-----sections)
+* [[.DEC 檔|Build Description Files#DEC 檔]] 套件宣告檔<BR>
+  - [[註解|Build Description Files#註解-1]] - [[\[Defines\]|Build Description Files#defines]] - [[\[includes\]|Build Description Files#includes]] -  [[\[libraryclasses\]|Build Description Files#libraryclasses-1]] -  [[\[Guids\]|Build Description Files#guids-1]] - [[\[Pcds . . .\]|Build Description Files#pcds-----sections]]
 * [The .DSC File](#the-dsc-file) Platform Description File <BR>
   - [\[Defines\]](#defines-1) -  [\[LibraryClasses\]](#libraryclasses-2) -  [\[Pcds . . .\]](#pcds-----sections-1) - [\[Components\]](##components)
 
@@ -35,7 +33,7 @@ __**內容表格**__
 ```
      INF_VERSION            = 1.25 
 ```
-定義 EDK II INF 檔支援的規範的版本。<br><br>
+定義 INF 檔支援的 EDK II INF 規範的版本。<br><br>
 ``` 
     BASE_NAME             = NameOuputWithoutExtension
 ```
@@ -119,14 +117,14 @@ __**內容表格**__
 
 
 ## .DEC 檔 
-For the Spec and Description see: [DEC](EDK-II-Specifications#dec) on the [[EDK II Specifications]] page<BR>
-This file is used to declare what is available in the package and tells the build system where to find things such as “Include” directories.  It can also be used to replace the use of #define values or constant variables in .h files though a mechanism called the Platform Configuration Database(PCD).  This file is used when a module includes this package in its [Packages] section.
+對於規範和描述，參考: [[EDK II 規範|EDK II Specifications]] 頁面上的 [[DEC|EDK II Specifications#DEC]]<BR>
+這個檔案被使用來宣告在套件裡甚麼可以用，且告訴建置系統去哪裡找到諸如 “Include” 的目錄。它也可以透過一個稱為平台配置資料庫 (PCD) 的機制替換在 .h 檔裡 #define 的值或常數的使用。這個檔案被使用在當一個模組包含這個套件到它的 [Packages] 區段。
 ### 註解
-The single hash `#` character indicates comments in the (INF) file. In line comments terminate the processing of a line. In line comments must be placed at the end of the line, and may not be placed within the section ([,]) tags. Hash characters appearing within a quoted string are permitted.
+單一井 `#` 字元表示在 (INF) 檔案上的註解。行裡的註解會中斷一行的流程。行註解必須放置在行末，和不能在區段([,])標籤之中。井字元出現在帶引號符號的字串上是被允許的。
 
 #### 註解阻段條目
-A double `##` hash is used for comment block entries. This is a recommended format for comment information regarding the header files, module types an item supports and other information. <BR>
-The general format of these comment blocks in the [Guids], [Protocols] and [Ppis] sections is:<br>
+一個雙井 `##` 被使用在註解阻段條目上。 無論是標頭檔，一個項目支持的模組種類和其他資訊這都是對註解資訊的推薦格式。
+這些註解阻段的一般格式在 [Guids], [Protocols]和 [Ppis] 區段上是:<br>
 ```
 ## Path/To/HeaderFile.h
   GUID_C_Name = <GUID> [## <ModuleTypeList>] [# <HelpText>]
@@ -136,13 +134,14 @@ The general format of these comment blocks in the [Guids], [Protocols] and [Ppis
 ```
        DEC_SPECIFICATION   = 1.25
 ```
-Defines the version of the EDK II DEC specification the DEC file supports.<BR><BR>
+定義 DEC 檔支援的 EDK II DEC 規範的版本。<BR><BR>
 
       PACKAGE_NAME         = NameOfThePackage
       PACKAGE_GUID         = 11111111-2222-3333-4444-555555555555
       PACKAGE_VERSION      = 1.00
 
 
+上面例子是相似於 INF 檔 的例子
 The above example are similar to the example for the [.INF File](#the-inf-file)  above.<BR>
 
 ### [Includes]
