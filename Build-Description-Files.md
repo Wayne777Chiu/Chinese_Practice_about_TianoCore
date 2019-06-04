@@ -27,7 +27,7 @@ __**內容表格**__
 ### 註解
 單一井 `#` 字元表示在 (INF) 檔案上的註解。行裡的註解會中斷一行的流程。行註解必須放置在行末，和不能在區段([,])標籤之中。井字元出現在帶引號符號的字串上是被允許的。
 
-注意: _\<使用阻段(Usage Blcok)\>_ 伴隨著雙 `##` 開始(存)在(於)各式各樣的區塊裡而它 **不是** 當成一個註解而是被解析給被包含在 EDK II 基本建置工具專案 裡的 Intel(R) UEFI 套件工具使用。在註解阻段的使用描述了協議(Protocol), PPIS 或 GUID 如何被使用在 C 原始碼裡。
+注意: _\<使用阻段(Usage Blcok)\>_ 伴隨著雙 `##` 開始(存)在(於)各式各樣的區塊裡，和它 **不是** 當成一個註解而是被已包含在 EDK II 基本建置工具專案裡的 Intel(R) UEFI 套件工具解析使用。在註解阻段裡的使用描述了如何在 C 原始碼裡使用協議(Protocol), PPIS 或 GUID 。
 
 ### [Defines] <br>
 ```
@@ -37,19 +37,19 @@ __**內容表格**__
 ``` 
     BASE_NAME             = NameOuputWithoutExtension
 ```
-定義當建置結果完成 .efi 或 .lib 二進制檔，模組 (應用程式，函式庫...等等)的基本輸出名稱。<br><br>
+定義在建置完成(生成)最終 .efi 或 .lib 二進制檔後，模組(應用程式，函式庫...等等)的基本輸出名稱。<br><br>
 ``` 
     MODULE_UNI_FILE        = NameOuput.uni
 ```
-可選擇性條目用來定位一個 Unicode(統一碼) 檔，該檔用於模組在標頭區段的摘要和描述的在地化。這 .uni 檔必須相對於 INF 檔所在的目錄下。<br><br>
+選擇性條目通常用來定位一個統一碼 (Unicode) 檔，該檔用於標頭區段上模組的摘要和描述的在地化。這 .uni 檔必須相對於 INF 檔所在的目錄下。<br><br>
 ```
      FILE_GUID             = 11111111-2222-3333-4444-555555555555
 ```
-對這個模組的獨一無二的GUID。 參考 http://www.guidgen.com/ <br><br>
+對這個模組而言獨一無二的GUID。 參考 http://www.guidgen.com/ <br><br>
 ```
      MODULE_TYPE           = USER_DEFINED
 ```
-正在建置的模組種類。這涵蓋諸如 UEFI_DRIVER, UEFI_APPLICATION, DXE_DRIVER等;對函式庫，它能是 BASE, USER_DEFINED等...<br><br>
+所建置的模組種類。這涵蓋諸如 UEFI_DRIVER, UEFI_APPLICATION, DXE_DRIVER等;對函式庫，它能是 BASE, USER_DEFINED等...<br><br>
 ```
        VERSION_STRING      = 1.0
 ```
@@ -69,7 +69,7 @@ __**內容表格**__
 
 ### [Packages]
  
-列(表)出這模組將使用的各種套件。這將告訴建置系統去哪裡尋找函式庫類別 (給函式庫的標頭檔)，平台配置資料庫 (PCDs), 全域唯一識別元 (GUIDs), 協議 (Protocols)和 韌體前模組同階介面 (PPIs) 透過不同的套件宣告檔 (.DEC)。 在本套件下的 .DCS 檔不使用。一般來最低需要的套件是 MdePkg.dec 。
+列(表)出這模組將使用的各種套件。這告訴建置系統經由不同的套件宣告檔 (.DEC) 去哪裡尋找函式庫類別 (給函式庫用的標頭檔)，平台配置資料庫 (PCDs), 全域唯一識別元 (GUIDs), 協議 (Protocols)和 韌體前模組同階介面 (PPIs)。不使用在這個套件下的 ~~.DCS~~.DEC 檔。一般來最低需要的套件是 MdePkg.dec 。
 ```
       MdePkg/MdePkg.dec
 ```

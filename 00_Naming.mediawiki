@@ -149,7 +149,10 @@ Infrastructure          基礎要件
                                           
 Integration Branch       整和分支
 [[EDK-II-Development-Process]] 
-                                 
+                                                    
+Intel(R) UEFI Packaging Tool           Intel(R) UEFI 套件工具
+[[Build Description Files]]        
+                                                              
 Intellectual Property   智慧產權 
 [[MinnowBoardMax]]                      
                                       
