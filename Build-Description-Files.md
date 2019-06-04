@@ -68,7 +68,7 @@ __**內容表格**__
 假如你的模組是一個函式庫且需要在啟動時初始化，你能用 CONSTRUCTOR 變數去指出在一個模組主要進入點被呼叫前先呼叫的函式名稱。<br><br>
 
 ### [Packages]
- 
+
 列(表)出這模組將使用的各種套件。這告訴建置系統經由不同的套件宣告檔 (.DEC) 去哪裡尋找函式庫類別 (給函式庫用的標頭檔)，平台配置資料庫 (PCDs), 全域唯一識別元 (GUIDs), 協議 (Protocols)和 韌體前模組同階介面 (PPIs)。不使用在這個套件下的 ~~.DCS~~.DSC 檔。一般來最低需要的套件是 MdePkg.dec 。
 ```
       MdePkg/MdePkg.dec
@@ -145,7 +145,7 @@ __**內容表格**__
 
 ### [Includes]
 
-這個區段列出給套件和使用這些套件 (.h 檔的搜尋路徑) 的模組的涵蓋目錄。這個 [Includes] 區段也可透過附加期間和結構名稱方式到涵蓋名稱去按結構方式指示目錄。例如 [Includes.IA32]，[Includes.X64]。這是你的 .C 模組去找 #include <header.h> 檔的地方。<BR>
+這個區段列出給套件和使用這些套件 (.h 檔的搜尋路徑) 的模組用的涵蓋目錄。這個 [Includes] 區段也可透過附加期間和結構名稱方式到涵蓋名稱去按結構方式指示目錄。例如 [Includes.IA32]，[Includes.X64]。這是你的 .C 模組去找 #include <header.h> 檔的地方。<BR>
 例如:
 ```
   [Includes]
@@ -186,10 +186,10 @@ __**內容表格**__
    [PcdsFixedAtBuild,PcdsPatchableInModule]
    [PcdsDynamic,]
 ```
- 
+
 這些區段呈現一個平台配置資料庫 (PCD) 的創建。實質上這是一個在 .h 檔內替換對使用 #defines, #if defined, 和 靜態常數 (static const variables)。EDK II 的設計者的野望是不鼓勵 #if define() 類型的編碼，此可能導致移植上的困難當嘗試在原始碼上定位常數 (constants) 和 "#define" 變數。 <BR>
 相反它使用了編譯器的優化去跳過使用了沒有使用 PCD 的源碼。另外，為了使源碼更具可移植性，建議在 #defines 上使用常數變數當值可能需要以二進制形式上進行修補。<br> 
- 例如:
+例如:
 
 ```
   [PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
