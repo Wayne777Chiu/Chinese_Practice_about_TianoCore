@@ -13,8 +13,8 @@ __**內容表格**__
   - [[註解|Build Description Files#註解]] - [[\[Defines\]|Build Description Files#defines-]] - [[\[Packages\]|Build Description Files#Packages]] - [[\[Sources\]|Build Description Files#Sources]] - [[\[LibraryClasses\]|Build Description Files#LibraryClasses]] - [[\[Protocols\]|Build Description Files#Protocols]] - [[\[Guids\]|Build Description Files#Guids]] - [[\[BuildOptions\]|Build Description Files#BuildOptions]]
 * [[.DEC 檔|Build Description Files#DEC 檔]] 套件宣告檔<BR>
   - [[註解|Build Description Files#註解-1]] - [[\[Defines\]|Build Description Files#defines]] - [[\[includes\]|Build Description Files#includes]] -  [[\[libraryclasses\]|Build Description Files#libraryclasses-1]] -  [[\[Guids\]|Build Description Files#guids-1]] - [[\[Pcds . . .\]|Build Description Files#pcds-----sections]]
-* [The .DSC File](#the-dsc-file) Platform Description File <BR>
-  - [\[Defines\]](#defines-1) -  [\[LibraryClasses\]](#libraryclasses-2) -  [\[Pcds . . .\]](#pcds-----sections-1) - [\[Components\]](##components)
+* [[.DSC 檔|Build Description Files#DSC 檔]] 平台組態描述檔 <BR>
+  - [[\[Defines\]|Build Description Files#defines-1]] -  [[\[libraryclasses\]|Build Description Files#libraryclasses-2]] -  [[\[Pcds . . .\]|Build Description Files#pcds-----sections-1]] - [[\[Components\]|Build Description Files#components]]
 
 ***
 
@@ -22,7 +22,7 @@ __**內容表格**__
 ## .INF 檔
 
 對於規範和描述，參考: [[EDK II 規範|EDK II Specifications]] 頁面上的 [[INF|EDK II Specifications#INF]]<BR>
-這個檔案描述如和建置一個模組 (例 驅動程式，函式庫，應用程式等等)。
+這個檔案描述如何建置一個模組 (例 驅動程式，函式庫，應用程式等等)。
 
 ### 註解
 單一井 `#` 字元表示在 (INF) 檔案上的註解。行裡的註解會中斷一行的流程。行註解必須放置在行末，和不能在區段([,])標籤之中。井字元出現在帶引號符號的字串上是被允許的。
@@ -141,13 +141,12 @@ __**內容表格**__
       PACKAGE_VERSION      = 1.00
 
 
-上面例子是相似於 INF 檔 的例子
-The above example are similar to the example for the [.INF File](#the-inf-file)  above.<BR>
+上面例子是相似於之前 [[.INF 檔|Build Description Files#INF 檔]] 的例子。<BR>
 
 ### [Includes]
 
-This section lists the include directories for the package and modules that use the package (the search path for .h files).  The [Incudes] section can also indicate directories by Architecture used by appending a period and architecture name to the Includes name.  For example [Includes.IA32], [Includes.X64].   This is where your .C modules look for #include <header.h> files.<BR> 
-For example:
+這個區段列出給套件和使用這些套件 (.h 檔的搜尋路徑) 的模組的涵蓋目錄。這個 [Includes] 區段也可透過附加期間和結構名稱方式到涵蓋名稱去按結構方式指示目錄。例如 [Includes.IA32]，[Includes.X64]。這是你的 .C 模組去找 #include <header.h> 檔的地方。<BR>
+例如:
 ```
   [Includes]
     TheIncludesDirectoryForThePackage
@@ -155,9 +154,9 @@ For example:
 
 ### [LibraryClasses]
 
-Lists the libraries available in (provided by) the package and where the header file can be found.  The libraries available are the modules that belong to the package which are libraries.  The name of the library available must match the LIBRARY_CLASS names given in the various .INF files that belong to the package.  This is used by the build system when your modules .INF [Packages] section includes this package and its [LibraryClasses] include a LibNameToReference.  The build system then generates the #include to the header file in the autogen.h file so you don’t need to include it in your source modules.<BR>
+列出在套件裡(提供)和在能找到標頭檔位置上的可用的函式庫。可用的函式庫是指屬於套件的模組是函式庫。可用函式庫的名稱必須符合 LIBRARY_CLASS 名稱，其被給定在屬於套件的各種 .INF 檔裡。這用來建置系統當你的模組 .INF [Packages] 區段包含這個套件 (Package) 和它的 [LibraryClasses] 包含一個 LibNameToReference 。然後建置系統會生成 #include 到標頭檔案在 autogen.h 檔裡，因而你不需要包含 (include) 它在你的源碼模組裡。<BR>
  
-For example:
+例如:
 ```
   ##  @libraryclass  Name description of library function.
   #   This library does something.
@@ -166,16 +165,16 @@ For example:
 
 ### [Guids]
 
-Defines various GUIDS available / used by the package.  It replaces #defines that would otherwise be in a .h file.  However you still must define a .h file that includes an extern reference to the variable name.  
+定義各式各樣的 GUIDS 變數/被套件使用。它替換原本在 .h 檔中的 #defines。然而你仍然需要定義一個包含一個對變數名稱的額外參照的一個 .h 檔。 
 <BR> 
-For Example:<BR>
-* note the `## `comment below is recommended for documentation but not required by the build system.
+例如:<BR>
+* 記住 關於以下的 `##` 註解當成文件而被建議，但不被建置系統所要求。
 ```
     ##location/of/extern/header.h
     gSomeVarGuid = {0x11111111, 0x2222, 0x3333, {0x44, 0x44, 0x55, 0x55, 0x55, 0x55, 0x55, 0x55}}
 ```
 <BR><BR>
-Now in a file /location/of/extern/header.h we add
+現在，在一個檔案 /location/of/extern/header.h 裡，我們新增了
 ```
     extern EFI_GUID gSomeVarGuid;
 ```
@@ -188,9 +187,9 @@ Now in a file /location/of/extern/header.h we add
    [PcdsDynamic,]
 ```
  
-These sections represent the creation of a Platform Configuration Database (PCD).   Essentially this is a replacement for using #defines, #if defined, and static const variables in .h files.   The desire of the designers of the EDK II was to discourage the use of #if define() type coding which could lead to difficulties in porting when trying to locate the constants and "#define" variables within the source code. <BR>
-Instead it uses the compilers optimizations to strip the use of code not used by using PCDs.   Also to make the code more portable, it is recommended to use of const variables over #defines where values may need to be patchable in binary form.<br>
-Example:
+這些區段呈現一個平台配置資料庫 (PCD) 的創建。實質上這是一個在 .h 檔內替換對使用 #defines, #if defined, 和 靜態常數 (static const variables)。EDK II 的設計者的野望是不鼓勵 #if define() 類型的編碼，此可能導致移植上的困難當嘗試在原始碼上定位常數 (constants) 和 "#define" 變數。 <BR>
+相反它使用了編譯器的優化去跳過使用了沒有使用 PCD 的源碼。另外，為了使源碼更具可移植性，建議在 #defines 上使用常數變數當值可能需要以二進制形式上進行修補。<br> 
+ 例如:
 
 ```
   [PcdsFixedAtBuild, PcdsPatchableInModule, PcdsDynamic, PcdsDynamicEx]
@@ -206,12 +205,12 @@ Example:
 ***
 
  
-## The .DSC file
-For the Spec and Description see: [DSC](EDK-II-Specifications#dsc) on the [[EDK II Specifications]] page<BR>
-This file describes how to build a package; a package being a set of components to be provided together. Note the Build will need at least one .DSC file to be successful.
+## .DSC 檔
+對於規範和描述，參考: [[EDK II 規範|EDK II Specifications]] 頁面上的 [[DSC|EDK II Specifications#DSC]]<BR>
+這個檔案描述如何建置一個套件; 一個套件當成是被提供在一起的元件的集合。注意建置將需要至少一個 .DSC 檔來建置完成。
  
 ### [Defines]
-The values in this section are self-explanatory.
+在此區段裡的值是不言自明的。
 
       PLATFORM_NAME            = name of the platform
       PLATFORM_GUID            = 11111111-2222-3333-4444-555555555555
@@ -224,7 +223,7 @@ The values in this section are self-explanatory.
  
 ### [LibraryClasses]
 
-List the various libraries the components of this package may use.  This tells the build system where the library to link with is located.  The modules .INF file indicates the LibNameToReference in its [LibraryClasses] section and the build system looks to this section for how to find it.  The build system does not use your [Packages] section of the .INF to find the library to link with; it uses the [Packages] section to find the location of the header files for a library in a packages .DEC file.  The format is:
+列出各式各樣的這個套件可能使用的函式庫元件。這告訴建置系統要連結的函式庫的所在位置。這模組 .INF 檔指出 LibNameToReference 在它的 [LibraryClasses] 區段裡，和建置系統要看這個區段去找到它。建置系統不使用你在 .INF 檔裡的 [Packages] 區段去找到連結的函式庫；它使用 [Packages] 區段去找到標頭檔的所在位置給套件 .DEC 檔的一個函式庫使用。 這格式是:
 
     LibNameToReference|Path/To/Library/Inf/File.inf
 
@@ -234,15 +233,15 @@ List the various libraries the components of this package may use.  This tells t
     [PcdsFixedAtBuild,PcdsPatchableInModule]
     [PcdsDynamic,]
 
-'''Etc…''' 
+'''等等......''' 
 
-These sections represent the redefinition of a particular token variable in the Platform Configuration Database (PCD).  These are optional and only needed if the project needs a different value as defined in the .DEC file.  
+這些區段呈現在平台配置資料庫 (PCD) 裡的一個特定記號變數的重新定義。這是可選擇性的和只有在專案需要一個不同值當成在 .DEC 檔裡被定義時需要用到。
  
 ### [Components]
-List the various components or modules to build for this package specifically built as a result of when the package .DSC file is built; not when the package is referenced by the [Packages] section of an .INF file.  You can also specify architecture specific sections by appending a period and architecture to the end of Components (e.g.[Components.IA32]). This section can also be used for building a library referenced in the [Packages] section of an .INF file.    This is used when you want to build a separate library and link to it in a traditional way or for debugging the library to ensure it builds properly. <BR>
-There must be at least one .inf file listed in the components section for the build to be successful <BR>
-For example:<BR>
-* Note: that the relative path is from the edk2  base directory and not the package directory (also referred to as the Work Space Directory)
+列出當套件 .DSC 檔被建置完成時給這個套件建置用來專門建置的各式元件和模組；而不是當一個套件被一個 .INF 檔的 [Packages] 區段參照時。你也能藉著附加一個期間和結構到元件的後面 (例 [Components.IA32]) 來指定結構特定部分。這個區段也可以用來建置一個參照自 .INF 檔裡的 [Packages] 區段的函式庫。這用來當你要去建置一個分離函式庫，用傳統方式去連結它或為了確保它建置適當而偵錯這個函式庫。 <BR>
+至少要有一個 .inf 檔列在元件 (components) 區段裡才能建置成功 <BR>
+例如:<BR>
+* 記住: 相對位置是從 edk2 基本目錄(開始)而不是套件目錄 (也可參考成工作區目錄(Work Space Directory))
 ```
   [Components]
      relative/path/to/module.inf

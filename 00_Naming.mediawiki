@@ -222,7 +222,7 @@ Path Separator Character    路徑分隔符號字元
 Platform Configuration Database (PCD(s)) 平台配置資料庫
 [[EDK-II-Ddebugging]] [[EDK-II-Specifications]]  [[Build Description Files]]                                         
                                                         
-Platform Description File (DES)     平台組態描述檔
+Platform Description File (DSC)     平台組態描述檔
 [[EDK-II-Specifications]]                               
                                                
 Platform Feature(s)      平台功能
@@ -320,8 +320,8 @@ Visual Forms Representation (VFR)      虛擬表單展現
 Web Browser(s)           網頁瀏覽器
 [[Using-EDK-II-with-Native-GCC]]         
                                         
-Workspace                 工作區
-[[Windows-systems]]                  
+Workspace (Work Space)                工作區
+[[Windows-systems]] [[Build Description Files]]                  
                                              
 V.S 
 
