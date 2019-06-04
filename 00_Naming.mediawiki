@@ -17,7 +17,7 @@ Base Module(s)          基底模組
                                  
 Base Tool(s)            基本建置工具
 [[Build Description Files]]   
-
+                                            
 Binary Image(s)         二進制映像檔 
 [[MinnowBoardMax]]                  
                                     
@@ -212,7 +212,7 @@ OVMF (Open Virtual Machine Firmware)   開放性的虛擬機器韌體
 [[OVMF]] [[Common instructions]]                              
                                                          
 Package                 物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
-
+                                                              
 Package Declaration File (DEC)            套件宣告檔
 [[EDK-II-Specifications]] [[Build Description Files]]        
                                                                                     
@@ -226,7 +226,7 @@ Platform Configuration Database (PCD(s)) 平台配置資料庫
 [[EDK-II-Ddebugging]] [[EDK-II-Specifications]]  [[Build Description Files]]                                         
                                                         
 Platform Description File (DSC)     平台組態描述檔
-[[EDK-II-Specifications]]                               
+[[EDK-II-Specifications]] [[Build Description Files]]                                    
                                                
 Platform Feature(s)      平台功能
 [[IntelAtomProcessorE3900]]                                
@@ -239,7 +239,7 @@ Porting                 平台開發導入
                                      
 Pre-EFI Module (PEIM)      韌體前模組                        
 [[Build Description Files]] 
-
+                                                 
 Prefix                      字首綴詞
 [[Nasm-Setup]]                       
                                         
@@ -248,7 +248,7 @@ Protocol(s)                   協議
                                                 
 (PEIM to PEIM Interface)(???) PPI(s) 韌體前模組同階介面                                           
 [[Build Description Files]]                     
-
+                                                       
 Release Note(s)            發佈公告
 [[MinnowBoardMax]] [[IntelAtomProcessorE3900]]          
                                    

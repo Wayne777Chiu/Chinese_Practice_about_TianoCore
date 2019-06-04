@@ -61,7 +61,7 @@ __**內容表格**__
 ```
        LIBRARY_CLASS  = LibNameToReference | AllowedModuleType1 AllowedModuleType2 Etc . . .
 ```
-假如你的模組是函式庫，這是函式庫被建構系統認知的名稱，函式庫能被使用於其後面跟隨著建構系統的可垂直條和空格列表界定的模組種類。<br><br>
+假如你的模組是函式庫，這是函式庫在建構系統裡被認知的名稱，函式庫能被其後跟隨垂直條 (Vertical Bar |) 和一串空格 (a list of space) 後的模組種類所使用。<br><br>
 ```
        CONSTRUCTOR         = LibInitializationFunction
 ```
@@ -69,7 +69,7 @@ __**內容表格**__
 
 ### [Packages]
  
-列(表)出這模組將使用的各種套件。這告訴建置系統經由不同的套件宣告檔 (.DEC) 去哪裡尋找函式庫類別 (給函式庫用的標頭檔)，平台配置資料庫 (PCDs), 全域唯一識別元 (GUIDs), 協議 (Protocols)和 韌體前模組同階介面 (PPIs)。不使用在這個套件下的 ~~.DCS~~.DEC 檔。一般來最低需要的套件是 MdePkg.dec 。
+列(表)出這模組將使用的各種套件。這告訴建置系統經由不同的套件宣告檔 (.DEC) 去哪裡尋找函式庫類別 (給函式庫用的標頭檔)，平台配置資料庫 (PCDs), 全域唯一識別元 (GUIDs), 協議 (Protocols)和 韌體前模組同階介面 (PPIs)。不使用在這個套件下的 ~~.DCS~~.DSC 檔。一般來最低需要的套件是 MdePkg.dec 。
 ```
       MdePkg/MdePkg.dec
 ```
@@ -84,7 +84,7 @@ __**內容表格**__
 
 ### [LibraryClasses]
 
-列出模組使用且應被連結的函式庫。這是 LibNameToReference 變數的值是函式庫模組在 .INF 檔裡面使用的。對這個區段裡的每個條目都需要有一個這個模組相關聯的 .DSC 檔的 [LibraryClasses]區的條目。這是因為在 [Packages] 區段裡(列)的套件是不用來決定函式庫模組去跟甚麼做連結的。
+列出模組使用且應被連結的函式庫。 LibNameToReference 的值被函式庫模組使用在它的 .INF 檔裡。對這個區段裡的每個條目都需要有一個與這個模組相關聯的[LibraryClasses]的條目在 .DSC 檔裡。這是因為在 [Packages] 區段裡(列)的套件是不被用來決定函式庫模組連結的。
 例如:
 ``` 
    LibNameToReference
@@ -107,7 +107,7 @@ __**內容表格**__
 ``` 
     gEfiDiskInfoScsiInterfaceGuid                 ## SOMETIMES_PRODUCES ## UNDEFINED
 ```
-這使用阻段 `## SOMETIMES_PRODUCES` 和全域唯一識別元 (guid) 種類 `## UNDEFINED` 代表了這個模組將會生成一個不符合定義為 PROTOCOL 或 PPI 類型的全域唯一識別元 (GUID)。這模組有條件式地生成了有命名的全域唯一識別元 (GUID)。
+使用阻段 `## SOMETIMES_PRODUCES` 和全域唯一識別元 (guid) 種類 `## UNDEFINED` 代表了這個模組將會生成一個不符合定義為 PROTOCOL 或 PPI 類型的全域唯一識別元 (GUID)。這模組有條件式地生成了有命名的全域唯一識別元 (GUID)。
  
 ### [BuildOptions]
  
