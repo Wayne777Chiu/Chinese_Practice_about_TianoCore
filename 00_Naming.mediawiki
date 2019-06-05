@@ -74,8 +74,8 @@ Driver                 驅動程式
 Driver Binding Protocol Start Function     驅動程式綁定協議開始函式   
 [[Build Description Files]]                       
                                                            
-Driver Writer Guide (DWG)  UEFI 驅動程式編碼指南
-[[Driver-Developer]]                         
+(UEFI) Driver Writer Guide (DWG)  UEFI 驅動程式編碼指南
+[[Driver-Developer]] [[UEFI Driver Writer's Guide]]                     
                                  
 Edit Menu                編輯選單
 [[Using-EDK-II-with-Native-GCC]]  
