@@ -231,7 +231,7 @@ Platform Configuration Database (PCD(s)) 平台配置資料庫
 Platform Description File (DSC)     平台組態描述檔
 [[EDK-II-Specifications]] [[Build Description Files]]                                    
                                                
-Platform Feature(s)      平台功能
+Platform Feature(s)      平台特點(/功能)
 [[IntelAtomProcessorE3900]]                                
                                               
 Port                    網路埠

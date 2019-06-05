@@ -56,7 +56,6 @@
 ***** [[EDK II Debugging]] (done)
 ****** [[SourceLevelDebugPkg]] (done)
 ******* [[How to debug OVMF with QEMU using GDB]]
-******** [[How to run OVMF]]
 ***** [[EDK II Platforms]]
 ****** [[OVMF]]
 ****** [[Nt32Pkg]]
@@ -118,6 +117,9 @@
 
 == [[UEFI Driver Writer's Guide]] ==
 * [[EDK II]]
+
+== [[How to debug OVMF with QEMU using GDB]] ==
+* [[How to run OVMF]]
 
 == [[EDKII Packages]] ==
 * [[EDK II]]
