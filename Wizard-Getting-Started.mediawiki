@@ -4,8 +4,7 @@
 ''記住: 例子是基於使用Visual Studio 2008 在 Microsoft Windows 7 上。對於安裝在其他系統/編譯器環境請檢視發佈公告''
 
 # 確認你有一個支援 UDK2014 的已安裝編譯器
-# 下載 UDK2014 驅動程式開發者發行版
-([https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UDK2014.IHV.zip UDK2014.IHV.zip])。
+# 下載 UDK2014 驅動程式開發者發行版 ([https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UDK2014.IHV.zip UDK2014.IHV.zip])。
 # 解壓縮 [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UDK2014.IHV.zip UDK2014.IHV.zip] 到工作區目錄(例如: C:\FW\UDK2014.IHV)
 #下載和安裝 [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard.msi UEFI Driver Wizard .msi]
 # 開啟 UEFI Driver Wizard，選擇 'File -> Open Workspace' 和選擇 UDK2014.IHV 工作區目錄
