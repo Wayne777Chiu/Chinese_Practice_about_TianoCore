@@ -1,6 +1,6 @@
 (2019/03/08)
 
-在我們的 [EDK II](http://www.tianocore.org/edk2/) 專案，有各式各樣的套件 (每個子目錄)。討論一個跟套件有關問題 (issue)，或去[[ 貢獻|Code Contributions]] 一個源碼改變，請諮詢在相對應的 [[edk2-devel]] 電子郵件列表上的套件維護者。
+在我們的 [EDK II](http://www.tianocore.org/edk2/) 專案，有各式各樣的套件 (每個子目錄)。討論一個跟套件有關問題 (issue)，或去[[貢獻|Code Contributions]] 一個源碼改變，請諮詢在相對應的 [[edk2-devel]] 電子郵件列表上的套件維護者。
 
 套件維護者被文件化在 EDK II 樹的根目錄裡的 [Maintainers.txt](https://raw.githubusercontent.com/tianocore/edk2/master/Maintainers.txt) 檔。
 

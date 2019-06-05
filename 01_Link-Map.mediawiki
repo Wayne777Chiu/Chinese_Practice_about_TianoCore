@@ -122,7 +122,6 @@
 * [[How to run OVMF]]
 
 == [[EDKII Packages]] ==
-* [[EDK II]]
 * [[Code Contributions]]
 * [[edk2-devel]]
 * [[Capsule Based Firmware Update and Firmware Recovery]]
