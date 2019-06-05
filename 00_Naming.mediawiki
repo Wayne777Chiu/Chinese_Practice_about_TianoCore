@@ -31,7 +31,10 @@ Boot services           開機過程服務
                                                  
 C Coding Standards      C語言編碼標準
 [[EDK-II-Specifications]]                              
-                                          
+                                         
+Capsule Based                 膠囊基底式
+[[EDKII Packages]] [[Capsule Based Firmware Update and Firmware Recovery]]
+
 Capsule Image(s)              膠囊映像檔
 [[EDK-II-Specifications]]          
                                            
