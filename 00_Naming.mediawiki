@@ -68,6 +68,9 @@ Definition(s)          定義
 Description Files       組態描述檔
 [[EDK-II-Specifications]]                   
                                        
+Developer Release         開發者發行版
+[[Wizard Getting Started]]
+                                          
 Document                v. 載明
 [[MdePkg]]                          
                                  
