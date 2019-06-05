@@ -110,5 +110,8 @@
 * [[Tasks]]
 
 == [[Code Contributions]] ==
-*[[Commit Message Format]]
-*[[Code Style]]
+* [[Commit Message Format]]
+* [[Code Style]]
+
+== [[Build Description Files]] ==
+* [[EDK II Specifications]]
