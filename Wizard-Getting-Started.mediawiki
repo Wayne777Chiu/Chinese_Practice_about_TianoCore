@@ -1,5 +1,5 @@
 (2019/03/08)
-
+__NOTOC__
 ==安裝概論==
 ''記住: 例子是基於使用Visual Studio 2008 在 Microsoft Windows 7 上。對於安裝在其他系統/編譯器環境請檢視發佈公告''
 
@@ -8,6 +8,35 @@
 # 解壓縮 [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UDK2014.IHV.zip UDK2014.IHV.zip] 到工作區目錄(例如: C:\FW\UDK2014.IHV)
 #下載和安裝 [https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard.msi UEFI Driver Wizard .msi]
 # 開啟 UEFI Driver Wizard，選擇 'File -> Open Workspace' 和選擇 UDK2014.IHV 工作區目錄
+
+在這些步驟完成後，UEFI 驅動程式精靈 (Driver Wizard)準備好第一次使用了。
+
+== 設定好工作區 ==
+
+UEFI 驅動程式精靈在開始運行精靈時，需要 UDK2014的子集或 EDK II 設定。[https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UDK2014.IHV.zip  UDK2014.IHV.zip] 驅動程式開發者發行版包含了被用來創建UEFI 驅動程式的元件的最小的套組。請參考 [[UDK2014.IHV-Setup-Guide]] 獲取更多資訊。
+
+在開始 UEFI 驅動程式精靈之後，使用 'File -> Open Workspace' 選項去選擇工作區目錄 (例如: C:\FW\SR1.IHV)
+
+
+<img src="https://raw.githubusercontent.com/tianocore/tianocore.github.io/master/images/UEFIDriverWizard01.png" > 
+<br> 
+<img src="https://raw.githubusercontent.com/tianocore/tianocore.github.io/master/images/UEFIDriverWizard02.png" >
+
+
+''注意在使用 UEFI 驅動程式精靈時，必須先運行 edksetup.bat 或 edksetup.sh在工作區目錄內。 在 Conf 目錄裡的 EDK II 組態設定檔被 UEFI 驅動程式精靈用來偵測合法的工作區。如果 edksetup 沒有已在工作區目錄內運行完畢，UEFI 驅動程式精靈將回報一個錯誤 (error)。''
+
+== 創建一個空白驅動程式 ==
+
+一旦工作區目錄被設定組態好，在工作區目錄內使用 'New UEFI Driver' 對話框去創建一個空白驅動程式。
+
+<img src="https://raw.githubusercontent.com/tianocore/tianocore.github.io/master/images/UEFIDriverWizard03.png" >
+
+記住如果需要的欄位留白(例如: UEFI 驅動程式名稱)，精靈可能會回傳一個錯誤在流程的最後。 關於對話框的詳盡內容，請參考新 UEFI 驅動程式對話框 (New UEFI Driver dialog) 頁面。
+
+<!-- [[Category:UEFI Driver Wizard]] -->
+<!-- [[Category:Driver]] -->
+<!-- [[Category:IHV]] -->
+<!-- [[Category:EDKII]] -->
 
 = 原文 =
 == Installation Overview ==

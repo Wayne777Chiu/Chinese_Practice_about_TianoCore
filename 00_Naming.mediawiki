@@ -75,7 +75,10 @@ Document                v. 載明
 [[MdePkg]]                          
                                  
 Driver                 驅動程式
-[[MdePkg]]                          
+[[MdePkg]]                    
+                                                           
+Driver Wizard           驅動程式精靈
+[[Wizard Getting Started]]  
                                          
 Driver Binding Protocol Start Function     驅動程式綁定協議開始函式   
 [[Build Description Files]]                       
@@ -199,6 +202,9 @@ Native                   原生
 NetWork                  網絡
 [[Using-EDK-II-with-Native-GCC]]  
                                         
+New UEFI Driver Dialog              新 UEFI 驅動程式對話框
+[[Wizard Getting Started]]  
+                                                    
 Source Build Instructions 原始碼建置說明
 [[MinnowBoardMax]]              
                                        
