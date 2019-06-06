@@ -91,6 +91,13 @@
 * [[How To Contribute]] 
 * [[Tasks]]
 
+== [[EDK II Documents]] ==
+* [[EDK II Specifications]]
+* [[EDK II User Documentation]]
+* [[EDK II Libraries and Helper files]]
+* [[EDK II White papers]]
+* [[Driver Developer]]
+
 == [[Code Contributions]] ==
 * [[Commit Message Format]]
 * [[Code Style]]
