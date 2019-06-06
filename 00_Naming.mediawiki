@@ -89,6 +89,9 @@ Driver Binding Protocol Start Function     驅動程式綁定協議開始函式
 Edit Menu                編輯選單
 [[Using-EDK-II-with-Native-GCC]]  
                                        
+EDK II User Documentation           EDK II 使用者文獻
+[[EDK II User Documentation]]
+                                                      
 Entry Point              (程式)進入點
 [[How-to-debug-OVMF-with-QEMU-using-GDB]]                             
                                                  
