@@ -33,7 +33,7 @@ UEFI 套件工具 (UEFIPT) 快速開始 1.2 <br>
 Signing UEFI Images.pdf V1.31 (簽章 UEFI 映像檔)<br>
 版本 1.31。 這份文件描述了針對使用UDK2010.SR1發行版的 UEFI 安全性啟動的開發和測試而言如何簽章 UEFI 映像檔。 
 
-*   提供 UEFI 安全啟動 
+*   提供 UEFI 安全性啟動 
 *   簽章 UEFI 映像檔的詳細步驟
 *   描述 UEFI 安全性啟動策略 
 *   描述設定特定的 UEFI 安全性啟動策略所需要的步驟
