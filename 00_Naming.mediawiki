@@ -9,6 +9,9 @@ Assembly Code           組合源碼
 Application Programmer    應用程式設計師
 [[Driver-Developer]]               
                                          
+Authenticated Variable     認證變數
+[[EDK II User Documentation]]          
+                                          
 Backslash Character     反斜線字元
 [[Using-EDK-II-with-Native-GCC]]     
                                  
@@ -34,7 +37,7 @@ C Coding Standards      C語言編碼標準
                                          
 Capsule Based                 膠囊基底式
 [[EDKII Packages]] [[Capsule Based Firmware Update and Firmware Recovery]]
-
+                                                              
 Capsule Image(s)              膠囊映像檔
 [[EDK-II-Specifications]]          
                                            
@@ -56,6 +59,9 @@ Cover-Letter                   涵蓋文稿
 Customer Reference Board(CRB)  顧客參照板
 [[IntelAtomProcessorE3900]]             
                                          
+DB                                      
+[[EDK II User Documentation]]     
+                                            
 Debug Host Application     偵錯主機應用程式
 [[SourceLevelDebugPkg]]              
                                           
@@ -89,9 +95,15 @@ Driver Binding Protocol Start Function     驅動程式綁定協議開始函式
 Edit Menu                編輯選單
 [[Using-EDK-II-with-Native-GCC]]  
                                        
+EDK II Module Writer's Guide        EDK II 模組編碼指南
+[[EDK II User Documentation]]                        
+                                            
 EDK II User Documentation           EDK II 使用者文獻
-[[EDK II User Documentation]]
-                                                      
+[[EDK II User Documentation]]                
+                                                        
+EDK II User Manual                  EDK II 使用者手冊
+[[EDK II User Documentation]]           
+                                           
 Entry Point              (程式)進入點
 [[How-to-debug-OVMF-with-QEMU-using-GDB]]                             
                                                  
@@ -162,7 +174,7 @@ Infrastructure          基礎要件
 Integration Branch       整和分支
 [[EDK-II-Development-Process]] 
                                                     
-Intel(R) UEFI Packaging Tool           Intel(R) UEFI 套件工具
+Intel(R) UEFI Packaging Tool (UEFIPT)           Intel(R) UEFI 套件工具
 [[Build Description Files]]        
                                                               
 Intellectual Property   智慧產權 
@@ -177,6 +189,9 @@ Internet prox(y|ies)     網路代理伺服器
 Internet Relay Chat (IRC)   網際網路中繼聊天
 [[EDK-II-Development-Process]]                   
                                              
+KEK                                       
+[[EDK II User Documentation]]                       
+                                                
 Legacy BIOS                 傳統式 BIOS
 [[UEFI-UBUNTU]]                        
                                               
@@ -236,7 +251,10 @@ Patch                        補丁
                                                        
 Path Separator Character    路徑分隔符號字元
 [[Multiple_Workspace]]                                
-                                                                                                                                                          
+                                                                                                        
+Performance Optimization            效能優化
+[[EDK II User Documentation]]                   
+
 Platform Configuration Database (PCD(s)) 平台配置資料庫
 [[EDK-II-Ddebugging]] [[EDK-II-Specifications]]  [[Build Description Files]]                                         
                                                         
@@ -263,7 +281,10 @@ Protocol(s)                   協議
                                                 
 (PEIM to PEIM Interface)(???) PPI(s) 韌體前模組同階介面                                           
 [[Build Description Files]]                     
-                                                       
+                                                                                           
+Release                    發行/ 發佈/ 釋出
+[[EDK II User Documentation]]                         
+                                                  
 Release Note(s)            發佈公告
 [[MinnowBoardMax]] [[IntelAtomProcessorE3900]]          
                                    
@@ -275,15 +296,21 @@ SPI Programmer          SPI 燒錄器
                                           
 Runtime services        運行時間服務
                                         
-Secure Boot             安全啟動
-[[Galileo]] [[UEFI-UBUNTU]]                                 
-                                   
+Secure Boot             安全性啟動
+[[Galileo]] [[UEFI-UBUNTU]] [[EDK II User Documentation]]             
+                                                          
+Secure Boot polic(y|ies)     安全性啟動策略                   
+[[EDK II User Documentation]]            
+                                                    
 Security Advisorie(s)     安全性公告
 [[Reporting-Security-Issues]]            
                                  
 Security Issue          安全性問題
 [[Reporting-Security-Issues]]                                   
                                    
+Self-Certification Test (SCT)      
+[[EDK II User Documentation]]            
+                                                    
 Shell                     殼層 (通常指使用者使用介面)   
 [[Using-EDK-II-with-Native-GCC]]  
                                                  
@@ -332,6 +359,9 @@ Universally Unquid Identifier (UUID) 全域唯一識別碼
 Usage Blcok                     使用阻段
 [[Build Description Files]]                
                                                  
+User Identification (UID)               使用者識別
+[[EDK II User Documentation]]            
+                                                      
 Visual Forms Representation (VFR)      虛擬表單展現
 [[EDK-II-Specifications]]                               
                                                       

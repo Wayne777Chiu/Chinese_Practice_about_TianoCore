@@ -94,6 +94,10 @@
 == [[EDK II Documents]] ==
 * [[EDK II Specifications]]
 * [[EDK II User Documentation]]
+** [[SecurityPkg]]
+** [[UEFI Driver Writer's Guide]]
+** [[Driver Developer]]
+** <s>[[EdkII_dashboard]]</s>
 * [[EDK II Libraries and Helper files]]
 * [[EDK II White papers]]
 * [[Driver Developer]]

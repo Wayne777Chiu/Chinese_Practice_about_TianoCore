@@ -16,7 +16,7 @@
 UEFI 套件工具 (UEFIPT) 快速開始 1.2 <br>
 
 這文件提供一個明確的步驟列表來遵循，其結果將在 Microsoft Windows* OS 和 Linux OS 環境下透過使用 UEFI 套件工具 (UEFIPT) 來創建一個 UEFI　發行套件。
-* 2015年八月
+* August 2015
     </td>
 </tr>
 
@@ -30,22 +30,22 @@ UEFI 套件工具 (UEFIPT) 快速開始 1.2 <br>
     </td>
 
     <td>
-Signing UEFI Images.pdf V1.31 <br>
-Version 1.31. This document describes how to sign UEFI images for the development and test of UEFI Secure Boot using the UDK2010.SR1 release.
+Signing UEFI Images.pdf V1.31 (簽章 UEFI 映像檔)<br>
+版本 1.31。 這份文件描述了針對使用UDK2010.SR1發行版的 UEFI 安全性啟動的開發和測試而言如何簽章 UEFI 映像檔。 
 
-*   Provides an overview of UEFI Secure Boot 
-*   Details the steps to sign an UEFI image 
-*   Describes the UEFI Secure Boot policies 
-*   Describes the steps required to set specific UEFI Secure Boot policies 
-*   Describes the image authorization flow when UEFI Secure Boot is enabled
-*   Decribes how to use OVMF and NT32Pkg as UEFI Secure Boot reference platforms
-*   Demonstrates several UEFI Secure Boot scenarios using OVMF
-Updates and clarifications related to UEFI Spec conformance regarding KEK and DB usages
+*   提供 UEFI 安全啟動 
+*   簽章 UEFI 映像檔的詳細步驟
+*   描述 UEFI 安全性啟動策略 
+*   描述設定特定的 UEFI 安全性啟動策略所需要的步驟
+*   描述當 UEFI 安全性啟動啟用時映像檔授權流程
+*   如何使用 OVMF 和 NT32Pkg 當成 UEFI 安全性啟動參考平台
+*   使用 OVMF 演示幾個 UEFI 安全性啟動場景
+更新與說明關於 KEK 和 DB 使用的相關 UEFI 規範的一致性
 
 
-See also [[SecurityPkg]] for more information on How to enable security, TPM, User identification (UID), secure boot and authenticated variable.
+也可看 [[SecurityPkg]] 獲取更多資訊在如何啟用安全，TPM，使用者識別 (UID)，安全性啟動和認證變數等。
 
-NOTE SVNs: For Nt32Pkg requires -r13186, For OVMF Requires -r13160 beyond UDK2010.SR1 release version
+注意 SVNs: 對 Nt32Pkg 需要 -r13186，對 OVMF 需要 -r13160 在 UDK2010.SR1 發行版以下版本
 
 * Feb 2013
     </td>
@@ -57,7 +57,7 @@ NOTE SVNs: For Nt32Pkg requires -r13186, For OVMF Requires -r13160 beyond UDK201
     </td>
 
     <td>
-The [[UEFI Driver Writer's Guide]] is designed to aid in the development of UEFI Drivers using the EDK II open source project as a development environment. Please refer to the [[Driver Developer]] page for more information.
+[[UEFI Driver Writer's Guide|UEFI 驅動程式編碼指南]]被設計來幫助使用 EDK II 源碼專案當成開發環境上的 UEFI 驅動程式開發。請參考[[Driver Developer|驅動程式開發者]]頁面獲得更多資訊。 
     </td>
 </tr>
 
@@ -67,8 +67,8 @@ The [[UEFI Driver Writer's Guide]] is designed to aid in the development of UEFI
     </td>
 
     <td>
-EDKII User Manual V 0.7 <br>
-This document provides detailed instructions for downloading, configuring, and building an EDK II project as well as running EDKII Emulation Environments.
+EDKII User Manual V 0.7 (EDKII 使用者手冊)<br>
+這份文件提供詳盡的指示針對下載，設定組態，建置一個 EDK II 專案和 運行 EDKII 模擬環境。
 
 * March 2010
     </td>
@@ -80,9 +80,8 @@ This document provides detailed instructions for downloading, configuring, and b
     </td>
 
     <td>
-EDK II Module Writer's Guide v 0.7<br>
-The document is a guideline for new EDK II module developers, and provides detailed instructions on how to develop and build a new module, and
-how to release with a package.
+EDK II Module Writer's Guide v 0.7 (EDK II 模組編碼指南)<br>
+這份文件是一個導引手冊給新的 EDK II 模組開發者且提供詳盡指示在如何開發和建置一個新的模組，和還有如何與套件一起釋出。
 
 * March 2010
     </td>
@@ -96,8 +95,8 @@ how to release with a package.
     </td>
 
     <td>
-Performance Optimization <br>
-Technical documentation for Performance Optimization for EDK II
+效能優化 (Performance Optimization) <br>
+技術性文獻針對 EDK II 效能優化
 
 * Feb 2010
     </td>
@@ -108,8 +107,8 @@ Technical documentation for Performance Optimization for EDK II
     </td>
 
     <td>
-UEFI SCT Case Writers Guide .91 <br>
-This document defines the guidelines for writing the test cases under UEFI Self-Certification Test (SCT) and introduces the UEFI SCT source tree. This document is intended for anyone interested in developing or porting tests for the UEFI SCT
+UEFI 自我認證測試案例 (SCT Case) 編碼指南 .91 <br>
+這份文件定義關於編碼在 UEFI 自我認證測試 (SCT) 之下的測試案例和介紹 UEFI SCT 源碼樹的導引手冊。這文件適合任何對 UEFI 自我認證測試 (SCT) 的開發或移植測試有興趣的人。
 * July 2009
     </td>
 </tr>
@@ -117,11 +116,11 @@ This document defines the guidelines for writing the test cases under UEFI Self-
 <!--
 <tr>
     <td>
-Previous UDK Releases
+之前的 UDK 發行版
     </td>
 
     <td>
-[[EdkII_dashboard| EDK II Dashboard Page]]
+[[EdkII_dashboard| EDK II 儀錶板頁面]]
     </td>
 </tr>
 <tr></tr>
