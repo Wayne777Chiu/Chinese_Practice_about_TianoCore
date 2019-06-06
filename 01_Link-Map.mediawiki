@@ -1,6 +1,6 @@
 (2019/03/08)
 
-[[Tianocore.github.io wiki首頁]] (still link lose)
+= [[Tianocore.github.io wiki首頁]] (still link lose) =
 * [[UEFI]] (done)
 ** [[start-using-UEFI]]
 *** [[Getting Started]]
