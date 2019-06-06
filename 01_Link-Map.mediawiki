@@ -10,7 +10,7 @@
 ****** [[Getting Started with EDK II]] (same as 1.1.1.1)
 ****** [[Driver Developer]]
 ******* [[UEFI Driver Wizard]]
-******* [[Wizard-Getting-Started]]
+******* [[Wizard Getting Started]]
 ******* [[UEFI Driver Writer's Guide]]
 ******* [[UDK2014.IHV Setup Guide]]
 ******* [[UDK2014]]
@@ -125,3 +125,5 @@
 * [[Code Contributions]]
 * [[edk2-devel]]
 * [[Capsule Based Firmware Update and Firmware Recovery]]
+
+== [[Wizard Getting Started]] ==
