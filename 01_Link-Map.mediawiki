@@ -9,25 +9,8 @@
 ****** [[EDK-II-Release-Planning]] 
 ****** [[Getting Started with EDK II]] (same as 1.1.1.1)
 ****** [[Driver Developer]]
-******* [[UEFI Driver Wizard]]
-******* [[Wizard Getting Started]]
-******* [[UEFI Driver Writer's Guide]]
-******* [[UDK2014.IHV Setup Guide]]
-******* [[UDK2014]]
-******* [[UDK2018]]
 ****** [[EDK II Specifications]]
-******* [[EDK II Draft Specification]]
-******* [[EDK II Speciificaitons Archived]]
-******* [[Build Description Files]]
 ****** [[Code Style]]
-******* [[Code Contributions]]
-******* [[Code Style-C]]
-******* [[Code Style-Python]]
-******* [[Source Control]]
-******* [[Commit Message Format]]
-******* [[Commit Partitioning]]
-******* [[Commit Signature Format]]
-******* [[How To Contribute]]
 ****** [[EDK II Overview]]
 ******* [[EDKII Packages]]
 ****** [[edk2-devel]]
@@ -126,4 +109,26 @@
 * [[edk2-devel]]
 * [[Capsule Based Firmware Update and Firmware Recovery]]
 
-== [[Wizard Getting Started]] ==
+== [[Driver Developer]] ==
+* [[UEFI Driver Wizard]]
+* [[Wizard Getting Started]]
+** [[UDK2014.IHV Setup Guide]]
+* [[UEFI Driver Writer's Guide]]
+* [[UDK2014.IHV Setup Guide]]
+* [[UDK2014]]
+* [[UDK2018]]
+
+== [[EDK II Specifications]] ==
+* [[EDK II Draft Specification]]
+* [[EDK II Speciificaitons Archived]]
+* [[Build Description Files]]
+
+== [[Code Style]] ==
+* [[Code Contributions]]
+* [[Code Style-C]]
+* [[Code Style-Python]]
+* [[Source Control]]
+* [[Commit Message Format]]
+* [[Commit Partitioning]]
+* [[Commit Signature Format]]
+* [[How To Contribute]]
