@@ -13,7 +13,7 @@ Authenticated Variable     認證變數
 [[EDK II User Documentation]]          
                                           
 Backslash Character     反斜線字元
-[[Using-EDK-II-with-Native-GCC]]     
+[[Using EDK II with Native GCC]]     
                                  
 Base Module(s)          基底模組
 [[MdePkg]]                          
@@ -45,10 +45,10 @@ Codebase                源碼基底
 [[IntelAtomProcessorE3900]]
                                    
 Command                 指令/命令
-[[Using-EDK-II-with-Native-GCC]]  
+[[Using EDK II with Native GCC]]  
                                              
 Command Terminal        指令終端機
-[[Using-EDK-II-with-Native-GCC]]         
+[[Using EDK II with Native GCC]]         
                                     
 Conf File(s)            配置檔
 [[Common instructions]]              
@@ -96,7 +96,7 @@ Driver Wizard           驅動程式精靈
 [[Driver-Developer]] [[UEFI Driver Writer's Guide]]                     
                                  
 Edit Menu                編輯選單
-[[Using-EDK-II-with-Native-GCC]]  
+[[Using EDK II with Native GCC]]  
                                        
 EDK II Module Writer's Guide        EDK II 模組編碼指南
 [[EDK II User Documentation]]                        
@@ -111,7 +111,7 @@ Entry Point              (程式)進入點
 [[How-to-debug-OVMF-with-QEMU-using-GDB]]                             
                                                  
 Environment Variable     環境變數
-[[Using-EDK-II-with-Native-GCC]]  
+[[Using EDK II with Native GCC]]  
                                   
 expansion boards        擴充板
 [[MinnowBoardMax]]                   
@@ -132,7 +132,7 @@ Flash Description File (FDF)     刷錄描述檔
 [[EDK-II-Specifications]]         
                                                
 General Purpose x86 Assembler 通用x86組譯器
-[[Using-EDK-II-with-Native-GCC]]           
+[[Using EDK II with Native GCC]]           
                                           
 Git Clone                    Git 克隆
 [[Windows-systems]]                  
@@ -187,7 +187,7 @@ Internal Forms Representation (IFR)       內部表單展現
 [[EDK-II-Specifications]]         
                                          
 Internet prox(y|ies)     網路代理伺服器  
-[[Using-EDK-II-with-Native-GCC]]      
+[[Using EDK II with Native GCC]]      
                                        
 Internet Relay Chat (IRC)   網際網路中繼聊天
 [[EDK-II-Development-Process]]                   
@@ -218,10 +218,10 @@ Module Information File(INF)    模組資訊檔
 [[Build Description Files]]                  
                                              
 Native                   原生
-[[Using-EDK-II-with-Native-GCC]]      
+[[Using EDK II with Native GCC]]      
                                      
 NetWork                  網絡
-[[Using-EDK-II-with-Native-GCC]]  
+[[Using EDK II with Native GCC]]  
                                         
 New UEFI Driver Dialog              新 UEFI 驅動程式對話框
 [[Wizard Getting Started]]  
@@ -268,7 +268,7 @@ Platform Feature(s)      平台特點(/功能)
 [[IntelAtomProcessorE3900]]                                
                                               
 Port                    網路埠
-[[Using-EDK-II-with-Native-GCC]]   
+[[Using EDK II with Native GCC]]   
                                               
 Porting                 平台開發導入
 [[MdePkg]]                                 
@@ -315,7 +315,7 @@ Self-Certification Test (SCT)
 [[EDK II User Documentation]]            
                                                     
 Shell                     殼層 (通常指使用者使用介面)   
-[[Using-EDK-II-with-Native-GCC]]  
+[[Using EDK II with Native GCC]]  
                                                  
 Signed-off-by              (Git) 署名
 [[EDK-II-Development-Process]]
@@ -327,7 +327,7 @@ Source Level Debug            源碼等級偵錯
 [[Nasm-Setup]]                           
                                                               
 step-by-step instructions   單步(驟)指示
-[[Windows-systems]] [[Using-EDK-II-with-Native-GCC]]                   
+[[Windows-systems]] [[Using EDK II with Native GCC]]                   
                                   
 TBD (To Be Determined)  待確定
 [[IntelAtomProcessorE3900]]                     
@@ -339,10 +339,10 @@ Template Specification             樣板規範
 [[EDK-II-Specifications]]                                
                                               
 Terminal Program         終端程式                                    
-[[Using-EDK-II-with-Native-GCC]]                               
+[[Using EDK II with Native GCC]]                               
                                  
 Toolchain                 工具鏈      
-[[Using-EDK-II-with-Native-GCC]]       
+[[Using EDK II with Native GCC]]       
                                              
 Topic Branch               主題分支
 [[EDK-II-Development-Process]]               
@@ -357,7 +357,7 @@ Unified Extensible Firmware Interface (UEFI) 統一可延伸韌體介面
 [[Driver-Developer]]                                            
                                                            
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
-[[Using-EDK-II-with-Native-GCC]]                                     
+[[Using EDK II with Native GCC]]                                     
                                              
 Usage Blcok                     使用阻段
 [[Build Description Files]]                
@@ -369,7 +369,7 @@ Visual Forms Representation (VFR)      虛擬表單展現
 [[EDK-II-Specifications]]                               
                                                       
 Web Browser(s)           網頁瀏覽器                   
-[[Using-EDK-II-with-Native-GCC]]         
+[[Using EDK II with Native GCC]]         
                                         
 Wizard-Getting-Started                開始精靈 
 Wizard Getting Started                        
