@@ -4,10 +4,10 @@
 [[MdePkg]]                          
                                  
 Assembly Code           組合源碼
-[[Nasm-Setup]]                           
+[[Nasm Setup]]                           
                                  
 Application Programmer    應用程式設計師
-[[Driver-Developer]]               
+[[Driver Developer]]               
                                          
 Authenticated Variable     認證變數
 [[EDK II User Documentation]]          
@@ -25,21 +25,21 @@ Binary Image(s)         二進制映像檔
 [[MinnowBoardMax]]                  
                                     
 Break Point             中斷點
-[[How-to-debug-OVMF-with-QEMU-using-GDB]]        
+[[How to debug OVMF with QEMU using GDB]]        
                                           
 Boot Image(s)              開機映像檔
-[[EDK-II-Specifications]]          
+[[EDK II Specifications]]          
                                               
 Boot services           開機過程服務
                                                  
 C Coding Standards      C語言編碼標準
-[[EDK-II-Specifications]]                              
+[[EDK II Specifications]]                              
                                          
 Capsule Based                 膠囊基底式
 [[EDKII Packages]] [[Capsule Based Firmware Update and Firmware Recovery]]
                                                               
 Capsule Image(s)              膠囊映像檔
-[[EDK-II-Specifications]]          
+[[EDK II Specifications]]          
                                            
 Codebase                源碼基底 
 [[IntelAtomProcessorE3900]]
@@ -54,7 +54,7 @@ Conf File(s)            配置檔
 [[Common instructions]]              
                                            
 Cover-Letter                   涵蓋文稿
-[[EDK-II-Development-Process]]               
+[[EDK II Development Process]]               
                                                
 Customer Reference Board(CRB)  顧客參照板
 [[IntelAtomProcessorE3900]]             
@@ -72,7 +72,7 @@ Definition(s)          定義
 [[MdePkg]]                          
                               
 Description Files       組態描述檔
-[[EDK-II-Specifications]]                   
+[[EDK II Specifications]]                   
                                        
 Developer Release         開發者發行版
 [[Wizard Getting Started]]
@@ -93,7 +93,7 @@ Driver Wizard           驅動程式精靈
 [[Wizard Getting Started]]  
                                         
 (UEFI) Driver Writer Guide (DWG)  UEFI 驅動程式編碼指南
-[[Driver-Developer]] [[UEFI Driver Writer's Guide]]                     
+[[Driver Developer]] [[UEFI Driver Writer's Guide]]                     
                                  
 Edit Menu                編輯選單
 [[Using EDK II with Native GCC]]  
@@ -108,7 +108,7 @@ EDK II User Manual                  EDK II 使用者手冊
 [[EDK II User Documentation]]           
                                            
 Entry Point              (程式)進入點
-[[How-to-debug-OVMF-with-QEMU-using-GDB]]                             
+[[How to debug OVMF with QEMU using GDB]]                             
                                                  
 Environment Variable     環境變數
 [[Using EDK II with Native GCC]]  
@@ -117,65 +117,65 @@ expansion boards        擴充板
 [[MinnowBoardMax]]                   
                                  
 Field (for bit)         (位元)區段
-[[EDK-II-Ddebugging]]                   
-                                          
+[[EDK II Debugging]]                   
+                                        
 Field (for data file)    (資料)欄位
-[[EDK-II-Specifications]]        
+[[EDK II Specifications]]        
                                           
 Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]           
                                      
 Firmware Volume (FV)           韌體冊
-[[EDK-II-Specifications]]                  
+[[EDK II Specifications]]                  
                                                 
 Flash Description File (FDF)     刷錄描述檔
-[[EDK-II-Specifications]]         
+[[EDK II Specifications]]         
                                                
 General Purpose x86 Assembler 通用x86組譯器
 [[Using EDK II with Native GCC]]           
                                           
 Git Clone                    Git 克隆
-[[Windows-systems]]                  
+[[Windows systems]]                  
                                        
 Git Commit                   Git  提交
-[[EDK-II-Development-Process]]         
+[[EDK II Development Process]]         
                                       
 Git Pull                     Git 拉取
-[[Windows-systems]]                          
+[[Windows systems]]                          
                                                 
 Git Rebase                     Git 重定基
-[[EDK-II-Development-Process]]                 
+[[EDK II Development Process]]                 
                                                                                              
 Git Repositor(y|ies)           Git 倉儲
-[[Windows-systems]]                      
+[[Windows systems]]                      
                                          
 Git Stage                      Git 預存
-[[EDK-II-Development-Process]]           
+[[EDK II Development Process]]           
                                            
 Globally Unique Identifier(s) (GUID(s))   全域唯一識別元
 [[Build Description Files]]        
                                                       
 Graphical User Interface (GUI)  圖形使用者介面
-[[Windows-systems]]                             
+[[Windows systems]]                             
                                             
 Hyperthreading             超線程              
 [[Common instructions]]                  
                                            
 Image Definition File (IDF)           映像定義檔
-[[EDK-II-Specifications]]         
+[[EDK II Specifications]]         
                                                        
 Independent Hardware Vendor (IHV)       獨立硬體供應商
-[[Driver-Developer]]                            
+[[Driver Developer]]                            
                                                
 Industry Standard       工業標準
                                              
 Information File                     資訊檔
-[[EDK-II-Specifications]]         
+[[EDK II Specifications]]         
                                                        
 Infrastructure          基礎要件                                     
                                           
 Integration Branch       整和分支
-[[EDK-II-Development-Process]] 
+[[EDK II Development Process]] 
                                                     
 Intel(R) UEFI Packaging Tool (UEFIPT)           Intel(R) UEFI 套件工具
 [[Build Description Files]]        
@@ -184,19 +184,19 @@ Intellectual Property   智慧產權
 [[MinnowBoardMax]]                      
                                       
 Internal Forms Representation (IFR)       內部表單展現
-[[EDK-II-Specifications]]         
+[[EDK II Specifications]]         
                                          
 Internet prox(y|ies)     網路代理伺服器  
 [[Using EDK II with Native GCC]]      
                                        
 Internet Relay Chat (IRC)   網際網路中繼聊天
-[[EDK-II-Development-Process]]                   
+[[EDK II Development Process]]                   
                                              
 KEK                                       
 [[EDK II User Documentation]]                       
                                                 
 Legacy BIOS                 傳統式 BIOS
-[[UEFI-UBUNTU]]                        
+[[UEFI UBUNTU]]                        
                                               
 Library Class(es)           函式庫類別
 [[Build Description Files]]   
@@ -204,7 +204,7 @@ Library Class(es)           函式庫類別
 Librar(y|ies) Instance(s)   函式庫實例
                                           
 Local Variable(s)           區域變數
-[[How-to-debug-OVMF-with-QEMU-using-GDB]]     
+[[How to debug OVMF with QEMU using GDB]]     
                                                
 Macro(s)                 巨集
                                             
@@ -212,7 +212,7 @@ Maker                    創客
 [[IntelAtomProcessorE3900]]             
                                          
 Meta-Data                    後設資料 (直譯 解釋資料的資料)
-[[EDK-II-Specifications]]         
+[[EDK II Specifications]]         
                                                        
 Module Information File(INF)    模組資訊檔
 [[Build Description Files]]                  
@@ -236,10 +236,10 @@ Open Source Hardware Association     開源硬體協會
 [[IntelAtomProcessorE3900]]     
                                       
 Operating Systems Vendor  (OSV)      作業系統供應商
-[[Driver-Developer]]                    
+[[Driver Developer]]                    
                                                        
 OS shim loader            OS 墊片載入器
-[[UEFI-UBUNTU]]                                  
+[[UEFI UBUNTU]]                                  
                                     
 OVMF (Open Virtual Machine Firmware)   開放性的虛擬機器韌體
 [[OVMF]] [[Common instructions]]                              
@@ -247,10 +247,10 @@ OVMF (Open Virtual Machine Firmware)   開放性的虛擬機器韌體
 Package                 物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
                                                               
 Package Declaration File (DEC)            套件宣告檔
-[[EDK-II-Specifications]] [[Build Description Files]]        
+[[EDK II Specifications]] [[Build Description Files]]        
                                                                                     
 Patch                        補丁
-[[EDK-II-Development-Process]]   
+[[EDK II Development Process]]   
                                                        
 Path Separator Character    路徑分隔符號字元
 [[Multiple_Workspace]]                                
@@ -259,10 +259,10 @@ Performance Optimization            效能優化
 [[EDK II User Documentation]]                   
                                                                
 Platform Configuration Database (PCD(s)) 平台配置資料庫
-[[EDK-II-Ddebugging]] [[EDK-II-Specifications]]  [[Build Description Files]]                                         
+[[EDK II Debugging]] [[EDK II Specifications]]  [[Build Description Files]]                                         
                                                         
 Platform Description File (DSC)     平台組態描述檔
-[[EDK-II-Specifications]] [[Build Description Files]]                                    
+[[EDK II Specifications]] [[Build Description Files]]                                    
                                                
 Platform Feature(s)      平台特點(/功能)
 [[IntelAtomProcessorE3900]]                                
@@ -277,7 +277,7 @@ Pre-EFI Module (PEIM)      韌體前模組
 [[Build Description Files]] 
                                                  
 Prefix                      字首綴詞
-[[Nasm-Setup]]                       
+[[Nasm Setup]]                       
                                         
 Protocol(s)                   協議
 [[Build Description Files]]      
@@ -292,7 +292,7 @@ Release Note(s)            發佈公告
 [[MinnowBoardMax]] [[IntelAtomProcessorE3900]]          
                                    
 RPM repositor(y|ies)          RPM套件庫
-[[How-to-run-OVMF]]                          
+[[How to run OVMF]]                          
                                            
 SPI Programmer          SPI 燒錄器
 [[IntelAtomProcessorE3900]]       
@@ -300,16 +300,16 @@ SPI Programmer          SPI 燒錄器
 Runtime services        運行時間服務
                                         
 Secure Boot             安全性啟動
-[[Galileo]] [[UEFI-UBUNTU]] [[EDK II User Documentation]]             
+[[Galileo]] [[UEFI UBUNTU]] [[EDK II User Documentation]]             
                                                           
 Secure Boot polic(y|ies)     安全性啟動策略                   
 [[EDK II User Documentation]]            
                                                     
 Security Advisorie(s)     安全性公告
-[[Reporting-Security-Issues]]            
+[[Reporting Security Issues]]            
                                  
 Security Issue          安全性問題
-[[Reporting-Security-Issues]]                                   
+[[Reporting Security Issues]]                                   
                                    
 Self-Certification Test (SCT)      
 [[EDK II User Documentation]]            
@@ -318,25 +318,25 @@ Shell                     殼層 (通常指使用者使用介面)
 [[Using EDK II with Native GCC]]  
                                                  
 Signed-off-by              (Git) 署名
-[[EDK-II-Development-Process]]
+[[EDK II Development Process]]
                                                     
 Source Layout Window       源碼佈局視窗                                                 
-[[How-to-debug-OVMF-with-QEMU-using-GDB]]   
+[[How to debug OVMF with QEMU using GDB]]   
                                            
 Source Level Debug            源碼等級偵錯
-[[Nasm-Setup]]                           
+[[Nasm Setup]]                           
                                                               
 step-by-step instructions   單步(驟)指示
-[[Windows-systems]] [[Using EDK II with Native GCC]]                   
+[[Windows systems]] [[Using EDK II with Native GCC]]                   
                                   
 TBD (To Be Determined)  待確定
 [[IntelAtomProcessorE3900]]                     
                                   
 Tech Support             技術支援
-[[Start-using-UEFI]]             
+[[Start using UEFI]]             
                                  
 Template Specification             樣板規範
-[[EDK-II-Specifications]]                                
+[[EDK II Specifications]]                                
                                               
 Terminal Program         終端程式                                    
 [[Using EDK II with Native GCC]]                               
@@ -345,16 +345,16 @@ Toolchain                 工具鏈
 [[Using EDK II with Native GCC]]       
                                              
 Topic Branch               主題分支
-[[EDK-II-Development-Process]]               
+[[EDK II Development Process]]               
                                                          
 UEFI Development Kit (UDK)       UEFI 開發套件組合
 [[UDK]]                                            
                                                    
 Unicode                    萬國碼、國際碼、統一碼、單一碼
-[[EDK-II-Specifications]] [[Build Description Files]]                               
+[[EDK II Specifications]] [[Build Description Files]]                               
                                                       
 Unified Extensible Firmware Interface (UEFI) 統一可延伸韌體介面
-[[Driver-Developer]]                                            
+[[Driver Developer]]                                            
                                                            
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using EDK II with Native GCC]]                                     
@@ -366,7 +366,7 @@ User Identification (UID)               使用者識別
 [[EDK II User Documentation]]            
                                                       
 Visual Forms Representation (VFR)      虛擬表單展現
-[[EDK-II-Specifications]]                               
+[[EDK II Specifications]]                               
                                                       
 Web Browser(s)           網頁瀏覽器                   
 [[Using EDK II with Native GCC]]         
@@ -376,7 +376,7 @@ Wizard Getting Started
 [[UEFI Driver Wizard]] [[Driver Developer]]
                                                          
 Workspace (Work Space)                工作區
-[[Windows-systems]] [[Build Description Files]]                  
+[[Windows systems]] [[Build Description Files]]                  
                                              
 V.S 
 

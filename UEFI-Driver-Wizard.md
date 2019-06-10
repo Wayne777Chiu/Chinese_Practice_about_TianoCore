@@ -13,7 +13,7 @@
 [[UDK2014.IHV 建置手冊|UDK2014.IHV Setup Guide]] (驅動程式開發者發行版) 是 UEFI 開發套組 (UDK2014) 的子集合，是被設計來使用 UEFI 驅動程式精靈。這發行版本僅包含必要性套件針對獨立硬體供應商 (IHV) 的驅動程式開發。
 
 請參考 UEFI　驅動程式精靈 (UEFI Driver Wizard)
-[ReadMe](https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard/README.txt). 
+[ReadMe](https://github.com/tianocore-docs/Docs/raw/master/Driver_Developer/UefiDriverWizard/README.txt)。
 查看 [[開始精靈|Wizard-Getting-Started]] 獲得更多資訊。 
 
 # 原文
