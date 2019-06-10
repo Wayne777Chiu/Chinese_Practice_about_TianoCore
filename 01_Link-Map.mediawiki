@@ -109,9 +109,6 @@
 == [[Build Description Files]] ==
 * [[EDK II Specifications]]
 
-== [[UEFI Driver Writer's Guide]] ==
-* [[EDK II]]
-
 == [[How to debug OVMF with QEMU using GDB]] ==
 * [[How to run OVMF]]
 
@@ -125,6 +122,7 @@
 * [[Wizard Getting Started]]
 ** [[UDK2014.IHV Setup Guide]]
 * [[UEFI Driver Writer's Guide]]
+** [[EDK II]]
 * [[UDK2014.IHV Setup Guide]]
 * [[UDK2014]]
 * [[UDK2018]]
