@@ -71,7 +71,7 @@
 這有助於避免透過緩衝區溢位來儲存原始碼的某些漏洞。
 
 <br>
-在這個白皮書 [ https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Securiy_Enhancement_to_Mitigate_Buffer_Overflow_in_UEFI.pdf BIOS 巡禮- 安全強化來緩解UEFI緩衝區溢位(A Tour Beyond BIOS-Security Enhancement to Mitigate Buffer Overflow)] 之下，我們僅討論 DEP 關於保護堆疊和關於設定不存在頁面去用來偵測 `NULL` 位址存取和當成警衛頁面。這份文件將有更全面性的 DEP 採用的討論在目前 UEFI 韌體裡去強固畫預開機階段。
+在這個白皮書 [ https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Securiy_Enhancement_to_Mitigate_Buffer_Overflow_in_UEFI.pdf BIOS 巡禮- 安全強化來緩解UEFI緩衝區溢位(A Tour Beyond BIOS-Security Enhancement to Mitigate Buffer Overflow)] 之下，我們僅討論 DEP 關於保護堆疊和關於設定不存在頁面去用來偵測 `NULL` 位址存取和當成警衛頁面。這份文件將有更全面性的討論採用 DEP 在目前 UEFI 韌體裡去強固畫預開機階段。
 <BR>
 
 * March 2017 
