@@ -1,4 +1,10 @@
 =翻譯=                            
+                                            
+A Tour Beyond BIOS            BIOS 巡禮
+[[EDK II White papers]]                  
+                                       
+Address-Space Layout Randomization    定址空間隨機布局
+[[EDK II White papers]]                  
                                        
 Ａpplication            應用程式
 [[MdePkg]]                          
@@ -59,6 +65,12 @@ Cover-Letter                   涵蓋文稿
 Customer Reference Board(CRB)  顧客參照板
 [[IntelAtomProcessorE3900]]             
                                          
+Data Execution Protection  (DEP)       資料執行保護
+[[EDK II White papers]]                     
+                                           
+Date Published                 發行日期
+[[EDK II White papers]]                     
+                                           
 DB                                      
 [[EDK II User Documentation]]     
                                             
@@ -134,6 +146,9 @@ Flash Description File (FDF)     刷錄描述檔
 General Purpose x86 Assembler 通用x86組譯器
 [[Using EDK II with Native GCC]]           
                                           
+Getting Started Guide           入門指南
+[[EDK II White papers]]                     
+                                          
 Git Clone                    Git 克隆
 [[Windows systems]]                  
                                        
@@ -158,6 +173,15 @@ Globally Unique Identifier(s) (GUID(s))   全域唯一識別元
 Graphical User Interface (GUI)  圖形使用者介面
 [[Windows systems]]                             
                                             
+HTTP Boot                   超文本傳輸協定開機
+HyperText Transfer Protocol Boot           
+[[EDK II White papers]]                     
+                                           
+HTTPS Boot                  超文本傳輸安全協定開機                         
+HyperText Transfer Protocol Secure Boot
+HTTP over TLS Boot                             
+[[EDK II White papers]]                     
+                                           
 Hyperthreading             超線程              
 [[Common instructions]]                  
                                            
@@ -229,6 +253,9 @@ New UEFI Driver Dialog              新 UEFI 驅動程式對話框
 Source Build Instructions 原始碼建置說明
 [[MinnowBoardMax]]              
                                        
+Stack Canaries                      金絲雀堆疊
+[[EDK II White papers]]                     
+                                           
 Open Compute Project(OCP)           開放伺服器計畫
 [[EDK II Platforms]]                            
                                                    
@@ -273,6 +300,9 @@ Port                    網路埠
 Porting                 平台開發導入
 [[MdePkg]]                                 
                                      
+Pre-Boot                   預啟動
+[[EDK II White papers]]                     
+                                          
 Pre-EFI Module (PEIM)      韌體前模組                        
 [[Build Description Files]] 
                                                  
@@ -290,7 +320,10 @@ Release                    發行/ 發佈/ 釋出
                                                   
 Release Note(s)            發佈公告
 [[MinnowBoardMax]] [[IntelAtomProcessorE3900]]          
-                                   
+                                                   
+Revision                      校訂版本
+[[EDK II Specifications]]  [[EDK II White papers]] [[UDK]]                     
+                                             
 RPM repositor(y|ies)          RPM套件庫
 [[How to run OVMF]]                          
                                            
@@ -346,7 +379,10 @@ Toolchain                 工具鏈
                                              
 Topic Branch               主題分支
 [[EDK II Development Process]]               
-                                                         
+                                                      
+Transport Layer Security (TLS)      傳輸層安全性  
+[[EDK II White papers]]                     
+                                          
 UEFI Development Kit (UDK)       UEFI 開發套件組合
 [[UDK]]                                            
                                                    
