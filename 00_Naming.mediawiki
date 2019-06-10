@@ -82,13 +82,16 @@ Document                v. 載明
                                  
 Driver                 驅動程式
 [[MdePkg]]                    
-                                                           
-Driver Wizard           驅動程式精靈
-[[Wizard Getting Started]]  
-                                         
+                                                                                                
 Driver Binding Protocol Start Function     驅動程式綁定協議開始函式   
 [[Build Description Files]]                       
-                                                           
+                                 
+Driver Developer Release      驅動程式開發者發行版  
+[[UEFI Driver Wizard]]           
+                                                   
+Driver Wizard           驅動程式精靈
+[[Wizard Getting Started]]  
+                                        
 (UEFI) Driver Writer Guide (DWG)  UEFI 驅動程式編碼指南
 [[Driver-Developer]] [[UEFI Driver Writer's Guide]]                     
                                  
@@ -254,7 +257,7 @@ Path Separator Character    路徑分隔符號字元
                                                                                                         
 Performance Optimization            效能優化
 [[EDK II User Documentation]]                   
-
+                                                               
 Platform Configuration Database (PCD(s)) 平台配置資料庫
 [[EDK-II-Ddebugging]] [[EDK-II-Specifications]]  [[Build Description Files]]                                         
                                                         
@@ -365,9 +368,13 @@ User Identification (UID)               使用者識別
 Visual Forms Representation (VFR)      虛擬表單展現
 [[EDK-II-Specifications]]                               
                                                       
-Web Browser(s)           網頁瀏覽器
+Web Browser(s)           網頁瀏覽器                   
 [[Using-EDK-II-with-Native-GCC]]         
                                         
+Wizard-Getting-Started                開始精靈 
+Wizard Getting Started                        
+[[UEFI Driver Wizard]] [[Driver Developer]]
+                                                         
 Workspace (Work Space)                工作區
 [[Windows-systems]] [[Build Description Files]]                  
                                              
