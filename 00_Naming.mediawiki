@@ -27,6 +27,9 @@ Base Module(s)          基底模組
 Base Tool(s)            基本建置工具
 [[Build Description Files]]   
                                             
+BaseBoard Management Controller  (BMC)    基板管理控制器
+[[EDK II White papers]]        
+                                                      
 Binary Image(s)         二進制映像檔 
 [[MinnowBoardMax]]                  
                                     
@@ -101,6 +104,9 @@ Driver Binding Protocol Start Function     驅動程式綁定協議開始函式
 Driver Developer Release      驅動程式開發者發行版  
 [[UEFI Driver Wizard]]           
                                                    
+Driver Execution Environment (DXE)       驅動程式執行環境
+[[EDK II White papers]]        
+                                       
 Driver Wizard           驅動程式精靈
 [[Wizard Getting Started]]  
                                         
@@ -119,6 +125,9 @@ EDK II User Documentation           EDK II 使用者文獻
 EDK II User Manual                  EDK II 使用者手冊
 [[EDK II User Documentation]]           
                                            
+Embedded Controller (EC)               嵌入式控制器
+[[EDK II White papers]]        
+                                                      
 Entry Point              (程式)進入點
 [[How to debug OVMF with QEMU using GDB]]                             
                                                  
@@ -182,6 +191,9 @@ HyperText Transfer Protocol Secure Boot
 HTTP over TLS Boot                             
 [[EDK II White papers]]                     
                                            
+Host Bus Adapter             主機匯流排配接器
+[[EDK II White papers]]        
+                                                             
 Hyperthreading             超線程              
 [[Common instructions]]                  
                                            
@@ -256,6 +268,12 @@ Source Build Instructions 原始碼建置說明
 Stack Canaries                      金絲雀堆疊
 [[EDK II White papers]]                     
                                            
+Susceptible to Malicious Behavior      容易受惡意行為影響
+[[EDK II White papers]]        
+                                                       
+System Management Mode (SMM)         系統管理模式
+[[EDK II White papers]]        
+                                                     
 Open Compute Project(OCP)           開放伺服器計畫
 [[EDK II Platforms]]                            
                                                    
@@ -303,6 +321,9 @@ Porting                 平台開發導入
 Pre-Boot                   預啟動
 [[EDK II White papers]]                     
                                           
+Pre-EFI Initialization (PEI)      韌體前初始化
+[[EDK II White papers]]        
+                                                     
 Pre-EFI Module (PEIM)      韌體前模組                        
 [[Build Description Files]] 
                                                  
@@ -330,6 +351,9 @@ RPM repositor(y|ies)          RPM套件庫
 SPI Programmer          SPI 燒錄器
 [[IntelAtomProcessorE3900]]       
                                           
+Runtime      (RT)           運行時間
+[[EDK II White papers]]        
+                                                                                    
 Runtime services        運行時間服務
                                         
 Secure Boot             安全性啟動
@@ -338,6 +362,9 @@ Secure Boot             安全性啟動
 Secure Boot polic(y|ies)     安全性啟動策略                   
 [[EDK II User Documentation]]            
                                                     
+Secruity (SEC)               安全性
+[[EDK II White papers]]        
+                                             
 Security Advisorie(s)     安全性公告
 [[Reporting Security Issues]]            
                                  
@@ -404,6 +431,9 @@ User Identification (UID)               使用者識別
 Visual Forms Representation (VFR)      虛擬表單展現
 [[EDK II Specifications]]                               
                                                       
+Vulnerability                         漏洞
+[[EDK II White papers]]        
+                                                       
 Web Browser(s)           網頁瀏覽器                   
 [[Using EDK II with Native GCC]]         
                                         
