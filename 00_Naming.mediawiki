@@ -6,6 +6,9 @@ A Tour Beyond BIOS            BIOS 巡禮
 Address-Space Layout Randomization    定址空間隨機布局
 [[EDK II White papers]]                  
                                        
+Advanced Configuration and Power Interface (ACPI) 進階組態與電源介面
+[[EDK II White papers]]                  
+
 Ａpplication            應用程式
 [[MdePkg]]                          
                                  
@@ -213,6 +216,9 @@ Infrastructure          基礎要件
 Integration Branch       整和分支
 [[EDK II Development Process]] 
                                                     
+Intel Architecture (IA)               英特爾(Intel)架構
+[[EDK II White papers]]                     
+                                           
 Intel(R) UEFI Packaging Tool (UEFIPT)           Intel(R) UEFI 套件工具
 [[Build Description Files]]        
                                                               
@@ -268,6 +274,9 @@ Source Build Instructions 原始碼建置說明
 Stack Canaries                      金絲雀堆疊
 [[EDK II White papers]]                     
                                            
+Super I/O (SIO)                       超級IO
+[[EDK II White papers]]        
+
 Susceptible to Malicious Behavior      容易受惡意行為影響
 [[EDK II White papers]]        
                                                        
@@ -303,6 +312,9 @@ Path Separator Character    路徑分隔符號字元
 Performance Optimization            效能優化
 [[EDK II User Documentation]]                   
                                                                
+Peripheral Component Interconnect / Personal Computer Interface (PCI)  外部連結標準 / 個人電腦介面
+[[EDK II White papers]]        
+                                                     
 Platform Configuration Database (PCD(s)) 平台配置資料庫
 [[EDK II Debugging]] [[EDK II Specifications]]  [[Build Description Files]]                                         
                                                         
