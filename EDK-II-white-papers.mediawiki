@@ -166,7 +166,7 @@
 觀眾向:這文件假定讀者擁有基本 EDKII/UEFI 韌體開發經驗。<BR><BR>
  
 BIOS 的主要工作是初始化平台硬體和回報資訊給一般作業系統 (OS)。記憶體映射是最種要的一面資訊之一。作業系統可以只要讀取核心 (Kernel)，驅動程式或應用程式在正確的地方假如知道記憶體如何的分布。
-在 '''UEFI　記憶體映射'''，我們介紹在 UEFI BIOS 裡記憶體的映射設計，和看看典型平台如何回報記憶體映射給 OS。在這份文件裡，我們將討論如何增強記憶體映射回報和提供安全性實踐給記憶體保護去強固平台。
+在 '''UEFI 記憶體映射'''，我們介紹在 UEFI BIOS 裡記憶體的映射設計，和看看典型平台如何回報記憶體映射給 OS。在這份文件裡，我們將討論如何增強記憶體映射回報和提供安全性實踐給記憶體保護去強固平台。
 
 
 * March 2016
@@ -266,8 +266,8 @@ EDK II 拓樸 – PCI 列舉: PCI 列舉如何建立和執行的拓樸
     </td>
 
     <td>
-[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.pdf BIOS 巡禮 進入 UEFI　安全性開機白皮書(A Tour Beyond BIOS into UEFI Secure Boot White Paper)] <br>
-這份文件提供一個實作和在 UEFI 安全性啟動功能和 UEFI 規範 (Version 2.3.1C, http://www.uefi.org)的功能背後的意圖的概論。
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.pdf BIOS 巡禮 進入 UEFI 安全性開機白皮書(A Tour Beyond BIOS into UEFI Secure Boot White Paper)] <br>
+這份文件提供一個實作和在 UEFI 安全性啟動功能和 UEFI 規範 (Version 2.3.1C, http://www.uefi.org )的功能背後的意圖的概論。
 
 文件的目的是去提供
 *   在這個能力背後的動機理解
