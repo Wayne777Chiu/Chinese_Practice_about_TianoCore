@@ -230,8 +230,7 @@ EDK II 拓樸 – PCI 列舉: PCI 列舉如何建立和執行的拓樸
 [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf .PDF]
 </td>
 <td>
-[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf 
-A Tour Beyond BIOS Implementing UEFI Authenticated Variables in SMM with EDKII]
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf A Tour Beyond BIOS Implementing UEFI Authenticated Variables in SMM with EDKII]
 <br>
 This paper presents the internal structure and boot flow of the SMM-based UEFI Authenticated Variable driver in the MDE Module Package and Security Package of the EDKII.
 <br>
@@ -247,8 +246,7 @@ This paper assumes that audience has EDKII/UEFI firmware development experience.
 [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf .PDF]
 </td>
 <td>
-[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf 
- BIOS 巡禮 在系統管理模式裡使用 EDKII 去實現 UEFI 認證變數(A Tour Beyond BIOS Implementing UEFI Authenticated Variables in SMM with EDKII)]
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf BIOS 巡禮 在系統管理模式裡使用 EDKII 去實現 UEFI 認證變數(A Tour Beyond BIOS Implementing UEFI Authenticated Variables in SMM with EDKII)]
 <br>
 這份文件介紹了在 EDK II 的 MDE 模組套件和安全性套件中以系統管理模式為基礎的 UEFI 認證變數驅動程式的內部構造和開機流程。
 <br>
