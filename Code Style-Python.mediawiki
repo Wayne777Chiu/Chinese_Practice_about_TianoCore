@@ -1,3 +1,10 @@
+(2019/03/08)
+
+<!-- [[Category:EDKIIBuildTools]] -->
+<!-- [[Category:CodeStyle]] -->
+對於我們的 Python 編碼，我們依據標準的 [http://www.python.org/dev/peps/pep-0008 Python 程式碼風格指南]。
+
+= 原文 =
 <!-- [[Category:EDKIIBuildTools]] -->
 <!-- [[Category:CodeStyle]] -->
 For our Python coding, we follow the standard [http://www.python.org/dev/peps/pep-0008 Style Guide for Python Code].
