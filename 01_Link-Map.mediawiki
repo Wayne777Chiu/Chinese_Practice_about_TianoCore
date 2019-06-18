@@ -134,8 +134,8 @@
 
 == [[Code Style]] ==
 * [[Code Contributions]]
-* [[Code Style-C]]
-* [[Code Style-Python]]
+* [[Code Style C]]
+* [[Code Style Python]]
 * [[Source Control]]
 * [[Commit Message Format]]
 * [[Commit Partitioning]]

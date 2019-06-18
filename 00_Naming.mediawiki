@@ -47,12 +47,18 @@ Boot services           開機過程服務
 C Coding Standards      C語言編碼標準
 [[EDK II Specifications]]                              
                                          
+CamelCase                        駝峰式大小寫
+[[Code Style C]]                                     
+                                                   
 Capsule Based                 膠囊基底式
 [[EDKII Packages]] [[Capsule Based Firmware Update and Firmware Recovery]]
                                                               
 Capsule Image(s)              膠囊映像檔
 [[EDK II Specifications]]          
                                            
+Coding Standards Specification    編碼標準規範
+[[Code Style C]]                               
+                                                   
 Codebase                源碼基底 
 [[IntelAtomProcessorE3900]]
                                    
@@ -203,6 +209,9 @@ Hyperthreading             超線程
 Image Definition File (IDF)           映像定義檔
 [[EDK II Specifications]]         
                                                        
+Indentation                           縮排
+[[Code Style C]]                                       
+                                          
 Independent Hardware Vendor (IHV)       獨立硬體供應商
 [[Driver Developer]]                            
                                                

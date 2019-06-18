@@ -3,8 +3,8 @@
 因此，請依循我們的編碼風格當做出 [[Code Contributions|源碼貢獻]] 時。
 
 編碼:
-* [[Code Style-C|C]]
-* [[Code Style-Python|Python]]
+* [[Code Style C|C]]
+* [[Code Style Python|Python]]
 
 
 [[Source Control|源碼控制]]:
