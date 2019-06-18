@@ -362,7 +362,10 @@ Release                    發行/ 發佈/ 釋出
                                                   
 Release Note(s)            發佈公告
 [[MinnowBoardMax]] [[IntelAtomProcessorE3900]]          
-                                                   
+                                               
+ResetVector (Reset Vector)      重置向量
+[[OVMF Boot Overview]]                               
+                                                 
 Revision                      校訂版本
 [[EDK II Specifications]]  [[EDK II White papers]] [[UDK]]                     
                                              
