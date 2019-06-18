@@ -2,7 +2,7 @@
 
 = [[Tianocore.github.io wiki首頁]] (still link lose) =
 * [[UEFI]] (done)
-** [[start-using-UEFI]]
+** [[start using UEFI]]
 *** [[Getting Started]]
 **** [[Getting Started with EDK II]] (same as 1.1.1.1.1.2)
 ***** [[EDK II]]
@@ -13,7 +13,7 @@
 ****** [[Code Style]]
 ****** [[EDK II Overview]]
 ******* [[EDKII Packages]]
-****** [[edk2-devel]]
+****** [[edk2 devel]]
 ****** [[Reporting Security Issues]]
 ****** [[Tasks]]
 ****** [[UDK]]
@@ -58,9 +58,9 @@
 ****** [[SourceForge to Github Quick Start]]
 ****** [[Commit-Partitioning]]
 ****** [[Commit-Message-Format]]
-****** [[edk2-devel]]
+****** [[edk2 devel]]
 ****** [[Code Style]]
-***** [[edk2-devel]]
+***** [[edk2 devel]]
 ***** [[Getting Started Writing Simple Application]]
 ****** [[Getting Started with EDK II]]
 ****** [[UDK2017]]
@@ -114,7 +114,7 @@
 
 == [[EDKII Packages]] ==
 * [[Code Contributions]]
-* [[edk2-devel]]
+* [[edk2 devel]]
 * [[Capsule Based Firmware Update and Firmware Recovery]]
 
 == [[Driver Developer]] ==
@@ -141,3 +141,12 @@
 * [[Commit Partitioning]]
 * [[Commit Signature Format]]
 * [[How To Contribute]]
+
+== [[OVMF]] ==
+* [[EDK II]]
+* [[UEFI]]
+* [[BSD License]]
+* [[OVMF FAQ]]
+* [[How to build OVMF]]
+* [[OVMF Boot Overview]]
+* [[edk2 devel]]
