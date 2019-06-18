@@ -1,6 +1,6 @@
 (2019/03/08)
 
-這只是一個 用來我們專案的 C [[編碼風格|Code Style]] 概論。官方的 C 編碼標準規範可以於此找到:
+這只是一個 用來我們專案的 C [[Code Style|編碼風格]] 概論。官方的 C 編碼標準規範可以於此找到:
 
 * [https://github.com/tianocore-docs/Docs/raw/master/Specifications/CCS_2_1_Draft.pdf EDK II C Coding Standards_2.1 Draft .PDF]
 __TOC__
@@ -16,7 +16,7 @@ __TOC__
 * 兩個空格 (spaces) 的縮排
 * 不使用 tab 字元。
 ** 設定編輯器優先插入空格 (spaeces) 而不是 tab 字元
-* if, for, while,  等總是使用 { }，即使只有一行敘述
+* if, for, while,  等總是使用 { }，即使只有一個敘述
 ** 左大括弧 ({) 應該總是出現在前一行的尾端。
 * 對函式 (function) 來說，左大括弧 ({) 應該總是各自出現在新的一行。
 
@@ -153,7 +153,7 @@ H 檔例子:
    }
 
 ===總是使用 { }===
- if, for, while,  等總是使用 { }，即使只有一行敘述
+ if, for, while,  等總是使用 { }，即使只有一個敘述
 
 <font style="color: green">Correct</font>:
    if (TRUE) {
