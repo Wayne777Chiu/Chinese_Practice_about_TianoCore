@@ -6,7 +6,7 @@
 *** [[Getting Started]]
 **** [[Getting Started with EDK II]] (same as 1.1.1.1.1.2)
 ***** [[EDK II]]
-****** [[EDK-II-Release-Planning]] 
+****** [[EDK II Release Planning]] 
 ****** [[Getting Started with EDK II]] (same as 1.1.1.1)
 ****** [[Driver Developer]]
 ****** [[EDK II Specifications]]
@@ -150,3 +150,20 @@
 * [[How to build OVMF]]
 * [[OVMF Boot Overview]]
 * [[edk2 devel]]
+
+== [[EDK II Release Planning]] ==
+* [[SoftFeatureFreeze]]
+* [[HardFeatureFreeze]]
+
+= Sidebar =
+* [[Home]]
+* [[Getting Started with EDK II]]
+* [[EDK II Platforms]]
+* [[EDK II Documents]]
+* [[EDK II Release Planning]]
+* [[Reporting Issues]]
+* [[Reporting Security Issues]]
+* [[Community Information]]
+* [[Additional Projects]] & [[Tasks]
+* [[Community Support]]
+* [[Community Virtual Meetings]]
