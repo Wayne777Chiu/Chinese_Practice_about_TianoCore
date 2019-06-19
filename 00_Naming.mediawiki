@@ -36,9 +36,15 @@ BaseBoard Management Controller  (BMC)    基板管理控制器
 Binary Image(s)         二進制映像檔 
 [[MinnowBoardMax]]                  
                                     
-Break Point             中斷點
+Break Point             中斷點   
 [[How to debug OVMF with QEMU using GDB]]        
                                           
+Boot Device Selection (BDS) 啟動裝置選擇
+[[OVMF Boot Overview]]                  
+                                       
+Boot Firmware Volume (BFV)  啟動韌體冊
+[[OVMF Boot Overview]]                  
+                                       
 Boot Image(s)              開機映像檔
 [[EDK II Specifications]]          
                                               
@@ -114,7 +120,10 @@ Driver Developer Release      驅動程式開發者發行版
 [[UEFI Driver Wizard]]           
                                                    
 Driver Execution Environment (DXE)       驅動程式執行環境
-[[EDK II White papers]]        
+[[EDK II White papers]] [[OVMF Boot Overview]]       
+                                       
+Driver Execution Environmnet Initial Program Load (DXE IPL) 驅動程式執行環境初始程式載入
+[[OVMF Boot Overview]]                                 
                                        
 Driver Wizard           驅動程式精靈
 [[Wizard Getting Started]]  
@@ -156,7 +165,7 @@ Firmware Support Package   韌體支援套裝
 [[IntelAtomProcessorE3900]]           
                                      
 Firmware Volume (FV)           韌體冊
-[[EDK II Specifications]]                  
+[[EDK II Specifications]] [[OVMF Boot Overview]]                 
                                                 
 Flash Description File (FDF)     刷錄描述檔
 [[EDK II Specifications]]         
@@ -343,8 +352,11 @@ Pre-Boot                   預啟動
 [[EDK II White papers]]                     
                                           
 Pre-EFI Initialization (PEI)      韌體前初始化
-[[EDK II White papers]]        
+[[EDK II White papers]] [[OVMF Boot Overview]]       
                                                      
+Pre-EFI Initialization Driver     韌體前初始化驅動程式
+[[OVMF Boot Overview]]                  
+                                                 
 Pre-EFI Module (PEIM)      韌體前模組                        
 [[Build Description Files]] 
                                                  
@@ -392,6 +404,9 @@ Secruity (SEC)               安全性
 Security Advisorie(s)     安全性公告
 [[Reporting Security Issues]]            
                                  
+Security Core (SEC Core)     安全性核心
+[[OVMF Boot Overview]]                  
+                                                     
 Security Issue          安全性問題
 [[Reporting Security Issues]]                                   
                                    
