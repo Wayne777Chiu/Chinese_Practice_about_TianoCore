@@ -1,13 +1,9 @@
 (2019/03/08)
+# 什麼是軟性特點凍結?
 
-# What is the soft feature freeze?
-
-The soft feature freeze is the beginning of the stabilization phase of edk2's
-development process. By the date of the soft feature freeze,  developers must
-have sent their patches to the mailing list **and** received positive
-maintainer reviews (`Reviewed-by` or `Acked-by` tags). This means that
-features, and in particular non-trivial ones, must have been accepted by
-maintainers before the soft freeze date.
+軟性特點凍結是 edk2 的開發過程中的穩定階段的開始。到了軟性特點凍結的日期，開發者們必須
+傳送他們的修補到信件列表 **和** 接收到正面的維護者評論 `Reviewed-by` 或 `Acked-by` 標籤)。
+這意味著特點，特別是不平凡的，必須在軟性特點凍結日之前已經被維護者所同意。
 
 Between the soft feature freeze and the [hard feature
 freeze](HardFeatureFreeze), previously reviewed and unit-tested features may be

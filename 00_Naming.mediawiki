@@ -41,7 +41,7 @@ Break Point             中斷點
                                           
 Boot Device Selection (BDS) 啟動裝置選擇
 [[OVMF Boot Overview]]                  
-                                       
+
 Boot Firmware Volume (BFV)  啟動韌體冊
 [[OVMF Boot Overview]]                  
                                        
@@ -285,22 +285,7 @@ NetWork                  網絡
                                         
 New UEFI Driver Dialog              新 UEFI 驅動程式對話框
 [[Wizard Getting Started]]  
-                                                    
-Source Build Instructions 原始碼建置說明
-[[MinnowBoardMax]]              
-                                       
-Stack Canaries                      金絲雀堆疊
-[[EDK II White papers]]                     
-                                           
-Super I/O (SIO)                       超級IO
-[[EDK II White papers]]        
-
-Susceptible to Malicious Behavior      容易受惡意行為影響
-[[EDK II White papers]]        
-                                                       
-System Management Mode (SMM)         系統管理模式
-[[EDK II White papers]]        
-                                                     
+                                                                              
 Open Compute Project(OCP)           開放伺服器計畫
 [[EDK II Platforms]]                            
                                                    
@@ -418,16 +403,34 @@ Shell                     殼層 (通常指使用者使用介面)
                                                  
 Signed-off-by              (Git) 署名
 [[EDK II Development Process]]
-                                                    
+                                         
+Soft Feature Freeze           軟性特點凍結
+[[SoftFeatureFreeze]]                       
+                                         
+Source Build Instructions 原始碼建置說明
+[[MinnowBoardMax]]              
+                                                                                                                   
 Source Layout Window       源碼佈局視窗                                                 
 [[How to debug OVMF with QEMU using GDB]]   
                                            
 Source Level Debug            源碼等級偵錯
 [[Nasm Setup]]                           
                                                               
+Stack Canaries                      金絲雀堆疊
+[[EDK II White papers]]                     
+                                           
 step-by-step instructions   單步(驟)指示
 [[Windows systems]] [[Using EDK II with Native GCC]]                   
-                                  
+
+Super I/O (SIO)                       超級IO
+[[EDK II White papers]]        
+                                       
+Susceptible to Malicious Behavior      容易受惡意行為影響
+[[EDK II White papers]]        
+                                                       
+System Management Mode (SMM)         系統管理模式
+[[EDK II White papers]]    
+                                              
 TBD (To Be Determined)  待確定
 [[IntelAtomProcessorE3900]]                     
                                   
