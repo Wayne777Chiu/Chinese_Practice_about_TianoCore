@@ -3,17 +3,14 @@
 
 軟性特點凍結是 edk2 的開發過程中的穩定階段的開始。到了軟性特點凍結的日期，開發者們必須
 傳送他們的修補到信件列表 **和** 接收到正面的維護者評論 `Reviewed-by` 或 `Acked-by` 標籤)。
-這意味著特點，特別是不平凡的，必須在軟性特點凍結日之前已經被維護者所同意。
+這意味著特點，特別是不平凡的，必須在軟性特點凍結日之前已經由維護者所同意。
 
-Between the soft feature freeze and the [hard feature
-freeze](HardFeatureFreeze), previously reviewed and unit-tested features may be
-applied (or merged) to the master branch, for integration testing. Feature
-addition or enablement patches posted **or** reviewed after the soft feature
-freeze will be delayed until after the upcoming [stable
-tag](EDK-II#stable-tags).
+在軟性特點凍結和 [硬性特點凍結](HardFeatureFreeze) 之間，之前經過審核和單元測試的特點可能被附加(或合併)到主要分支上，進行整合性測試。
+在軟性特點凍結之後才被發佈 **或** 審核的特點添加或啟動補丁將被延遲到即將到來的[穩定版標籤](EDK-II#穩定版標籤)。
 
-# What should I do by the soft feature freeze?
+# 通過軟性特點凍結我應該做甚麼?
 
+作為一個維護者，對任何你正聚焦到下一版[穩定版標籤](EDK-II#穩定版標籤)的特點，你應該確保
 As a maintainer, for any feature that you're targeting to the next [stable
 tag](EDK-II#stable-tags), you should make sure that you've reviewed and
 accepted the patches related to the feature.
