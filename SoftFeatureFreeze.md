@@ -10,10 +10,12 @@
 
 # 通過軟性特點凍結我應該做甚麼?
 
-作為一個維護者，對任何你正聚焦到下一版[穩定版標籤](EDK-II#穩定版標籤)的特點，你應該確保
+作為一個維護者，對任何你正聚焦到下一版[穩定版標籤](EDK-II#穩定版標籤)的特點，你應該確保跟這特點有相依性的補丁你已經檢視和同意過。
 As a maintainer, for any feature that you're targeting to the next [stable
 tag](EDK-II#stable-tags), you should make sure that you've reviewed and
 accepted the patches related to the feature.
+
+當一個開發者，你可能應該聚焦在早於軟性凍結日期至少 1-2 週的日期。而這將給維護者足夠時間去審核和測試你的補丁。對於主要特點你可能應該與維護者溝通關於這(特點的)主要意圖。
 
 As a developer, you probably should target a date that is at least 1-2 weeks
 earlier than the soft freeze date. This will give the maintainer enough time to
