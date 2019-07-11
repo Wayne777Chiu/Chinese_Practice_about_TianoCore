@@ -11,7 +11,7 @@
 | 2019-05-24           | [Hard Feature Freeze](HardFeatureFreeze) |
 | 2019-05-31           | 發行     
 
-## 建議功能特點
+## 建議功能(特點)
 * [更新 OpenSSL 版本到即將來到的 1.1.1](https://bugzilla.tianocore.org/show_bug.cgi?id=1089)
 * [新增新的工具鏈給 LLVM/CLANG8.0](https://bugzilla.tianocore.org/show_bug.cgi?id=1603)
 * [FeatureFlagExpression 支持 in LibraryClasses section of INF file](https://bugzilla.tianocore.org/show_bug.cgi?id=1446)
@@ -32,7 +32,7 @@
 | 2019-08-23           | [Hard Feature Freeze](HardFeatureFreeze) |
 | 2019-08-30           | 發行  
 
-## 建議功能特點
+## 建議功能(特點)
 * TBD
 
 # edk2-stable2019011 tag 計畫
@@ -46,7 +46,7 @@
 | 2019-11-22           | [Hard Feature Freeze](HardFeatureFreeze) |
 | 2019-11-29           | 發行                                  |
 
-## 建議功能特點
+## 建議功能(特點)
 * TBD
 
 # [edk2-stable201903 tag](https://github.com/tianocore/edk2/releases/tag/edk2-stable201903)

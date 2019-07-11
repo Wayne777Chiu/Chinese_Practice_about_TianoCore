@@ -10,7 +10,7 @@ Welcome to the Chinese_for_TianoCore wiki! the source context base from tianocor
 
 有多種硬體平台使用 EDK II 開放源碼UEFI 韌體，其中包含 [[MinnowBoard Max/Turbot|MinnowBoardMax]], [[Aaeon UpSquared|IntelAtomProcessorE3900]], 和 [[Intel® Galileo Gen 2|Galileo]]。　這可讓你在實際硬體上體驗及開發。
 
-TianoCore 使用 Bugzilla 去追蹤問題和特點要求。請檢視[[回報問題|Reporting Issues]] 和 [[回報安全性問題|Reporting Security Issues]] 來得到更多資訊。假如你想要去開拓源碼或修正問題，請看[[如何合作開發|How To Contribute]]。頁面[[任務|Tasks]]有優先權工作項目的列表。
+TianoCore 使用 Bugzilla 去追蹤問題和功能要求。請檢視[[回報問題|Reporting Issues]] 和 [[回報安全性問題|Reporting Security Issues]] 來得到更多資訊。假如你想要去開拓源碼或修正問題，請看[[如何合作開發|How To Contribute]]。頁面[[任務|Tasks]]有優先權工作項目的列表。
 
 [<img src="https://github.com/tianocore/tianocore.github.io/blob/master/images/tianocore_logo_text_whitebkg.jpg"/>](http://www.tianocore.org)
 

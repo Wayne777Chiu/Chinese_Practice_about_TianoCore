@@ -324,7 +324,7 @@ Platform Configuration Database (PCD(s)) 平台配置資料庫
 Platform Description File (DSC)     平台組態描述檔
 [[EDK II Specifications]] [[Build Description Files]]                                    
                                                
-Platform Feature(s)      平台特點(/功能)
+Platform Feature(s)      平台功能(/特點)
 [[IntelAtomProcessorE3900]]                                
                                               
 Port                    網路埠
@@ -404,7 +404,7 @@ Shell                     殼層 (通常指使用者使用介面)
 Signed-off-by              (Git) 署名
 [[EDK II Development Process]]
                                          
-Soft Feature Freeze           軟性特點凍結
+Soft Feature Freeze           軟性功能凍結
 [[SoftFeatureFreeze]]                       
                                          
 Source Build Instructions 原始碼建置說明

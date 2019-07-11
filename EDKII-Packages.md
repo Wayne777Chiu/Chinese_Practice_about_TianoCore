@@ -7,8 +7,8 @@
 ## EDK II 套件
 以下是 EDK II 套件列表和連結到提供每個套件概論的頁面。
 
-## EDK II 特點
-以下是主要 EDK II 特點列表和連結到提供特點概論和如何整合到 EDK II 建置裡的頁面。
+## EDK II 功能
+以下是主要 EDK II 功能列表和連結到提供功能概論和如何整合到 EDK II 建置裡的頁面。
 
 * [膠囊基底式韌體更新與韌體回復](Capsule-Based-Firmware-Update-and-Firmware-Recovery)
 
