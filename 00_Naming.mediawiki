@@ -48,6 +48,9 @@ Boot Firmware Volume (BFV)  啟動韌體冊
 Boot Image(s)              開機映像檔
 [[EDK II Specifications]]          
                                               
+Bugzilla Ticket             Bugzilla 票證
+[[SoftFeatureFreeze]]                       
+                                         
 Boot services           開機過程服務
                                                  
 C Coding Standards      C語言編碼標準

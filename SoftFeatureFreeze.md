@@ -11,42 +11,22 @@
 # 通過軟性功能凍結我應該做甚麼?
 
 作為一個維護者，對任何你正聚焦到下一版[穩定版標籤](EDK-II#穩定版標籤)的功能，你應該確保跟這功能有相依性的補丁你已經檢視和同意過。
-As a maintainer, for any feature that you're targeting to the next [stable
-tag](EDK-II#stable-tags), you should make sure that you've reviewed and
-accepted the patches related to the feature.
 
-當一個開發者，你可能應該聚焦在早於軟性凍結日期至少 1-2 週的日期。而這將給維護者足夠時間去審核和測試你的補丁。對於主要功能你可能應該與維護者溝通關於這(功能的)主要意圖。
+當一個開發者，你可能應該聚焦在早於軟性凍結日期至少 1-2 週的日期。而這將給維護者足夠時間去審核和測試你的補丁。對於主要功能你可能應該與維護者溝通關於這(功能的)主要意圖。這也會有幫助假如你去:
 
-As a developer, you probably should target a date that is at least 1-2 weeks
-earlier than the soft freeze date. This will give the maintainer enough time to
-review and test your patches. For major features you should probably
-communicate with the maintainer about their intentions. It also helps if you:
+- 為 [TianoCore 功能需求](https://bugzilla.tianocore.org/enter_bug.cgi?product=Tianocore%20Feature%20Requests) 產品輸入一個 Bugzilla 票證。
 
-- Enter a Bugzilla ticket for the [TianoCore Feature
-  Requests](https://bugzilla.tianocore.org/enter_bug.cgi?product=Tianocore%20Feature%20Requests)
-  product.
+- (可選擇性) 寫下描述功能和動機的頁面在 [edk2 維基](Home)。
 
-- Optionally, write a Feature page in the [edk2 wiki](Home) describing the
-  feature and the motivation.
+- 在 [發布計畫維基頁面](EDK-II-Release-Planning) 裡，連結你的 Bugzilla 項目和/或功能維基頁面。
 
-- On the [release planning wiki page](EDK-II-Release-Planning), link to your
-  Bugzilla entry and/or the feature wiki page.
+- 盡早完成這一切，讓你可以與維護者一起進行審查流程。
 
-- Do all this early enough that you can work with the maintainer to get the
-  review process underway.
+(這定義被模組化在 QEMU 的 [軟性功能凍結](https://wiki.qemu.org/Planning/SoftFeatureFreeze) 之後)
 
-(This definition is modeled after QEMU's [soft feature
-freeze](https://wiki.qemu.org/Planning/SoftFeatureFreeze).)
+# 通告軟性功能凍結
 
-# Announcing the soft feature freeze
-
-The proposed schedule for the active development cycle is shown in the [EDK II
-Release Planning](EDK-II-Release-Planning) article. Shortly before the soft
-feature freeze, an announcement email is sent to the
-[edk2-devel](https://lists.01.org/mailman/listinfo/edk2-devel) mailing list.
-The announcement is posted by one of the maintainers that are listed in
-[Maintainers.txt](https://github.com/tianocore/edk2/blob/master/Maintainers.txt),
-in section `EDK II Releases`.
+對主動開發循環的建議時間表被展示在 [EDK II 發布計畫](EDK-II-Release-Planning) 文章裡。在軟性功能凍結之前不久，一個通告電子郵件被寄送給 [edk2-devel](https://lists.01.org/mailman/listinfo/edk2-devel) 郵件列表。 這通告被在 `EDK II 發行` 章節裡名列 [Maintainer.txt](https://github.com/tianocore/edk2/blob/master/Maintainers.txt) 的維護者之一來公布。
 
 # 原文
 # What is the soft feature freeze?
