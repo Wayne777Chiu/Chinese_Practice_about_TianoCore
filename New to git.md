@@ -21,7 +21,7 @@ EDK II git 工作流程
   
   * 這指令取得你目前的分支 (head) 和設置到另一個修訂版本。原始情況下，它設置到目前分支的最後提交。
 
-  * 為什麼他是潛在性危險的:
+  * 為什麼它是潛在性危險的:
 
     * 它將覆蓋掉檔案裡任何你尚未提交的改變。
 
@@ -37,7 +37,7 @@ EDK II git 工作流程
 
   * 這指令刪除沒有被你的 git 倉儲裡追跡的當地端樹檔案。
 
-  * 為什麼他是潛在性危險的:
+  * 為什麼它是潛在性危險的:
 
     * 它能刪除你尚未添加到 git 的給新功能的檔案。
 
@@ -45,74 +45,39 @@ EDK II git 工作流程
 
     * *記住*。 沒有方法去回復被刪除的檔案!
 
-     
+  * 提示:
 
-* `git clean`
-
-  * This command deletes files in your local tree that are not tracked
-    in your git repository.
-
-  * Why it is potentially dangerous:
-
-    * It can delete files for new features that you have not yet added
-      to git.
-
-  * Ways to recover:
-
-    * *NONE*. There is no way to recover the deleted files!
-
-  * Tip:
-
-    * Use the `--dry-run` parameter to see what will be deleted.
+    * 使用參數 `--dry-run` 來檢視甚麼要被刪除。
 
 * `git merge`
+     
+  * 這指令合併兩個分支的歷史紀錄。
 
-  * This command joins together the histories of two branches.
+  * 現在而言，EDK II 是選擇以線性歷史紀錄來維護且不使用合併( merge )。
 
-  * For now, EDK II is choosing to maintain a linear history, and not
-    use merges.
+  * 為什麼它是潛在性危險的:
 
-  * Why it is potentially dangerous:
+    * 當自動合併兩個分支時，git 可能偶爾去選擇到錯誤的動作。雖然很少見，這可能會導致一些改變在最新的樹裡被刪除掉。
 
-    * It is occasionally possible for git to choose the wrong action
-      when auto-merging the two branches. Although rare, this can lead
-      to some changes getting dropped in the latest tree.
+  * 方法去回復
 
-  * Ways to recover:
+    * 如果合併尚未推進到上游 (upstream)，有一些方法可以回復。
 
-    * If the merge has not be pushed upstream, there are a few ways to
-      recover.
+      * 最保證的修正方法是透過歷史紀錄去找到你合併前的樹版本。 (有幫助的工具: `gitk`, `tig`, 或 `git log --oneline --graph`)
 
-      * The best guaranteed way to fix things is to look through the
-        history to find the tree version before your merge. (Helpful
-        tools: `gitk`, `tig`, or `git log --oneline --graph`)
+      * 現在，使用 `git reset --hard <good-version>`
 
-      * Now, use `git reset --hard <good-version>`
+        * 這將強制你的分支回到合併前的狀態。務必理解這個 `git reset --hard` 危險就如同之前的文字敘述那樣。
 
-        * This will force your branch back to the state before the
-          merge. Be sure to understand the dangers of `git reset
-          --hard` as documented above.
+      * 你可能也可以簡化的使用 `git rebase origin/master` 去移除合併的提交。
 
-      * You might also be able to simply use `git rebase
-        origin/master` to remove the merge commit.
-
-    * If the merged commit is pushed upstream, then unfortunately it
-      will persist in history. This is not really a big deal, but just
-      be sure that the merge worked correctly. If you find that
-      changes were actually lost then add new commits to re-apply the
-      changes.
+    * 假如合併的提交被推進到上游端，那麼很不幸地它將持續在歷史紀錄裡。 這不是甚麼大不了的問題，但只是要確保合併的正確地執行。假如你發現改變真的遺失了，那麼增加新的提交來重新套用這個改變。
 
 * `git pull`
 
-  * By default, the `git pull` command is a `git fetch` followed by a
-    `git merge`. Therefore it has the same concerns as the `git merge`
-    command documented above.
+  * 預設情況下，這 `git pull` 指令是一個 `git fetch` 後緊跟著 `git merge`。 因此，它有相同疑慮如上所述的指令 `git merge`
 
-  * Tip:
-
-    * You can also run `git config pull.rebase true` to set your edk2
-      tree up so that `git pull` will be a `git fetch` followed by a
-      `git rebase` (rather than `git merge`)
+  * 提示: 你也能運行 `git config pull.rebase true` 來設置你的 edk2 樹，這樣 `git pull` 將是 `git fetch` 後緊跟著 `git rebase` (優於 `git merge`)
 
 * `git push -f`
 

@@ -467,6 +467,9 @@ Unified Extensible Firmware Interface (UEFI) 統一可延伸韌體介面
 Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
 [[Using EDK II with Native GCC]]                                     
                                              
+Upstream                       (Git) 上游
+[[New to git]]                                             
+                                             
 Usage Blcok                     使用阻段
 [[Build Description Files]]                
                                                  
