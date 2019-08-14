@@ -81,26 +81,25 @@ EDK II git 工作流程
 
 * `git push -f`
 
-  * This command 'force' pushes a branch. This potentially can force
-    the remote branch to rewrite its history.
+  * 這個指令 '強制' 推進一個分支。這可能強制遠程分支去覆寫它的歷史紀錄。
 
-  * Note: The main edk2 tree is protected from force pushes, and you
-    can setup your github branches to be similarly protected:
+  * 記住: 主要的 edk2 樹可防護強制推進，而且你能設定你的 github 分支去受到同樣的保護:
 
     <https://github.com/blog/2051-protected-branches-and-required-status-checks>
 
-  * Why it is potentially dangerous:
+  * 為什麼它是潛在性危險的:
 
-    * If you 'rewrite' the history of a tree, then people will be
-      suspicious that bad changes have been snuck into the tree.
+    * 假如你覆寫樹上的歷史紀錄，那麼人們可能會懷疑不好的改變已經偷渡到樹裡。
 
-    * This is generally only considered bad for 'upstream' branches
-      that many people are basing their work off of.
+    * 這一般只視為許多人們以'上游'分支為基礎來處理他們工作的壞處。
 
-  * Ways to recover:
+  * 方法去回復
 
-    * You might be able to force push the old version back if you can
-      find out its version.
+    * 你可能能夠利用強制推進回去舊的版本假如你找的到該版本的話。
+
+  * 對強制推進有時候是可以的
+
+    * 對於沒有人依賴在其上的你的個人開發分支，去強制推進是可以的。事實上，
 
   * It's sometimes okay to force push
 
