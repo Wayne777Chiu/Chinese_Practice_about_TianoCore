@@ -155,7 +155,7 @@
 * [[SoftFeatureFreeze]]
 * [[HardFeatureFreeze]]
 
-= Sidebar =
+== Sidebar ==
 * [[Home]]
 * [[Getting Started with EDK II]]
 * [[EDK II Platforms]]
@@ -164,6 +164,15 @@
 * [[Reporting Issues]]
 * [[Reporting Security Issues]]
 * [[Community Information]]
-* [[Additional Projects]] & [[Tasks]
+* [[Additional Projects]] & [[Tasks]]
 * [[Community Support]]
 * [[Community Virtual Meetings]]
+
+== [EDK II Development Process]] ==
+* [[Getting Started with EDK II]] 
+* [[New to git]]
+* [[SourceForge to Github Quick Start]]
+* [[Commit-Partitioning]]
+* [[Commit-Message-Format]]
+* [[edk2 devel]]
+* [[Code Style]]
