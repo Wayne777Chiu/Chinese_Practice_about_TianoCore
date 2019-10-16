@@ -99,15 +99,7 @@ EDK II git 工作流程
 
   * 對強制推進有時候是可以的
 
-    * 對於沒有人依賴在其上的你的個人開發分支，去強制推進是可以的。事實上，
-
-  * It's sometimes okay to force push
-
-    * For your personal development branches where no one is depending
-      on the branch, it is okay to force push. In fact, most people
-      will eventually find that force pushing is a good way to backup
-      the currect state of their development work on a remote server.
-
+    * 對於沒有人依賴在其上的你的個人開發分支，去強制推進是可以的。事實上，最終人們會發現強制推進是一個好方式去備份在遠程伺服器上開發工作的目前狀態。
 
 
 #原文

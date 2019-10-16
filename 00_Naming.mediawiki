@@ -173,6 +173,9 @@ Firmware Volume (FV)           韌體冊
 Flash Description File (FDF)     刷錄描述檔
 [[EDK II Specifications]]         
                                                
+Force Push(ing)              (Git) 強制推進
+[[New to git]]                                    
+                                               
 General Purpose x86 Assembler 通用x86組譯器
 [[Using EDK II with Native GCC]]           
                                           
