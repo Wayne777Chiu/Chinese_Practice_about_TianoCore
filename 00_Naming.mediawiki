@@ -351,10 +351,12 @@ Pre-EFI Initialization Driver     韌體前初始化驅動程式
 Pre-EFI Module (PEIM)      韌體前模組                        
 [[Build Description Files]] 
                                                  
-Prefix                      字首綴詞
+Prefix                         字首綴詞
 [[Nasm Setup]]                       
-                                        
-Protocol(s)                   協議
+
+Prompt                         提示  
+
+Protocol(s)                   協定
 [[Build Description Files]]      
                                                 
 (PEIM to PEIM Interface)(???) PPI(s) 韌體前模組同階介面                                           
@@ -478,7 +480,9 @@ Usage Blcok                     使用阻段
                                                  
 User Identification (UID)               使用者識別
 [[EDK II User Documentation]]            
-                                                      
+
+verbose                                詳細(或進階) ex verbose mode
+
 Visual Forms Representation (VFR)      虛擬表單展現
 [[EDK II Specifications]]                               
                                                       
