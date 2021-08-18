@@ -1,0 +1,38 @@
+<!-- [[Category:EDKII]] -->
+(2019/03/08)
+
+[http://www.tianocore.org/edk2/ EDK II] 專案是回應 EFI 社群的需求關於對 UEFI 和 PI開發上有更好的建置和版本追蹤環境。EDK II 與原生的 EDK 上主要不同點是 EDK II 的'''強化建置環境'''。
+這強化建置環境的優點包括了:
+
+* 操作系統獨立性
+* 在選擇編譯器與組譯器上的彈性
+* 使用開放源碼建置工具和應用程式來產生工作代碼的能力
+* 強化模組和模組套件的開發和建置能力
+* 建置配置工具和資訊集的使用來提供靈活的流程
+* 線上的源碼控制允許使用者去貢獻源碼和成為參與者
+
+EDK II 的加強建置環境與原生 EDK 的建置環境有很大的不同。 有很多新的觀念和功能在 EDK II 裡，將(建置)環境改變了。如果你熟悉原生的 EDK ，這些改變將是明顯的，當然它們對每個人的好處是很明顯的。新架構和套件所有人被寫入在 [[EDKII Packages|EDKII 套件包]] 裡。
+
+一個重要的注意事項，EDK II 的編譯結果與原生 EDK 是相同的，改變是只在建置環境裡影響源碼的那個層級。任何在源碼檔案上的改變僅是支援建置環境的改變，一旦創建模組，它們在功能上是相同的。
+
+EDK II 被歸類在開發層級的專案，而 EDK 是一個官方層級的專案。 EDK 仍打算去被使用在大量生產出貨上，而 EDK II 則是通過額外的開發更進一步完善。
+隨著 EDK II 專案的成熟及 EFI 開源社群的主動參與拓展專案的範圍(特性，功能和支持)，EDK II 專案將成長為一個官方層級專案。 我們歡迎你對 EDK II 專案感興趣和鼓勵你的參與和回饋。
+
+= 原文 =
+<!-- [[Category:EDKII]] -->
+The [http://www.tianocore.org/edk2/ EDK II] project is the response to the EFI community’s request for a better build and version tracking environment for UEFI and PI development. The main difference between the EDK II to the original EDK is the '''Enhanced Build Environment''' of the EDK II. 
+The advantages of the Enhanced Build Environment include: 
+
+* Operating System independence 
+* Flexibility in choosing the compiler and assembler tools 
+* The ability to generate working code using open source build tools and applications 
+* Enhanced development and build capability of modules and module packages 
+* Use of build configuration tools and data sets to provide flexible process
+* Online source control allows users to contribute code and become participants
+
+The EDK II enhanced build environment is a significant departure from the build environment of the original EDK. There are many new concepts and features in the EDK II, which have altered the environment. If you are familiar with the original EDK these changes will be obvious, while the benefits of them will be apparent to everyone. The new structure, along with package owners is documented in the [[EDKII Packages]]. 
+
+It is important to note, that the compiled results of the EDK II are equivalent to the original EDK, the changes are in the build environment and only affect the sources at that level. Any differences in the code files are only to support the changes in the build environment, once the modules are created, they are functionally identical. 
+
+The EDK II is classified at a development level project and the EDK is an official level project. The EDK is still intended to be used for volume production and shipments while the EDK II is being further refined through additional development. 
+As the EDK II project matures and the active participation of the EFI open source community members expand the project’s scope (features, functionality, and support) the EDK II project will grow into an official level project. In the mean time, we are pleased in your interest in the EDK II project and encourage your participation and feedback.

@@ -1,0 +1,17 @@
+(2019/03/08)
+這個套件包含一個原始碼偵錯代理去連上 COM 或 USB 偵錯埠進入平台。 再加上偵錯主機應用程式 (debug host application) 將允許 UEFI 驅動程式和 UEFI 應用程式的原始碼等級偵錯。
+
+https://github.com/tianocore/edk2/tree/master/SourceLevelDebugPkg
+
+主機偵錯應用程式 (Host Debug Application) 給 Microsoft Windows 和 Linux 可在這裡找到: https://firmware.intel.com/develop/intel-uefi-tools-and-utilities/intel-uefi-development-kit-debugger-tool#overlay-context=develop
+
+更多用 gdb 偵錯在這裡: [[How to debug OVMF with QEMU using GDB|如何使用 GDB 對用 QEMU 的 OVMF 偵錯]]
+
+=原文=
+This package includes a source code debugger agent into a platform, which connects over COM or USB debug ports.  This plus a debug host application will allow source level debugging of UEFI drivers and UEFI applications.
+
+https://github.com/tianocore/edk2/tree/master/SourceLevelDebugPkg
+
+Host debug applications for Microsoft Windows and Linux are available here: https://firmware.intel.com/develop/intel-uefi-tools-and-utilities/intel-uefi-development-kit-debugger-tool#overlay-context=develop
+
+Info for debugging with gdb is available here: [[How to debug OVMF with QEMU using GDB]]

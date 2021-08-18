@@ -1,0 +1,21 @@
+(2019/03/08)
+
+請參考下面的連結 
+[https://www.linaro.org/projects/server/ Linaro Enterprise Group (LEG)]
+在Linaro wiki下的文章:
+
+* [https://wiki.linaro.org/LEG/UEFIforQEMU 使用 UEFI 在 QEMU/KVM (AArch64 + AArch32)]
+* [https://wiki.linaro.org/LEG/UEFIforXEN 使用 UEFI 在 a Xen domU (AArch64)]
+
+來源: https://github.com/tianocore/edk2/tree/master/ArmVirtPkg
+
+=原文=
+
+Please refer to the following
+[https://www.linaro.org/projects/server/ Linaro Enterprise Group (LEG)]
+articles in the Linaro wiki:
+
+* [https://wiki.linaro.org/LEG/UEFIforQEMU Using UEFI in QEMU/KVM (AArch64 + AArch32)]
+* [https://wiki.linaro.org/LEG/UEFIforXEN Using UEFI in a Xen domU (AArch64)]
+
+Source: https://github.com/tianocore/edk2/tree/master/ArmVirtPkg

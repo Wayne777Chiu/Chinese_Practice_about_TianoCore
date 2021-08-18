@@ -1,0 +1,38 @@
+(2019/03/08)
+
+我們的社群啟用 [[UEFI]] 韌體和工具透過各式開放源碼專案。
+
+我們目前大部分的努力都與 [[EDK II]] 專案相關。因此假如你是開發者，這裡是好的開始去合作貢獻給我們的社群。
+
+UEFI 開發者是我們社群的主要聚焦，假使你有興趣在嘗試使用UEFI，那麼我們有一個頁面在說明如何 [[start using UEFI | 開始使用 UEFI]] 。
+
+有幾個方式來參與我們社群。 任何人可以加入我們的 [[Mailing Lists | 寄件列表]] 來討論 UEFI 相關主題。
+
+=開發者們=
+
+假如你是一位開發者，和想要對我們社群提供 [[Code Contributions | 源碼貢獻]] :
+* 檢視我們的 [[Member Types | 成員種類]]　，其中說明貢獻源碼的需求。
+* 檢視我們的 [[Tasks | 任務]]　頁面，其中記錄了一些開放源碼的專案。
+* 檢視我們的 [[Code Style | 編碼風格]]　頁面說明編碼風格和註釋紀錄風格。
+
+'''''譯者''':關於 EDK II (http://www.tianocore.org/edk2/) 的連結改成 這裡 [[EDK II]]''
+
+<!-- [[Category:Main]] -->
+
+=原文=
+
+Our community enables [[UEFI]] firmware and tools through various open source projects.
+Most of our efforts are currently related to the [http://www.tianocore.org/edk2/ EDK II] project, so if you are developer, then this is a good place to start contributing to our community.
+
+UEFI developers are the primary focus of our community, but if you are interested in trying to use UEFI, then we have a page on how to [[start using UEFI]].
+
+There are several ways to participate in our community.  Anyone can join our [[Mailing Lists]] to discuss UEFI related topics.
+
+=Developers=
+
+If you are a developer, and would like to make [[Code Contributions]] to our community:
+* Review our [[Member Types]] which documents requirements for contributing code
+* Review our [[Tasks]] page which documents some open projects
+* Review our [[Code Style]] page which documents coding styles and commit log styles
+
+<!-- [[Category:Main]] -->

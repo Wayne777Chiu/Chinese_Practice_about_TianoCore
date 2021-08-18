@@ -1,0 +1,553 @@
+=翻譯=                            
+                                            
+A Tour Beyond BIOS            BIOS 巡禮
+[[EDK II White papers]]                  
+                                       
+Address-Space Layout Randomization    定址空間隨機布局
+[[EDK II White papers]]                  
+                                       
+Advanced Configuration and Power Interface (ACPI) 進階組態與電源介面
+[[EDK II White papers]]                  
+
+Application            應用程式
+[[MdePkg]]                          
+                                 
+Assembly Code           組合源碼
+[[Nasm Setup]]                           
+                                 
+Application Programmer    應用程式設計師
+[[Driver Developer]]               
+                                         
+Authenticated Variable     認證變數
+[[EDK II User Documentation]]          
+                                          
+Backslash Character     反斜線字元
+[[Using EDK II with Native GCC]]     
+                                 
+Base Module(s)          基底模組
+[[MdePkg]]                          
+                                 
+Base Tool(s)            基本建置工具
+[[Build Description Files]]   
+                                            
+BaseBoard Management Controller  (BMC)    基板管理控制器
+[[EDK II White papers]]        
+                                                      
+Binary Image(s)         二進制映像檔 
+[[MinnowBoardMax]]                  
+                                    
+Break Point             中斷點   
+[[How to debug OVMF with QEMU using GDB]]        
+                                          
+Boot Device Selection (BDS) 啟動裝置選擇
+[[OVMF Boot Overview]]                  
+                                              
+Boot Firmware Volume (BFV)  啟動韌體冊
+[[OVMF Boot Overview]]                  
+                                       
+Boot Image(s)              開機映像檔
+[[EDK II Specifications]]          
+                                              
+Bugzilla Ticket             Bugzilla 票證
+[[SoftFeatureFreeze]]                       
+                                            
+Boot services           開機過程服務
+                                                 
+C Coding Standards      C語言編碼標準
+[[EDK II Specifications]]                              
+                                         
+CamelCase                        駝峰式大小寫
+[[Code Style C]]                                     
+                                                   
+Capsule Based                 膠囊基底式
+[[EDKII Packages]] [[Capsule Based Firmware Update and Firmware Recovery]]
+                                                              
+Capsule Image(s)              膠囊映像檔
+[[EDK II Specifications]]          
+                                           
+Coding Standards Specification    編碼標準規範
+[[Code Style C]]                               
+                                                   
+Codebase                源碼基底 
+[[IntelAtomProcessorE3900]]
+                                   
+Command                 指令/命令
+[[Using EDK II with Native GCC]]  
+                                             
+Command Terminal        指令終端機
+[[Using EDK II with Native GCC]]         
+                                    
+Conf File(s)            配置檔
+[[Common instructions]]              
+                                           
+Cover-Letter                   涵蓋文稿
+[[EDK II Development Process]]               
+                                               
+Customer Reference Board(CRB)  顧客參照板
+[[IntelAtomProcessorE3900]]             
+                                         
+Data Execution Protection  (DEP)       資料執行保護
+[[EDK II White papers]]                     
+                                           
+Date Published                 發行日期
+[[EDK II White papers]]                     
+                                           
+DB                                      
+[[EDK II User Documentation]]     
+                                            
+Debug Host Application     偵錯主機應用程式
+[[SourceLevelDebugPkg]]              
+                                          
+Debugger Agent            偵錯代理
+[[SourceLevelDebugPkg]]              
+                                                                          
+Definition(s)          定義         
+[[MdePkg]]                          
+                              
+Description Files       組態描述檔
+[[EDK II Specifications]]                   
+                                       
+Developer Release         開發者發行版
+[[Wizard Getting Started]]
+                                          
+Document                v. 載明
+[[MdePkg]]                          
+                                 
+Driver                 驅動程式
+[[MdePkg]]                    
+                                                                                                
+Driver Binding Protocol Start Function     驅動程式綁定協議開始函式   
+[[Build Description Files]]                       
+                                 
+Driver Developer Release      驅動程式開發者發行版  
+[[UEFI Driver Wizard]]           
+                                                   
+Driver Execution Environment (DXE)       驅動程式執行環境
+[[EDK II White papers]] [[OVMF Boot Overview]]       
+                                       
+Driver Execution Environmnet Initial Program Load (DXE IPL) 驅動程式執行環境初始程式載入
+[[OVMF Boot Overview]]                                 
+                                       
+Driver Wizard           驅動程式精靈
+[[Wizard Getting Started]]  
+                                        
+(UEFI) Driver Writer Guide (DWG)  UEFI 驅動程式編碼指南
+[[Driver Developer]] [[UEFI Driver Writer's Guide]]                     
+                                 
+Edit Menu                編輯選單
+[[Using EDK II with Native GCC]]  
+                                       
+EDK II Module Writer's Guide        EDK II 模組編碼指南
+[[EDK II User Documentation]]                        
+                                            
+EDK II User Documentation           EDK II 使用者文獻
+[[EDK II User Documentation]]                
+                                                        
+EDK II User Manual                  EDK II 使用者手冊
+[[EDK II User Documentation]]           
+                                           
+Embedded Controller (EC)               嵌入式控制器
+[[EDK II White papers]]        
+                                                      
+Entry Point              (程式)進入點
+[[How to debug OVMF with QEMU using GDB]]                             
+                                                 
+Environment Variable     環境變數
+[[Using EDK II with Native GCC]]  
+                                  
+expansion boards        擴充板
+[[MinnowBoardMax]]                   
+                                 
+Field (for bit)         (位元)區段
+[[EDK II Debugging]]                   
+                                        
+Field (for data file)    (資料)欄位
+[[EDK II Specifications]]        
+                                          
+Firmware Support Package   韌體支援套裝
+[[IntelAtomProcessorE3900]]           
+                                     
+Firmware Volume (FV)           韌體冊
+[[EDK II Specifications]] [[OVMF Boot Overview]]                 
+                                                
+Flash Description File (FDF)     刷錄描述檔
+[[EDK II Specifications]]         
+                                               
+Force Push(ing)              (Git) 強制推進
+[[New to git]]                                    
+                                               
+General Purpose x86 Assembler 通用x86組譯器
+[[Using EDK II with Native GCC]]           
+                                          
+Getting Started Guide           入門指南
+[[EDK II White papers]]                     
+                                          
+Git Clone                    Git 克隆
+[[Windows systems]]                  
+                                       
+Git Commit                   Git  提交
+[[EDK II Development Process]]         
+                                      
+Git Pull                     Git 拉取
+[[Windows systems]]                          
+                                                
+Git Rebase                     Git 重定基
+[[EDK II Development Process]]                 
+                                                                                             
+Git Repositor(y|ies)           Git 倉儲
+[[Windows systems]]                      
+                                         
+Git Stage                      Git 預存
+[[EDK II Development Process]]           
+                                           
+Globally Unique Identifier(s) (GUID(s))   全域唯一識別元
+[[Build Description Files]]        
+                                                      
+Graphical User Interface (GUI)  圖形使用者介面
+[[Windows systems]]                             
+                                            
+HTTP Boot                   超文本傳輸協定開機
+HyperText Transfer Protocol Boot           
+[[EDK II White papers]]                     
+                                           
+HTTPS Boot                  超文本傳輸安全協定開機                         
+HyperText Transfer Protocol Secure Boot
+HTTP over TLS Boot                             
+[[EDK II White papers]]                     
+                                           
+Host Bus Adapter             主機匯流排配接器
+[[EDK II White papers]]        
+                                                             
+Hyperthreading             超線程              
+[[Common instructions]]                  
+                                           
+Image Definition File (IDF)           映像定義檔
+[[EDK II Specifications]]         
+                                                       
+Indentation                           縮排
+[[Code Style C]]                                       
+                                          
+Independent Hardware Vendor (IHV)       獨立硬體供應商
+[[Driver Developer]]                            
+                                               
+Industry Standard       工業標準
+                                             
+Information File                     資訊檔
+[[EDK II Specifications]]         
+                                                       
+Infrastructure          基礎要件                                     
+                                          
+Integration Branch       整和分支
+[[EDK II Development Process]] 
+                                                    
+Intel Architecture (IA)               英特爾(Intel)架構
+[[EDK II White papers]]                     
+                                           
+Intel(R) UEFI Packaging Tool (UEFIPT)           Intel(R) UEFI 套件工具
+[[Build Description Files]]        
+                                                              
+Intellectual Property   智慧產權 
+[[MinnowBoardMax]]                      
+                                      
+Internal Forms Representation (IFR)       內部表單展現
+[[EDK II Specifications]]         
+                                         
+Internet prox(y|ies)     網路代理伺服器  
+[[Using EDK II with Native GCC]]      
+                                       
+Internet Relay Chat (IRC)   網際網路中繼聊天
+[[EDK II Development Process]]                   
+                                             
+KEK                                       
+[[EDK II User Documentation]]                       
+                                                
+Legacy BIOS                 傳統式 BIOS
+[[UEFI UBUNTU]]                        
+                                              
+Library Class(es)           函式庫類別
+[[Build Description Files]]   
+                                                  
+Librar(y|ies) Instance(s)   函式庫實例
+                                          
+Local Variable(s)           區域變數
+[[How to debug OVMF with QEMU using GDB]]     
+                                               
+Macro(s)                 巨集
+                                            
+Maker                    創客
+[[IntelAtomProcessorE3900]]             
+                                         
+Meta-Data                    後設資料 (直譯 解釋資料的資料)
+[[EDK II Specifications]]         
+                                                       
+Module Information File(INF)    模組資訊檔
+[[Build Description Files]]                  
+                                             
+Native                   原生
+[[Using EDK II with Native GCC]]      
+                                     
+NetWork                  網絡
+[[Using EDK II with Native GCC]]  
+                                        
+New UEFI Driver Dialog              新 UEFI 驅動程式對話框
+[[Wizard Getting Started]]  
+                                                                              
+Open Compute Project(OCP)           開放伺服器計畫
+[[EDK II Platforms]]                            
+                                                   
+Open Source Hardware Association     開源硬體協會
+[[IntelAtomProcessorE3900]]     
+                                      
+Operating Systems Vendor  (OSV)      作業系統供應商
+[[Driver Developer]]                    
+                                                       
+OS shim loader            OS 墊片載入器
+[[UEFI UBUNTU]]                                  
+                                    
+OVMF (Open Virtual Machine Firmware)   開放性的虛擬機器韌體
+[[OVMF]] [[Common instructions]]                              
+                                                         
+Package                 物件包/套件包 (!?) (various sets of packages - MdePkg.mediawiki)
+                                                              
+Package Declaration File (DEC)            套件宣告檔
+[[EDK II Specifications]] [[Build Description Files]]        
+                                                                                    
+Patch                        補丁
+[[EDK II Development Process]]   
+                                                       
+Path Separator Character    路徑分隔符號字元
+[[Multiple_Workspace]]                                
+                                                                                                        
+Performance Optimization            效能優化
+[[EDK II User Documentation]]                   
+                                                               
+Peripheral Component Interconnect / Personal Computer Interface (PCI)  外部連結標準 / 個人電腦介面
+[[EDK II White papers]]        
+                                                     
+Platform Configuration Database (PCD(s)) 平台配置資料庫
+[[EDK II Debugging]] [[EDK II Specifications]]  [[Build Description Files]]                                         
+                                                        
+Platform Description File (DSC)     平台組態描述檔
+[[EDK II Specifications]] [[Build Description Files]]                                    
+                                               
+Platform Feature(s)      平台功能(/特點)
+[[IntelAtomProcessorE3900]]                                
+                                              
+Port                    網路埠
+[[Using EDK II with Native GCC]]   
+                                              
+Porting                 平台開發導入
+[[MdePkg]]                                 
+                                     
+Pre-Boot                   預啟動
+[[EDK II White papers]]                     
+                                          
+Pre-EFI Initialization (PEI)      韌體前初始化
+[[EDK II White papers]] [[OVMF Boot Overview]]       
+                                                     
+Pre-EFI Initialization Driver     韌體前初始化驅動程式
+[[OVMF Boot Overview]]                  
+                                                 
+Pre-EFI Module (PEIM)      韌體前模組                        
+[[Build Description Files]] 
+                                                 
+Prefix                         字首綴詞
+[[Nasm Setup]]                       
+
+Prompt                         提示  
+
+Protocol(s)                   協定
+[[Build Description Files]]      
+                                                
+(PEIM to PEIM Interface)(???) PPI(s) 韌體前模組同階介面                                           
+[[Build Description Files]]                     
+                                                                                           
+Release                    發行/ 發佈/ 釋出
+[[EDK II User Documentation]]                         
+                                                  
+Release Note(s)            發佈公告
+[[MinnowBoardMax]] [[IntelAtomProcessorE3900]]          
+                                               
+ResetVector (Reset Vector)      重置向量
+[[OVMF Boot Overview]]                               
+                                                 
+Revision                      校訂版本
+[[EDK II Specifications]]  [[EDK II White papers]] [[UDK]]                     
+                                             
+RPM repositor(y|ies)          RPM套件庫
+[[How to run OVMF]]                          
+                                           
+SPI Programmer          SPI 燒錄器
+[[IntelAtomProcessorE3900]]       
+                                          
+Runtime      (RT)           運行時間
+[[EDK II White papers]]        
+                                                                                    
+Runtime services        運行時間服務
+                                        
+Secure Boot             安全性啟動
+[[Galileo]] [[UEFI UBUNTU]] [[EDK II User Documentation]]             
+                                                          
+Secure Boot polic(y|ies)     安全性啟動策略                   
+[[EDK II User Documentation]]            
+                                                    
+Secruity (SEC)               安全性
+[[EDK II White papers]]        
+                                             
+Security Advisorie(s)     安全性公告
+[[Reporting Security Issues]]            
+                                 
+Security Core (SEC Core)     安全性核心
+[[OVMF Boot Overview]]                  
+                                                     
+Security Issue          安全性問題
+[[Reporting Security Issues]]                                   
+                                   
+Self-Certification Test (SCT)      
+[[EDK II User Documentation]]            
+                                                    
+Shell                     殼層 (通常指使用者使用介面)   
+[[Using EDK II with Native GCC]]  
+                                                 
+Signed-off-by              (Git) 署名
+[[EDK II Development Process]]
+                                         
+Soft Feature Freeze           軟性功能凍結
+[[SoftFeatureFreeze]]                       
+                                         
+Source Build Instructions 原始碼建置說明
+[[MinnowBoardMax]]              
+                                                                                                                   
+Source Layout Window       源碼佈局視窗                                                 
+[[How to debug OVMF with QEMU using GDB]]   
+                                           
+Source Level Debug            源碼等級偵錯
+[[Nasm Setup]]                           
+                                                              
+Stack Canaries                      金絲雀堆疊
+[[EDK II White papers]]                     
+                                           
+step-by-step instructions   單步(驟)指示
+[[Windows systems]] [[Using EDK II with Native GCC]]                   
+
+Super I/O (SIO)                       超級IO
+[[EDK II White papers]]        
+                                       
+Susceptible to Malicious Behavior      容易受惡意行為影響
+[[EDK II White papers]]        
+                                                       
+System Management Mode (SMM)         系統管理模式
+[[EDK II White papers]]    
+                                              
+TBD (To Be Determined)  待確定
+[[IntelAtomProcessorE3900]]                     
+                                  
+Tech Support             技術支援
+[[Start using UEFI]]             
+                                 
+Template Specification             樣板規範
+[[EDK II Specifications]]                                
+                                              
+Terminal Program         終端程式                                    
+[[Using EDK II with Native GCC]]                               
+                                 
+Toolchain                 工具鏈      
+[[Using EDK II with Native GCC]]       
+                                             
+Topic Branch               主題分支
+[[EDK II Development Process]]               
+                                                      
+Transport Layer Security (TLS)      傳輸層安全性  
+[[EDK II White papers]]                     
+                                          
+UEFI Development Kit (UDK)       UEFI 開發套件組合
+[[UDK]]                                            
+                                                   
+Unicode                    萬國碼、國際碼、統一碼、單一碼
+[[EDK II Specifications]] [[Build Description Files]]                               
+                                                      
+Unified Extensible Firmware Interface (UEFI) 統一可延伸韌體介面
+[[Driver Developer]]                                            
+                                                           
+Universally Unquid Identifier (UUID) 全域唯一識別碼                                 
+[[Using EDK II with Native GCC]]                                     
+                                             
+Upstream                       (Git) 上游
+[[New to git]]                                             
+                                             
+Usage Blcok                     使用阻段
+[[Build Description Files]]                
+                                                 
+User Identification (UID)               使用者識別
+[[EDK II User Documentation]]            
+
+verbose                                詳細(或進階) ex verbose mode
+
+Visual Forms Representation (VFR)      虛擬表單展現
+[[EDK II Specifications]]                               
+                                                      
+Vulnerability                         漏洞
+[[EDK II White papers]]        
+                                                       
+Web Browser(s)           網頁瀏覽器                   
+[[Using EDK II with Native GCC]]         
+                                        
+Wizard-Getting-Started                開始精靈 
+Wizard Getting Started                        
+[[UEFI Driver Wizard]] [[Driver Developer]]
+                                                         
+Workspace (Work Space)                工作區
+[[Windows systems]] [[Build Description Files]]                  
+                                             
+V.S 
+
+Web vs Internet
+    --> 如何用一句英文解釋 10 個易混淆的熱門科技字
+        --> refer https://www.inside.com.tw/article/4287-10-tech-terms-people-get-confused
+
+instruction vs command
+    --> Command vs Instruction - What's the difference?
+        --> path: https://wikidiff.com/command/instruction
+            -->  As nouns the difference between command and instruction is that 
+            command is an order, a compelling task given to an inferior or a machine 
+            while instruction is (uncountable) the act of instructing, teaching, or furnishing with information or knowledge.
+            As a verb command is to order, give orders; to compel or direct with authority. 
+framework vs architechture
+    --> 小朱® 的技術隨手寫 - Framework 和 Architecture 有何不同?
+        --> https://dotblogs.com.tw/regionbbs/2009/06/12/framework_vs_architecture
+
+翻譯參考
+    Git am                    Git 使用修補檔 (format-patch)
+        --> .3 分散式 Git - 專案的管理
+            --> https://git-scm.com/book/zh-tw/v1/%E5%88%86%E6%95%A3%E5%BC%8F-Git-%E5%B0%88%E6%A1%88%E7%9A%84%E7%AE%A1%E7%90%86
+    Git Clone                 Git 克隆
+        --> 2.1 Git 基礎 - 取得一個 Git 倉儲
+            --> refer: https://git-scm.com/book/zh-tw/
+    Git Pull                 Git 拉取
+        --> 2.5 Git 基礎 - 與遠端協同工作
+            --> refer: https://git-scm.com/book/zh-tw/ 
+    Git Stage                Git 預存
+        --> 2.2 Git 基礎 - 紀錄變更到版本庫中                 
+            --> https://git-scm.com/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E7%B4%80%E9%8C%84%E8%AE%8A%E6%9B%B4%E5%88%B0%E7%89%88%E6%9C%AC%E5%BA%AB%E4%B8%AD
+    Git Repositor(y|ies)     Git 倉儲
+        --> 2.1 Git 基礎 - 取得一個 Git 倉儲 
+            --> refer: https://git-scm.com/book/zh-tw/v2/Git-%E5%9F%BA%E7%A4%8E-%E5%8F%96%E5%BE%97%E4%B8%80%E5%80%8B-Git-%E5%80%89%E5%84%B2
+    (git) cover-letter             涵蓋文稿
+        --> git-format-patch - Prepare patches for e-mail submission
+            --> https://git-scm.com/docs/git-format-patch
+    another refer: 
+        --> 阮一峰 Git 教程
+            --> https://www.bookstack.cn/read/git-tutorial/docs-commands-git-add.md
+        --> Yu-Cheng Chuang’s Blog - Git-rebase 小筆記
+            --> https://blog.yorkxin.org/2011/07/29/git-rebase.html
+    Signed-of-by vs. Signature
+        --> 为什么要Sign Off？
+            --> https://segmentfault.com/q/1010000004044749
+
+    Meta-Data 
+        --> 技術服務小百科 後設資料( Metadata ) 
+            --> http://techserviceslibrary.blogspot.com/2011/04/metadata.html
+某參照: 
+    目的查詢 (Conf Files)
+    (之乎) config、option、setting这三者在程序世界里是什么区别？
+        --> refer: https://www.zhihu.com/question/39827177

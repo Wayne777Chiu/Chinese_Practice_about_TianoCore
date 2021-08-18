@@ -1,0 +1,66 @@
+(2019/03/08)
+__NOTOC__
+==='''介紹'''===
+一個 EDKII 建置工具的更新現在允許當嘗試去解決套件位置時可以設定去搜尋多重路徑。 這新的特徵允許更多彈性當設計一個樹的分布或合併不同源碼時。新的功能可透過一個新的環境變數的增加來被啟動 (PACKAGES_PATH)。
+
+這個 PACKAGES_PATH 的變數是一個額外搜尋路徑的有序清單使用了主機作業系統的默認路徑分隔符號在每個條目間。 列表的第一個路徑有最高優先權和最後的路徑有最低優先權。 在 WORKSPACE 變數的路徑總是比任何條目在 PACKAGE_PATH上的有最高搜尋優先權。
+
+要使用這個特徵，PACKAGES_PATH 環境變數必須被設定先於運行 edksetup 腳本前。 這麼做的理由是 edksetup 腳本決定的配置位置和 BaseTools 目錄位置都是基於 WORKSPACE 和 PACKAGES_PATH 環境變數而來的。
+
+PACKAGES_PATH 環境變數的使用是可選擇選項，假如它沒被定義，將會建置過去有像它(一樣功能)的函數。
+
+==='''環境變數:'''===
+*       WORKSPACE
+**    Build 目錄的位置
+**    總是有最高的搜尋優先權
+*       PACKAGES_PATH
+**    額外路徑的列表去搜尋套件使用 OS 路徑分隔符號字元
+**    路徑在一個優先順序上被列表
+
+'''例子:'''
+    set WORKSPACE=c:\efi\test
+    set PACKAGES_PATH=%WORKSPACE%\platform;%WORKSPACE%\edk2
+
+在這個情況下，WORKSPACE 是一個容器 (container) 給兩個(建置)樹使用伴隨著建置目錄的位置。這個例子假定所給定(特定)平台的源碼套件的設置是被包含在 platform 目錄上的。 從源碼倉儲來的源碼套件被包含在 edk2 目錄上。
+
+當用這樣配置的目錄來執行建置工具將會掃描以下的順序去找出被列在 DSC 和 FDF 檔的套件。
+#        C:\efi\test
+#        C:\efi\test\platform
+#        C:\efi|test\edk2
+
+'''總結'''
+*        使用 PACKAGES_PATH 不是必須
+*        PACKAGES_PATH 必須被設定先於執行 edksetup 腳本前來修正工具配置
+
+===原文===
+==='''Introduction:'''===
+An update to the EDKII build tools now allows the setting of multiple paths that will be searched when attempting to resolve the location of packages.  This new feature allows for more flexibility when designing a tree layout or combining sources from different sources.  The new functionality is enabled through the addition of a new environment variable (PACKAGES_PATH). 
+
+The PACKAGES_PATH variable is an ordered list of additional search paths using the default path separator of the host OS between each entry.  The first path in the list has the highest priority and the last path has the lowest priority.  The path specified by the WORKSPACE variable always has the highest search priority over any PACKAGE_PATH entries.
+
+To use this feature, the PACKAGES_PATH environment variable must be set prior to running the edksetup script.  The reason for this is that the edksetup script determines the location of the Conf and BaseTools directory location based on the values of the WORKSPACE and PACKAGES_PATH environment variables.
+
+The use of the PACKAGES_PATH environment variable is optional and if it is not defined the build will function like it has in the past.
+
+==='''Environment Variables:'''===
+*         WORKSPACE
+**    Location of the Build directory
+**    Always highest search priority
+*        PACKAGES_PATH
+**   List of additional paths to search for packages using OS path separator character
+**   Paths are listed in priority order
+
+'''Example:'''
+  set WORKSPACE=c:\efi\test
+  set PACKAGES_PATH=%WORKSPACE%\platform;%WORKSPACE%\edk2
+
+In this case WORKSPACE is the container for two trees as well as the location of the Build directory.  The example assumes the set of code packages for a given platform are contained in the platform directory.  While the code packages from the open source repository are contained in the edk2 directory.
+
+When the build tools are run with this configuration the directories will be scanned in the following order to find packages listed in the DSC and FDF files.
+#       c:\efi\test
+#       c:\efi\test\platform
+#       c:\efi\test\edk2
+
+'''Summary:'''
+*         Use of PACKAGES_PATH is not required
+*         PACKAGES_PATH must be set prior to running the edksetup script for correct tool configuration

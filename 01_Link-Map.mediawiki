@@ -1,0 +1,178 @@
+(2019/03/08)
+
+= [[Tianocore.github.io wiki首頁]] (still link lose) =
+* [[UEFI]] (done)
+** [[start using UEFI]]
+*** [[Getting Started]]
+**** [[Getting Started with EDK II]] (same as 1.1.1.1.1.2)
+***** [[EDK II]]
+****** [[EDK II Release Planning]] 
+****** [[Getting Started with EDK II]] (same as 1.1.1.1)
+****** [[Driver Developer]]
+****** [[EDK II Specifications]]
+****** [[Code Style]]
+****** [[EDK II Overview]]
+******* [[EDKII Packages]]
+****** [[edk2 devel]]
+****** [[Reporting Security Issues]]
+****** [[Tasks]]
+****** [[UDK]]
+******* [[UDK2018]]
+******* [[UDK2017]]
+******* [[UDK2015]] 
+******* [[UDK2014]] 
+******* [[UDK2010]]
+******* [[EDK II]]
+******* [[UDK]]
+****** [[UDK2018]] 
+****** [[UDK2017]] 
+****** [[UDK2015]] 
+****** [[UDK2014]]
+****** [[UDK2010]]
+***** [[Using EDK II with Native GCC]]
+***** [[Windows systems]] 
+***** [[Xcode]]
+***** [[Unix-like systems]]
+***** [[Nasm Setup]]  (done)
+***** [[ASL Setup]] (done)
+***** [[Multiple_Workspace]] (done)
+***** [[EDK II Debugging]] (done)
+****** [[SourceLevelDebugPkg]] (done)
+******* [[How to debug OVMF with QEMU using GDB]]
+***** [[EDK II Platforms]]
+****** [[OVMF]]
+****** [[Nt32Pkg]]
+****** [[EmulatorPkg]]
+****** [[ArmVirtPkg]]
+****** [[IntelAtomProcessorE3900]]
+****** [[MinnowBoardMax]]
+****** [[Purley MinPlatform]]
+****** [[Kaby Lake MinPlatform]]
+****** [[Galileo]]
+****** [[MinnowBoard]]
+****** [[Beagle Board Wiki]]
+****** [[Omap35xxPkg]]
+***** [[EDK II Development Process]]
+****** [[Getting Started with EDK II]] 
+****** [[New to git]]
+****** [[SourceForge to Github Quick Start]]
+****** [[Commit-Partitioning]]
+****** [[Commit-Message-Format]]
+****** [[edk2 devel]]
+****** [[Code Style]]
+***** [[edk2 devel]]
+***** [[Getting Started Writing Simple Application]]
+****** [[Getting Started with EDK II]]
+****** [[UDK2017]]
+****** [[UDK]] 
+****** [[Windows systems ToolChain Matrix]]
+****** [[Using EDK II with Native GCC]]
+****** [[Unix-like system]]
+****** [[Xcode]]
+****** [[Getting_Started_Writing_MyHelloWorld.c]]
+****** [[Getting Started Writing MyHelloWorld.inf]]
+******* [[EDK II Specifications]]
+***** [[Build Description Files]]
+*** [http://www.tianocore.org/ovmf/ OVMF] (web link)
+*** [https://en.wikipedia.org/wiki/QEMU QEMU] (web wiki)
+*** [https://en.wikipedia.org/wiki/kernel-based_Virtual_Machine KVM] (web wiki)
+*** [[UEFI UBUNTU]]
+* [[EDK II]] 
+* [[PI]] 
+* [[Nt32Pkg]] 
+* [[OVMF]]
+* [[ArmVirtPkg]]
+* [[MdePkg]] 
+* [[MinnowBoardMax]]
+* [[IntelAtomProcessorE3900]] 
+* [[Galileo]] 
+* [[Reporting Issues]]
+* [[Reporting Security Issues]]
+* [[How To Contribute]] 
+* [[Tasks]]
+
+== [[EDK II Documents]] ==
+* [[EDK II Specifications]]
+* [[EDK II User Documentation]]
+** [[SecurityPkg]]
+** [[UEFI Driver Writer's Guide]]
+** [[Driver Developer]]
+** <s>[[EdkII_dashboard]]</s>
+* [[EDK II Libraries and Helper files]]
+* [[EDK II White papers]]
+* [[Driver Developer]]
+
+== [[Code Contributions]] ==
+* [[Commit Message Format]]
+* [[Code Style]]
+
+== [[Build Description Files]] ==
+* [[EDK II Specifications]]
+
+== [[How to debug OVMF with QEMU using GDB]] ==
+* [[How to run OVMF]]
+
+== [[EDKII Packages]] ==
+* [[Code Contributions]]
+* [[edk2 devel]]
+* [[Capsule Based Firmware Update and Firmware Recovery]]
+
+== [[Driver Developer]] ==
+* [[UEFI Driver Wizard]]
+* [[Wizard Getting Started]]
+** [[UDK2014.IHV Setup Guide]]
+* [[UEFI Driver Writer's Guide]]
+** [[EDK II]]
+* [[UDK2014.IHV Setup Guide]]
+* [[UDK2014]]
+* [[UDK2018]]
+
+== [[EDK II Specifications]] ==
+* [[EDK II Draft Specification]]
+* [[EDK II Speciificaitons Archived]]
+* [[Build Description Files]]
+
+== [[Code Style]] ==
+* [[Code Contributions]]
+* [[Code Style C]]
+* [[Code Style Python]]
+* [[Source Control]]
+* [[Commit Message Format]]
+* [[Commit Partitioning]]
+* [[Commit Signature Format]]
+* [[How To Contribute]]
+
+== [[OVMF]] ==
+* [[EDK II]]
+* [[UEFI]]
+* [[BSD License]]
+* [[OVMF FAQ]]
+* [[How to build OVMF]]
+* [[OVMF Boot Overview]]
+* [[edk2 devel]]
+
+== [[EDK II Release Planning]] ==
+* [[SoftFeatureFreeze]]
+* [[HardFeatureFreeze]]
+
+== Sidebar ==
+* [[Home]]
+* [[Getting Started with EDK II]]
+* [[EDK II Platforms]]
+* [[EDK II Documents]]
+* [[EDK II Release Planning]]
+* [[Reporting Issues]]
+* [[Reporting Security Issues]]
+* [[Community Information]]
+* [[Additional Projects]] & [[Tasks]]
+* [[Community Support]]
+* [[Community Virtual Meetings]]
+
+== [EDK II Development Process]] ==
+* [[Getting Started with EDK II]] 
+* [[New to git]]
+* [[SourceForge to Github Quick Start]]
+* [[Commit-Partitioning]]
+* [[Commit-Message-Format]]
+* [[edk2 devel]]
+* [[Code Style]]

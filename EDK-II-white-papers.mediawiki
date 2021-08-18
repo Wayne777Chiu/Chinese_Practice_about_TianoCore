@@ -1,0 +1,636 @@
+(2019/03/08)
+
+<div class="t_projects">
+<table>
+<tr><th colspan="4" style="background-color:#a9c6dd">EDK II 白皮書</th></tr>
+<tr>
+<td>'''下載 PDF'''</td>
+<td>
+'''標題'''<Br>
+'''描述'''<br>
+*'''公開日期'''<BR>
+</td>
+</tr>
+
+<tr>
+<td>
+[https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue/details Gitbook PDF]
+
+</td>
+<td>
+
+[https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue/details BIOS 巡禮- 安全強化來緩解UEFI緩衝區溢位(A Tour Beyond BIOS- Security Enhancement to Mitigate Buffer Overflow in UEFI)]
+貢獻者: Jiewen Yao, Vincent Zimmer and Jian Wang<BR>
+
+
+緩衝區溢位是 “計算機安全歷史裡最重要開發技術之一。” [ [https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Andrew+S.+Tanenbaum&search-alias=books&text=Andrew+S.+Tanenbaum&sort=relevancerank Tanenbaum] ] “緩衝區溢位非常適合在最現代化系統中用來引入三種最重要保護機制可行性: 金絲雀堆疊(stack canaries),資料執行保護(data execution protection), 和定址空間隨機布局(address-space layout randomization)。”[ [https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Andrew+S.+Tanenbaum&search-alias=books&text=Andrew+S.+Tanenbaum&sort=relevancerank Tanenbaum] ] 然而，目前的 UEFI 韌體實作僅採用這些機制的一小部分。 <BR>
+這份文件將介紹如何在 UEFI 韌體裡啟用這些保護機制來強固化預啟動 (pre-boot) 階段。
+* March 2018 [https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue/details V 2.0 Gitbook]
+* October 2016 [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Securiy_Enhancement_to_Mitigate_Buffer_Overflow_in_UEFI.pdf V 1.0 PDF]
+
+</td>
+</tr>
+
+<tr>
+<td>
+[https://www.gitbook.com/book/edk2-docs/getting-started-guide-of-edk-ii-http-boot/details GitBook PDF]
+
+
+</td>
+<td>
+[https://www.gitbook.com/book/edk2-docs/getting-started-guide-of-edk-ii-http-boot/details EDK II 超文本傳輸協定開機入門指南 (EDK II HTTP Boot Getting Started Guide)]- 貢獻者: Ye Ting, Fu Siyuan, and Zhang Lubo
+<BR>
+這份文件是一個入門指南關於使用了在 UEFI 規範裡介紹過的超文本傳輸安全協定開機 (HTTP boot) 的能力，校訂版本 2.5。
+* January 2018 Rev 0.9
+* April 2016 Rev 0.8 [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/EDKIIHttpBootGettingStartedGuide_0_8.pdf  .PDF] 
+</td>
+</tr>
+<tr>
+<td>
+[https://www.gitbook.com/book/edk2-docs/getting-started-with-uefi-https-boot-on-edk-ii/details Gitbook PDF]
+</td>
+<td>
+[https://www.gitbook.com/book/edk2-docs/getting-started-with-uefi-https-boot-on-edk-ii/details EDK II 上 UEFI 超文本傳輸安全協定開機入門 (Getting Started with UEFI HTTPS Boot on EDK II)] 貢獻者: Wu Jiaxin, Fu Siyuan and Brian Richardson<BR>
+超文本傳輸安全協定開機 (HTTP over TLS boot) 是一個針對安全性開機的標準實作，使用了在網路裝置上的統一可延伸性韌體介面 (UEFI)。超文本傳輸安全協定開機是特別重要尤其是對在企業基礎架構之外下使用了潛在不安全網路的客戶端。統一可延伸性韌體介面 (UEFI) 的超文本傳輸安全協定開機 (HTTPS Boot) 的安全性是由底層傳輸層 (TLS) 安全性提供。
+這份文件是假定讀者熟悉可在此頁找到的 [https://www.gitbook.com/book/edk2-docs/getting-started-guide-of-edk-ii-http-boot/details EDK II 超文本傳輸協定開機入門指南(EDK II HTTP Boot Getting Started Guide)]
+<BR>
+
+* May 2017 Rev 1.3
+* Feb 2017 Rev 1.2 [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/EDKIIHttpsBootGettingStartedGuide_1.2.pdf .PDF]
+</td>
+</tr>
+
+<tr>
+<td>
+[https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-memory-protection-in-uefi-bios/details Gitbook PDF]
+</td>
+<td>
+[https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-memory-protection-in-uefi-bios/details BIOS 巡禮- 在 UEFI BIOS 裡的記憶體保護 (A Tour Beyond BIOS- Memory Protection in UEFI BIOS)] 貢獻者: Jiewen Yao and Vincent Zimmer<BR>
+
+資料執行保護 (Data execution Protection) (DEP) 旨在避免一個應用程式或服務從一個非可執行記憶體範圍內執行程式碼。
+這有助於避免透過緩衝區溢位來儲存原始碼的某些漏洞(exploits)。
+
+<br>
+在這個白皮書 [ https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Securiy_Enhancement_to_Mitigate_Buffer_Overflow_in_UEFI.pdf BIOS 巡禮- 安全強化來緩解UEFI緩衝區溢位(A Tour Beyond BIOS-Security Enhancement to Mitigate Buffer Overflow)] 之下，我們僅討論 DEP 關於保護堆疊和關於設定不存在頁面去用來偵測 `NULL` 位址存取和當成警衛頁面。這份文件將有更全面性的討論採用 DEP 在目前 UEFI 韌體裡去強固畫預開機階段。
+<BR>
+
+* March 2017 
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Capsule_Update_and_Recovery_in_EDK_II.pdf .PDF]
+
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Capsule_Update_and_Recovery_in_EDK_II.pdf BIOS 巡禮- 在 EDK II 裡的膠囊式更新與回復(A Tour Beyond BIOS- Capsule Update and Recovery in EDK II)]
+貢獻者: Jiewen Yao and Vincent Zimmer<BR>
+
+韌體的更新能力代表了一個重要功能對主板上的系統韌體和各式各樣的裝置的韌體實體，諸如主機匯流排配接器-附 PCI 選擇 ROM，嵌入式控制器 (EC)，基板管理控制器 (BMC)等等，而言。韌體回復也是一個功能用來去支援在主快閃映像不恰當或損壞的情況中用回復模式 (recovery mode)下的韌體啟動。
+<BR>
+本文件，我們提供更詳盡的資料在如何實作膠囊更新和回復在 EDK II上。
+* December 2016 
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Security_Design_Guide_in_EDK_II.pdf .PDF]
+
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Security_Design_Guide_in_EDK_II.pdf BIOS 巡禮在EDK II 的安全性設計指南(A Tour Beyond BIOS Security Design Guide in EDK II)] 貢獻者: Jiewen Yao and Vincent Zimmer<BR>
+
+
+這份文件的目的是提供安全性線上指南給開發者，實作者，和 EDK II 韌體原始碼檢視者。本文件討論的主題是試著去協助減少存在於 EDK II 的一般常見安全性漏洞 (vulnerabilty) 有關類型的臭蟲。依循這個線上指南將增加實作此韌體的平台的整體安全性，和確保平台不是容易受惡意行為影響。
+
+* September 2016 
+</td>
+</tr>
+<tr>
+<td>
+
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf  .PDF] 
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf BIOS 巡禮在 EDK II 的實作剖析(A Tour Beyond BIOS Implementing Profiling in EDK II)] - 貢獻者: Jiewen Yao, Vincent Zimmer, Star Zeng and Fan Jeff <BR>
+統一可延伸韌體介面 (UEFI) 和 平台初始化 (PI) 規範定義了豐富的執行環境諸如安全性 (SEC)，韌體前初始化 (PEI)，驅動程式執行環境 (DXE)，系統管理模式 (SMM)，韌體驅動程式的 UEFI 運行時間 (RT)。有越來越多的功能被加入到韌體。同時，韌體仍然是資源受限環境。除了功能性之外，容量，效能，和安全性是韌體工程師的三個主要焦點。這份文件介紹幾種被實作在 EDK II 的剖析功能去幫助 UEFI 韌體開發者去分析 UEFI 韌體實作的容量，效能和安全性。
+
+* July 2016 
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Open_Source_IA_Firmware_Platform_Design_Guide_in_EFI_Developer_Kit_II.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Open_Source_IA_Firmware_Platform_Design_Guide_in_EFI_Developer_Kit_II.pdf BIOS 巡禮在 EDK II 開放源碼的英特爾架構韌體平台設計指南(A Tour Beyond BIOS Open Source IA Firmware Platform Design Guide in EDK II)]- 貢獻者: Vincent Zimmer and Jiewen Yao<BR>
+
+<BR>
+這文件介紹一份設計指南關於一個 EDK II 開放源碼英特爾架構韌體解決方案。為了要讓一個開放性英特爾架構韌體解決方案簡單，我們演示一個最小功能的韌體設計途徑。 <BR>
+唯一的準則是
+#可以開機到作業系統。
+#安全性的。
+我們試著移除許多不需要的矽或平台功能例如膠囊式更新與回復，S3回復 (S3 Resume)，SMBIOS，嵌入式控制器 (EC)，超級IO (SIO)，積體電路匯流排 (I2C)，和僅啟用進階組態與電源介面 (ACPI) & 系統管理模式 (SMM) 來支援開機。
+
+* May 2016 
+</td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Secure_SMM_Communication.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Secure_SMM_Communication.pdf BIOS 巡禮安全系統管理模式溝通(A Tour Beyond BIOS Secure SMM Communication)]- 貢獻者: Star Zeng, Vincent Zimmer and Jiewen Yao<BR>
+
+<BR>
+這文件介紹我們如何去在 UEFI BIOS 裡做安全系統管理模式的溝通。<BR>
+觀眾向:這文件假定讀者擁有基本 EDKII/UEFI 韌體開發經驗和基本的系統管理模式的知識。
+
+* April 2016 
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Memory_Map_And_Practices_in_UEFI_BIOS_V2.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Memory_Map_And_Practices_in_UEFI_BIOS_V2.pdf BIOS 巡禮在 UEFI BIOS 裡的記憶體映射和實踐(A Tour Beyond BIOS Memory Map and Practices in UEFI BIOS)]- 貢獻者: Vincent Zimmer and Jiewen Yao<BR><BR>
+
+這份文件介紹在 UEFI BIOS 裡，記憶體映射的安全性實踐。<BR>
+觀眾向:這文件假定讀者擁有基本 EDKII/UEFI 韌體開發經驗。<BR><BR>
+ 
+BIOS 的主要工作是初始化平台硬體和回報資訊給一般作業系統 (OS)。記憶體映射是最種要的一面資訊之一。作業系統可以只要讀取核心 (Kernel)，驅動程式或應用程式在正確的地方假如知道記憶體如何的分布。
+在 '''UEFI 記憶體映射'''，我們介紹在 UEFI BIOS 裡記憶體的映射設計，和看看典型平台如何回報記憶體映射給 OS。在這份文件裡，我們將討論如何增強記憶體映射回報和提供安全性實踐給記憶體保護去強固平台。
+
+
+* March 2016
+</td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_SMM.pdf  .PDF] or [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_SMM.vsd .VSD]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_SMM.pdf  EDK II 拓樸 系統管理模式(EDK II Topology SMM)] - 白皮書貢獻者: Lee Hamel<BR>
+EDK II 拓樸 – 系統管理模式: 系統管理模式如何建立和執行的拓樸
+
+* Jan 2016
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_S3.pdf  .PDF] or
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_S3.vsd .VSD]<BR>
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_S3.pdf EDK II 拓樸 S3 (EDK II Topology S3) ] - 白皮書貢獻者: Lee Hamel<BR>
+EDK II 拓樸 – S3: S3 如何建立和執行的拓樸
+
+* Jan 2016
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_PCI_Enumeration.pdf  .PDF] or [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_PCI_Enumeration.vsd .VSD]
+
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_PCI_Enumeration.pdf  EDK II 拓樸 PCI 列舉 (EDK II Topology PCI Enumeration)] - 白皮書貢獻者: Lee Hamel<BR>
+EDK II 拓樸 – PCI 列舉: PCI 列舉如何建立和執行的拓樸
+
+
+* Jan 2016
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/UDK_Build_Integration_of_Reset_Vector.pdf PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/UDK_Build_Integration_of_Reset_Vector.pdf UDK 建立重置向量的集成 (UDK Build Integration of Reset Vector)]  - 白皮書貢獻者: Lee Hamel<BR>
+重置向量如何被集大成至 UDK 建置
+
+* Jan 2016
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf BIOS 巡禮 在系統管理模式裡使用 EDKII 去實現 UEFI 認證變數(A Tour Beyond BIOS Implementing UEFI Authenticated Variables in SMM with EDKII)]
+<br>
+這份文件介紹了在 EDK II 的 MDE 模組套件和安全性套件中以系統管理模式為基礎的 UEFI 認證變數驅動程式的內部構造和開機流程。
+<br>
+先決條件
+這文件假設讀者有 EDKII/UEFI 韌體開發經驗。他或她應該也熟悉 UEFI/PI 韌體基礎結構，如 SEC, PEI, DXE，運行時間階段。
+
+* Oct 2015 
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_S3_resume_with_EDKII_V2.pdf  .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_S3_resume_with_EDKII_V2.pdf BIOS 巡禮 用 EDKII 實做 S3 恢復(A Tour Beyond BIOS Implementing S3 Resume with EDKII)]
+<br>
+這份文件介紹如實作在 EDKII 裡的 PI S3 恢復設計的內部構造和開機流程。
+
+<br>
+先決條件
+這文件假設讀者有 EDKII/UEFI 韌體開發經驗。他或她應該也熟悉 UEFI/PI/ACPI 韌體基礎結構，如 SEC, PEI, DXE，運行時間階段和 S-states。
+* Oct 2015 
+</td>
+</tr>
+
+
+<tr>
+    <td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.pdf PDF] or
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.zip Zip]
+
+    </td>
+
+    <td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.pdf BIOS 巡禮 進入 UEFI 安全性開機白皮書(A Tour Beyond BIOS into UEFI Secure Boot White Paper)] <br>
+這份文件提供一個實作和在 UEFI 安全性啟動功能和 UEFI 規範 (Version 2.3.1C, http://www.uefi.org )的功能背後的意圖的概論。
+
+文件的目的是去提供
+*   在這個能力背後的動機理解
+*   實作的帶過
+*   功能演化。
+
+這份文件目標鎖定在韌體，軟體，和 BIOS 工程師。 
+* July 2012
+    </td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/EDK_II_Build_Decoded.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/EDK_II_Build_Decoded.pdf EDK II 建置解碼 (EDK II Build Decoded)]<BR>
+
+討論建置用的檔案和他們的目的。
+* April 2012
+
+</td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/How-to-Create_VS_Solution_for_Existing_Code.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/How-to-Create_VS_Solution_for_Existing_Code.pdf 如何去創造 Visual Studio 解決方案(How to create Visual Studio solution)]<BR>
+如何去創造給 EDK II 樹的 Visual Studio 解決方案。
+* April 2012
+</td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/User_Docs/PerformanceOptimization_1_0.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/User_Docs/PerformanceOptimization_1_0.pdf EDK II 效能優化(EDK II Performance Optimization)]<BR>
+這份文件著重在用於特色化和優化 EDK II 韌體效能的技術和方法。
+(PDF)
+* April 2010
+</td>
+</tr>
+</table>
+<!-- [[Category:EDKII]] -->
+<!-- [[Category:Documents]] -->
+
+= 原文 =
+<div class="t_projects">
+<table>
+<tr><th colspan="4" style="background-color:#a9c6dd">EDK II White papers</th></tr>
+<tr>
+<td>'''Download PDF'''</td>
+<td>
+'''Title'''<Br>
+'''Description'''<br>
+*'''Date Published'''<BR>
+</td>
+</tr>
+
+<tr>
+<td>
+[https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue/details Gitbook PDF]
+
+</td>
+<td>
+
+[https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue/details A Tour Beyond BIOS- Security Enhancement to Mitigate Buffer Overflow in UEFI ]
+contributed by Jiewen Yao, Vincent Zimmer and Jian Wang<BR>
+
+
+A buffer overflow is “one of the most important exploitation techniques in the history of computer security.” [ [https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Andrew+S.+Tanenbaum&search-alias=books&text=Andrew+S.+Tanenbaum&sort=relevancerank Tanenbaum] ] “Buffer overflows are ideally suited for introducing three of the most important protection mechanisms available in most modern systems: stack canaries, data execution protection, and address-space layout randomization.”[ [https://www.amazon.com/s/ref=dp_byline_sr_book_1?ie=UTF8&field-author=Andrew+S.+Tanenbaum&search-alias=books&text=Andrew+S.+Tanenbaum&sort=relevancerank Tanenbaum] ] However, the current UEFI firmware implementation only adopted a few of these mechanisms. <BR>
+This paper will introduce how to enable the protection mechanisms in UEFI firmware to harden the pre-boot phase.
+* March 2018 [https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-mitigate-buffer-overflow-in-ue/details V 2.0 Gitbook]
+* October 2016 [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Securiy_Enhancement_to_Mitigate_Buffer_Overflow_in_UEFI.pdf V 1.0 PDF]
+
+</td>
+</tr>
+
+<tr>
+<td>
+[https://www.gitbook.com/book/edk2-docs/getting-started-guide-of-edk-ii-http-boot/details GitBook PDF]
+
+
+</td>
+<td>
+[https://www.gitbook.com/book/edk2-docs/getting-started-guide-of-edk-ii-http-boot/details EDK II HTTP Boot Getting Started Guide]- contributed by Ye Ting, Fu Siyuan, and Zhang Lubo
+<BR>
+This document is a getting started guide for using the HTTP boot capability introduced in the UEFI Specification, revision 2.5.
+* January 2018 Rev 0.9
+* April 2016 Rev 0.8 [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/EDKIIHttpBootGettingStartedGuide_0_8.pdf  .PDF] 
+</td>
+</tr>
+<tr>
+<td>
+[https://www.gitbook.com/book/edk2-docs/getting-started-with-uefi-https-boot-on-edk-ii/details Gitbook PDF]
+</td>
+<td>
+[https://www.gitbook.com/book/edk2-docs/getting-started-with-uefi-https-boot-on-edk-ii/details Getting Started with UEFI HTTPS Boot on EDK II] contributed by Wu Jiaxin, Fu Siyuan and Brian Richardson<BR>
+HTTP over TLS (HTTPS) boot is a standard implementation for securely booting using the Unified Extensible Firmware Interface (UEFI) over a network device. HTTPS Boot is especially important for clients using potentially insecure networks outside of corporate infrastructure. Security for UEFI HTTPS Boot is provided by the underlying Transport Layer Security (TLS). 
+This paper assumes the reader is familiar with the [https://www.gitbook.com/book/edk2-docs/getting-started-guide-of-edk-ii-http-boot/details EDK II HTTP Boot Getting Started Guide]
+ available on this page.
+<BR>
+
+* May 2017 Rev 1.3
+* Feb 2017 Rev 1.2 [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/EDKIIHttpsBootGettingStartedGuide_1.2.pdf .PDF]
+</td>
+</tr>
+
+<tr>
+<td>
+[https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-memory-protection-in-uefi-bios/details Gitbook PDF]
+</td>
+<td>
+[https://www.gitbook.com/book/edk2-docs/a-tour-beyond-bios-memory-protection-in-uefi-bios/details A Tour Beyond BIOS- Memory Protection in UEFI BIOS] contributed by Jiewen Yao and Vincent Zimmer<BR>
+
+Data execution protection (DEP) is intended to prevent an application or service from executing code from a non-executable memory region. 
+This helps prevent certain exploits that store code via a buffer overflow.
+
+<br>
+In the White paper [ https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Securiy_Enhancement_to_Mitigate_Buffer_Overflow_in_UEFI.pdf A Tour Beyond BIOS-Security Enhancement to Mitigate Buffer Overflow] below, we only discussed the DEP for protecting the stack and setting the not-present page for detecting  `NULL`  address 
+accesses and as the guard page. This document will have a more comprehensive discussion of the DEP adoption in the current UEFI firmware to harden the pre-boot phase.
+<BR>
+
+* March 2017 
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Capsule_Update_and_Recovery_in_EDK_II.pdf .PDF]
+
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Capsule_Update_and_Recovery_in_EDK_II.pdf A Tour Beyond BIOS- Capsule Update and Recovery in EDK II]
+contributed by Jiewen Yao and Vincent Zimmer<BR>
+
+The firmware update capability represents an important feature for the system firmware on the mother board and the various device firmware instances, such as a host bus adapter-attached PCI option ROM, embedded controller (EC), baseboard management controller (BMC), etc. The firmware recovery is also a feature to support firmware boot in recovery mode in cases where the main flash image is errant or corrupt.
+<BR>
+In this paper, we provide more details on how we implement capsule update and recovery in EDK II.
+* December 2016 
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Security_Design_Guide_in_EDK_II.pdf .PDF]
+
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Security_Design_Guide_in_EDK_II.pdf A Tour Beyond BIOS Security Design Guide in EDK II] contributed by Jiewen Yao and Vincent Zimmer<BR>
+
+
+The purpose of this document is to provide security guidelines to developers, implementers, and code reviewers of the EDK II firmware. The topics discussed in this paper are intended to aid in reducing bugs associated with common security vulnerability classes present in EDK II. Following these guidelines will increase the overall security of platforms implementing the firmware and ensure platforms are not as susceptible to malicious behavior.
+
+* September 2016 
+</td>
+</tr>
+<tr>
+<td>
+
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf  .PDF] 
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_Profiling_in_EDK_II.pdf A Tour Beyond BIOS Implementing Profiling in EDK II] - contributed by Jiewen Yao, Vincent Zimmer, Star Zeng and Fan Jeff <BR>
+The Unified Extensible Firmware Interface (UEFI) and Platform Initialization (PI) specification defines rich execution environments such as Security (SEC), Pre-EFI Initialization (PEI), Driver Execution Environment (DXE), System Management Mode (SMM) and UEFI Runtime (RT) for firmware drivers. There are more and more features added into a firmware. At same time, the firmware still has a resource constrained environment. In addition to functionality, the size, performance, and security are three major concerns of a firmware engineer. This paper introduces several profiling features implemented in EDK II to help the UEFI firmware developer to analyze the size, performance and security of a UEFI firmware implementation.
+
+* July 2016 
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Open_Source_IA_Firmware_Platform_Design_Guide_in_EFI_Developer_Kit_II.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Open_Source_IA_Firmware_Platform_Design_Guide_in_EFI_Developer_Kit_II.pdf A Tour Beyond BIOS Open Source IA Firmware Platform Design Guide in EDK II]- contributed by Vincent Zimmer and Jiewen Yao<BR>
+
+<BR>
+This paper introduces a design guide for an EDK II open source IA firmware solution. In order to make an open IA firmware solution simple, we demonstrate a firmware design approach with minimal features. <BR>
+The only criteria are 
+#It can boot to the OS
+#It is secure. 
+We can remove many unnecessary silicon or platform features like Capsule update, Recovery, S3 resume, SMBIOS, EC, Super IO (SIO), I2C, and only enable ACPI
+& SMM to support booting.
+
+* May 2016 
+</td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Secure_SMM_Communication.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Secure_SMM_Communication.pdf A Tour Beyond BIOS Secure SMM Communication]- contributed by Star Zeng, Vincent Zimmer and Jiewen Yao<BR>
+
+<BR>
+This paper introduces how we can do secure SMM communication in a UEFI BIOS.<BR>
+Audience: This paper assumes that audience has basic EDKII/UEFI firmware development experience, and basic knowledge of SMM. 
+
+* April 2016 
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Memory_Map_And_Practices_in_UEFI_BIOS_V2.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Memory_Map_And_Practices_in_UEFI_BIOS_V2.pdf A Tour Beyond BIOS Memory Map and Practices in UEFI BIOS]- contributed by Vincent Zimmer and Jiewen Yao<BR><BR>
+
+This paper introduces the memory map security practices in UEFI BIOS.<BR>
+Audience: This paper assumes that audience has basic EDKII/UEFI firmware development experience.<BR><BR>
+ 
+The main job of BIOS is to initialize the platform hardware and report information to a generic operating system (OS). The memory map is one of the most important pieces of information. The operating system can only load a kernel, driver or application in the right place if it knows how memory is allocated.
+In '''UEFI Memory Map''', we introduced the memory map design in UEFI BIOS, and saw how a typical platform reports the memory map to an OS. In this paper we will discuss how to enhance the memory map reporting and provide security practice for memory protection to harden platforms.
+
+
+* March 2016
+</td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_SMM.pdf  .PDF] or [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_SMM.vsd .VSD]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_SMM.pdf  EDK II Topology SMM] - White Paper contributed by Lee Hamel<BR>
+EDK II Topology – SMM: Topology of how SMM is set up and executed
+
+* Jan 2016
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_S3.pdf  .PDF] or
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_S3.vsd .VSD]<BR>
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_S3.pdf EDK II Topology S3 ] - White Paper contributed by Lee Hamel<BR>
+EDK II Topology - S3: Topology of how S3 is set up and executed
+
+* Jan 2016
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_PCI_Enumeration.pdf  .PDF] or [https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_PCI_Enumeration.vsd .VSD]
+
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/EDK_II_Topology_-_PCI_Enumeration.pdf  EDK II Topology PCI Enumeration] - White Paper contributed by Lee Hamel<BR>
+EDK II Topology - PCI Enumeration: Topology of how PCI Enumeration is set up and executed
+
+
+* Jan 2016
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/UDK_Build_Integration_of_Reset_Vector.pdf PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/Edk_II_Topology/UDK_Build_Integration_of_Reset_Vector.pdf UDK Build Integration of Reset Vector]  - White Paper contributed by Lee Hamel<BR>
+How the Reset Vector is integrated into a UDK build
+
+* Jan 2016
+</td>
+</tr>
+
+
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_UEFI_Authenticated_Variables_in_SMM_with_EDKII_V2.pdf 
+A Tour Beyond BIOS Implementing UEFI Authenticated Variables in SMM with EDKII]
+<br>
+This paper presents the internal structure and boot flow of the SMM-based UEFI Authenticated Variable driver in the MDE Module Package and Security Package of the EDKII.
+<br>
+Prerequisite
+This paper assumes that audience has EDKII/UEFI firmware development experience. He or she should also be familiar with UEFI/PI firmware infrastructure, such as SEC, PEI, DXE, runtime phase.
+
+* Oct 2015 
+</td>
+</tr>
+
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_S3_resume_with_EDKII_V2.pdf  .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_Implementing_S3_resume_with_EDKII_V2.pdf A Tour Beyond BIOS Implementing S3 Resume with EDKII]
+<br>
+This paper presents the internal structure and boot flow of PI S3 resume design, as implemented in the EDKII.
+
+<br>
+Prerequisite
+This paper assumes that audience has EDKII/UEFI firmware development experience. He or she should also be familiar with UEFI/PI/ACPI firmware infrastructure, such as SEC, PEI, DXE, runtime phase, and S-states.
+* Oct 2015 
+</td>
+</tr>
+
+
+<tr>
+    <td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.pdf PDF] or
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.zip Zip]
+
+    </td>
+
+    <td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/A_Tour_Beyond_BIOS_into_UEFI_Secure_Boot_White_Paper.pdf A Tour Beyond BIOS into UEFI Secure Boot White Paper] <br>
+This document provides an overview of the implementation and intent behind the UEFI Secure Boot feature and capability of UEFI Specification, Version 2.3.1C, http://www.uefi.org 
+
+The goal of the paper is to provide
+*	an understanding of the motivations behind this capability
+*	a walk-through of the implementation 
+*	a future evolution.
+
+This paper targets firmware, software, and BIOS engineers. 
+* July 2012
+    </td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/EDK_II_Build_Decoded.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/EDK_II_Build_Decoded.pdf EDK II Build Decoded]<BR>
+
+Discussion of the files that are used in a build and their purpose.
+* April 2012
+
+</td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/How-to-Create_VS_Solution_for_Existing_Code.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/White_Papers/How-to-Create_VS_Solution_for_Existing_Code.pdf How to create Visual Studio solution]<BR>
+How to create a Visual Studio solution for an EDK II tree.
+* April 2012
+</td>
+</tr>
+<tr>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/User_Docs/PerformanceOptimization_1_0.pdf .PDF]
+</td>
+<td>
+[https://github.com/tianocore-docs/Docs/raw/master/User_Docs/PerformanceOptimization_1_0.pdf EDK II Performance Optimization]<BR>
+This paper focuses on techniques and methodologies which can be used to characterize and optimize the performance of EDK II based firmware.
+(PDF)
+* April 2010
+</td>
+</tr>
+</table>
+<!-- [[Category:EDKII]] -->
+<!-- [[Category:Documents]] -->
