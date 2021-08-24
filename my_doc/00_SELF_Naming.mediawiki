@@ -1,0 +1,24 @@
+=翻譯=                            
+                                            
+Dirtory Tree                     目錄樹
+[[DEC_SPEC]]
+
+GUID ENTRY(ies)                  GUID輸入點
+
+Section Tag                      區塊標籤
+[[DEC_SPEC]]
+
+Package(s)                       套件
+[[DEC_SPEC]]
+
+PCD Access Method Type           PCD 訪問方法種類
+[[DEC_SPEC]]
+
+Prompt                           提示
+[[WayneSamplePkg.dec]]
+
+Unified Mechanism                統合機制
+[[EDK_II_UserManual_0_7.pdf]]
+
+verbose                          詳細(或進階) ex verbose mode
+[[WayneSamplePkg.dec]]

@@ -1,0 +1,32 @@
+refer: 
+https://github.com/tianocore/tianocore.github.io/wiki/EDK-II-Documentation#specifications 
+  --> https://tianocore-docs.github.io/edk2-DecSpecification/release-1.27/edk2-DecSpecification-release-1.27.pdf 
+
+  UEFI EDKII Package Declaration (DEC) File Format Specification
+
+
+Wiki-Short-Name
+  --> DEC_SPEC
+      --> edk2-DecSpecification-release-1.27.pdf
+
+
+[Guids] 區塊 (sections)
+
+GUID 輸入點(entries) 排列
+
+
+PCD Section 
+雖然是選擇性區塊,但如果在套件目錄樹底下的模組(Modules)使用了尚未在其他dec檔宣告的PCD,必須列出PCD在dec檔
+
+有五種PCD的訪問方法類別. 注意不要被PCD的資料種類所混淆
+  --> PcdsFeatureFlag
+  --> PcdsFixedAtBuild
+  --> PcdsPatchableInModule
+  --> PcdsDynamic
+  --> PcdsDynamicEx
+
+PCD
+  --> PCD全名是platform Configuration Database.
+  --> PCD是一個模組的統合性機制用來去擷取外部資源的資訊和控制程序行為.
+  --> 資訊可能來自不同時間段
+    --> 編譯時間 (compile time)
